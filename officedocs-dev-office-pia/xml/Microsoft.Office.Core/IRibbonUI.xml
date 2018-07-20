@@ -1,0 +1,258 @@
+<Type Name="IRibbonUI" FullName="Microsoft.Office.Core.IRibbonUI">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f912fe8c8db15a87c031bae5d14f2fe64d719567" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659962" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IRibbonUI" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRibbonUI" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.IRibbonUI" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRibbonUI" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRibbonUI" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C03A7-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Das Objekt, das von der im <b>customUI</b>-Tag angegebenen <b>onLoad</b>-Prozedur zurückgegeben wird. Das Objekt enthält Methoden, um Steuerelementeigenschaften ungültig zu machen und um die Benutzeroberfläche zu aktualisieren.</summary>
+    <remarks>
+      <para>Sie können die Menüband-Benutzeroberfläche (UI) mithilfe von Rückrufprozeduren in COM-add-ins anpassen. Wenn die Host-Anwendung startet, wird die <b>OnLoad</b> -Rückrufprozedur aufgerufen.  Die Callback-Prozedur gibt dann ein <b>IRibbonUI</b> -Objekt auf der Benutzeroberfläche (UI) zeigen. Dieses Objekt können Sie die Methoden <b>Invalidate</b>, <b>InvalidateControl</b>und <b>Aktualisierung von</b> aufzurufen.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>Im folgenden Beispiel löst die hostanwendung starten die <b>OnLoad</b> -Ereignisprozedur, die eine Prozedur ruft dann die erstellt ein <b>IRibbonUI</b> -Objekt zurück, der Menüband-Benutzeroberfläche darstellt.  Im nächsten Schritt eine Rückrufprozedur ist definiert, die alle zwischengespeicherten Steuerelemente ungültig macht und anschließend die Benutzeroberfläche aktualisiert.</para>
+      <para>Im folgenden finden Sie das XML-Markup für Office zum Laden des benutzerdefinierten Menübands:</para>
+      <code>&amp;lt;customUI … onLoad=”MyAddInInitialize” …&amp;gt;</code>
+      <para>Im folgenden ist die Rückrufmethode für das <b>OnLoad</b> -Ereignis:</para>
+      <code>Dim MyRibbon As IRibbonUI
+Sub MyAddInInitialize(Ribbon As IRibbonUI)
+    Set MyRibbon = Ribbon
+End Sub
+
+Sub myFunction()
+    ‘ Invalidates the caches of all of this add-in’s controls 
+    MyRibbon.Invalidate()            
+End Sub</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivateTab">
+      <MemberSignature Language="C#" Value="public void ActivateTab (string ControlID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ActivateTab([in]string ControlID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.ActivateTab(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateTab (ControlID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateTab(System::String ^ ControlID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">Gibt den Bezeichner der benutzerdefinierten Registerkarte des Menübands an, die aktiviert werden.</param>
+        <summary>Aktiviert die angegebene benutzerdefinierte Registerkarte.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateTabMso">
+      <MemberSignature Language="C#" Value="public void ActivateTabMso (string ControlID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ActivateTabMso([in]string ControlID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.ActivateTabMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateTabMso (ControlID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateTabMso(System::String ^ ControlID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">Gibt den Bezeichner der benutzerdefinierten Registerkarte des Menübands an, die aktiviert werden.</param>
+        <summary>Aktiviert die angegebene integrierte Registerkarte.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateTabQ">
+      <MemberSignature Language="C#" Value="public void ActivateTabQ (string ControlID, string Namespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ActivateTabQ([in]string ControlID, [in]string Namespace) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.ActivateTabQ(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateTabQ (ControlID As String, Namespace As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateTabQ(System::String ^ ControlID, System::String ^ Namespace);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+        <Parameter Name="Namespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">Gibt den Bezeichner der benutzerdefinierten Registerkarte des Menübands an, die aktiviert werden.</param>
+        <param name="Namespace">Gibt den Namespace des Registerkartenelements an.</param>
+        <summary>Aktiviert die angegebene benutzerdefinierte Registerkarte auf der Menüband-Benutzeroberfläche von Microsoft Office Fluent. Registerkarte den Bezeichner enthält den vollqualifizierten Namen und den Namespace der Registerkarte verwendet.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalidate">
+      <MemberSignature Language="C#" Value="public void Invalidate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invalidate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.Invalidate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Macht die zwischengespeicherten Werte für alle Steuerelemente der Menüband-Benutzeroberfläche ungültig.</summary>
+        <remarks>
+          <para>Sie können die Multifunktionsleisten-Benutzeroberfläche mithilfe von Rückrufprozeduren in COM-add-ins anpassen. Für jede der die Rückrufe das Add-in implementiert wird werden die Antworten zwischengespeichert.  Angenommen, wenn ein Add-in-Writer die Rückrufprozedur <b>GetImage</b> für eine Schaltfläche implementiert, die Funktion einmal aufgerufen, die Bild wird geladen, und dann, wenn das Bild werden aktualisiert muss, das zwischengespeicherte Bild verwendet anstelle des Verfahrens zurückrufen. Dieser Prozess bleibt in-Place, bis das Add-in signalisiert, dass die zwischengespeicherten Werte ungültig sind, mithilfe der <b>Invalidate</b> -Methode, mit der die Zeit, die Rückrufprozedur erneut aufgerufen und die Rückgabe Antwort zwischengespeichert.  Das Add-in können Sie eine sofortige Aktualisierung der Benutzeroberfläche erzwingen, indem Aufrufen der <b>Refresh</b> -Methode.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>Im folgenden Beispiel löst die hostanwendung starten die <b>OnLoad</b> -Ereignisprozedur, die eine Prozedur dann die erstellt ein Objekt ruft, das der Menüband-Benutzeroberfläche darstellt.  Im nächsten Schritt eine Rückrufprozedur ist definiert, die alle Steuerelemente auf der Benutzeroberfläche ungültig macht und anschließend die Benutzeroberfläche aktualisiert.</para>
+          <para>Im folgenden finden Sie das XML-Markup für Office zum Laden des benutzerdefinierten Menübands:</para>
+          <code>&amp;lt;customUI … onLoad=”MyAddInInitialize” …&amp;gt;</code>
+          <para>Im folgenden ist die Rückrufmethode für das <b>OnLoad</b> -Ereignis:</para>
+          <code>Dim MyRibbon As IRibbonUI
+Sub MyAddInInitialize(Ribbon As IRibbonUI)
+    Set MyRibbon = Ribbon
+End Sub
+
+Sub myFunction()
+    ‘ Invalidates the caches of all of this add-in’s controls 
+    MyRibbon.Invalidate()            
+End Sub</code>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateControl">
+      <MemberSignature Language="C#" Value="public void InvalidateControl (string ControlID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InvalidateControl([in]string ControlID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.InvalidateControl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InvalidateControl (ControlID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidateControl(System::String ^ ControlID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">Gibt die ID des Steuerelements an, das ungültig gemacht wird.</param>
+        <summary>Macht den zwischengespeicherten Wert für ein einzelnes Steuerelement der Menüband-Benutzeroberfläche ungültig.</summary>
+        <remarks>
+          <para>Sie können die Multifunktionsleisten-Benutzeroberfläche mithilfe von Rückrufprozeduren in COM-add-ins anpassen. Für jede der die Rückrufe das Add-in implementiert wird werden die Antworten zwischengespeichert.  Angenommen, wenn ein Add-in-Writer die Rückrufprozedur <b>GetImage</b> für eine Schaltfläche implementiert, die Funktion einmal aufgerufen, die Bild wird geladen, und dann, wenn das Bild werden aktualisiert muss, das zwischengespeicherte Bild verwendet anstelle des Verfahrens zurückrufen. Dieser Prozess bleibt in-Place für das Steuerelement, bis das Add-in signalisiert, dass die zwischengespeicherten Werte ungültig sind, mithilfe der <b>InvalidateControl</b> -Methode, mit der die Zeit, die Rückrufprozedur erneut aufgerufen und die Rückgabe Antwort zwischengespeichert.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>Im folgenden Beispiel löst die hostanwendung starten die <b>OnLoad</b> -Ereignisprozedur, die eine Prozedur dann die erstellt ein Objekt ruft, das der Menüband-Benutzeroberfläche darstellt.  Im nächsten Schritt eine Rückrufprozedur wird definiert, ein Steuerelement auf der Benutzeroberfläche erklärt und anschließend die Benutzeroberfläche aktualisiert.</para>
+          <para>Im folgenden finden Sie das XML-Markup für Office zum Laden des benutzerdefinierten Menübands:</para>
+          <code>&amp;lt;customUI … onLoad=”MyAddInInitialize” …&amp;gt;</code>
+          <para>Im folgenden ist die Rückrufmethode für das <b>OnLoad</b> -Ereignis:</para>
+          <code>Dim MyRibbon As IRibbonUI
+Sub MyAddInInitialize(Ribbon As IRibbonUI)
+    Set MyRibbon = Ribbon
+End Sub
+
+Sub myFunction()
+    ‘ Invalidates the cache of a single control 
+    MyRibbon.InvalidateControl(“control5”)            
+End Sub</code>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateControlMso">
+      <MemberSignature Language="C#" Value="public void InvalidateControlMso (string ControlID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InvalidateControlMso([in]string ControlID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.InvalidateControlMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InvalidateControlMso (ControlID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidateControlMso(System::String ^ ControlID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">Den Bezeichner des Steuerelements, das ungültig gemacht wird angegeben.</param>
+        <summary>Mit dieser Methode wird ein integriertes Steuerelement für ungültig erklärt.</summary>
+        <remarks>
+          <para>Ein Steuerelement für ungültig erklärt wird die Anzeige aktualisiert und bewirkt, dass alle diesem Steuerelement auszuführenden zugeordneten Rückrufprozeduren.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

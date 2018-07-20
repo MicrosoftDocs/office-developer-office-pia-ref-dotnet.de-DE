@@ -1,0 +1,353 @@
+<Type Name="EncryptionProvider" FullName="Microsoft.Office.Core.EncryptionProvider">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="d47f94e5632932307e068c56805ab362f5180bfc" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660019" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface EncryptionProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract EncryptionProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.EncryptionProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface EncryptionProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class EncryptionProvider" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000CD809-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt die Methoden zum Einrichten von Berechtigungen, zum Anwenden der Kryptografie der zugrunde liegenden Ver- und Entschlüsselung sowie für die Benutzerauthentifizierung bereit.</summary>
+    <remarks>
+      <para>Verschlüsselungsanbieter werden über benutzerdefinierten COM-add-ins implementiert. Sie sind im Lieferumfang Speicher in Office-Dokumenten für Add-in-spezifische Informationen zum Speichern von Informationen, die Sie zum Verschlüsseln, entschlüsseln, Rechte anwenden und Anzeigen von Berechtigung Setup oder die Authentifizierung von Benutzeroberflächen benötigen.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Authenticate">
+      <MemberSignature Language="C#" Value="public int Authenticate (object ParentWindow, object EncryptionData, out uint PermissionsMask);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Authenticate([in]object ParentWindow, [in]object EncryptionData, [out] unsigned int32&amp; PermissionsMask) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.EncryptionProvider.Authenticate(System.Object,System.Object,System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Authenticate (ParentWindow As Object, EncryptionData As Object, ByRef PermissionsMask As UInteger) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Authenticate(System::Object ^ ParentWindow, System::Object ^ EncryptionData, [Runtime::InteropServices::Out] System::UInt32 % PermissionsMask);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ParentWindow" Type="System.Object" />
+        <Parameter Name="EncryptionData" Type="System.Object" />
+        <Parameter Name="PermissionsMask" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ParentWindow">Gibt das Fenster an, das zum Anzeigen der Verschlüsselungseinstellungen aufgerufen wird.</param>
+        <param name="EncryptionData">Enthält die verschlüsselten Daten für das aktuelle Dokument.</param>
+        <param name="PermissionsMask">Die Benutzeroberfläche, die vom Verschlüsselungsanbieter-Add-In angezeigt wird.</param>
+        <summary>Hiermit bestimmen Sie, ob der Benutzer die entsprechenden Berechtigungen zum Öffnen des verschlüsselten Dokuments hat.</summary>
+        <returns>
+          <b>Integer</b>
+        </returns>
+        <remarks>
+          <para>Dies ist, in dem Ihr COM-add-ins Verschlüsselungsanbieter für zeigt Benutzeroberfläche für die Anwendung Verschlüsselung verwendet werden kann. Beispielsweise würde eine Verschlüsselungsanbieters Kennwort des Benutzers Kennwort einzugeben.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneSession">
+      <MemberSignature Language="C#" Value="public int CloneSession (int SessionHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CloneSession([in]int32 SessionHandle) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.EncryptionProvider.CloneSession(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneSession (SessionHandle As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CloneSession(int SessionHandle);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743811)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SessionHandle" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="SessionHandle">Die ID der geklonten Sitzung.</param>
+        <summary>Erstellt eine zweite, Arbeitskopie von der <see cref="T:Microsoft.Office.Core.EncryptionProvider" /> des Objekts verschlüsselungssitzung für eine Datei gespeichert werden sollen.</summary>
+        <returns>
+          <b>Integer</b>
+        </returns>
+        <remarks>
+          <para>Die Ausgabe dieser Methode ist eine andere Sitzungshandle mit denselben verschlüsselungseinstellungen. Wenn eine automatische Speicherung ausgeführt wird, werden Sie mit dieser Sitzungshandle bereitgestellt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecryptStream">
+      <MemberSignature Language="C#" Value="public void DecryptStream (int SessionHandle, string StreamName, object EncryptedStream, object UnencryptedStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DecryptStream([in]int32 SessionHandle, [in]string StreamName, [in]object EncryptedStream, [in]object UnencryptedStream) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.EncryptionProvider.DecryptStream(System.Int32,System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DecryptStream (SessionHandle As Integer, StreamName As String, EncryptedStream As Object, UnencryptedStream As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DecryptStream(int SessionHandle, System::String ^ StreamName, System::Object ^ EncryptedStream, System::Object ^ UnencryptedStream);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743815)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SessionHandle" Type="System.Int32" />
+        <Parameter Name="StreamName" Type="System.String" />
+        <Parameter Name="EncryptedStream" Type="System.Object" />
+        <Parameter Name="UnencryptedStream" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="SessionHandle">Die ID der aktuellen Sitzung.</param>
+        <param name="StreamName">Die ID des Datenstroms.</param>
+        <param name="EncryptedStream">Der verschlüsselte Datenstrom.</param>
+        <param name="UnencryptedStream">Der Datenstrom vor der Entschlüsselung.</param>
+        <summary>Entschlüsselt einen verschlüsselten Datenstrom für ein Dokument und gibt diesen zurück.</summary>
+        <remarks>
+          <para>Diese Methode wird vom COM-add-in aufgerufen, wenn das Dokument geöffnet ist, und nachdem Ihr Add-in überprüft hat, dass der Benutzer öffnet das Dokument authentifiziert wird. Diese Methode ist die Umkehrung der <see cref="M:Microsoft.Office.Core.EncryptionProvider.EncryptStream(System.Int32,System.String,System.Object,System.Object)" /> -Methode und konvertiert verschlüsselte Daten wieder in den reine (unverschlüsselte) Daten.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptStream">
+      <MemberSignature Language="C#" Value="public void EncryptStream (int SessionHandle, string StreamName, object UnencryptedStream, object EncryptedStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EncryptStream([in]int32 SessionHandle, [in]string StreamName, [in]object UnencryptedStream, [in]object EncryptedStream) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.EncryptionProvider.EncryptStream(System.Int32,System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EncryptStream (SessionHandle As Integer, StreamName As String, UnencryptedStream As Object, EncryptedStream As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EncryptStream(int SessionHandle, System::String ^ StreamName, System::Object ^ UnencryptedStream, System::Object ^ EncryptedStream);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SessionHandle" Type="System.Int32" />
+        <Parameter Name="StreamName" Type="System.String" />
+        <Parameter Name="UnencryptedStream" Type="System.Object" />
+        <Parameter Name="EncryptedStream" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="SessionHandle">Die ID der aktuellen Sitzung.</param>
+        <param name="StreamName">Der Name des verschlüsselten Dokumentdatenstroms.</param>
+        <param name="UnencryptedStream">Der Datenstrom vor der Verschlüsselung.</param>
+        <param name="EncryptedStream">Der Datenstrom nach der Verschlüsselung.</param>
+        <summary>Verschlüsselt einen Datenstrom für ein Dokument und gibt diesen zurück.</summary>
+        <remarks>
+          <para>Diese Methode wird in der Regel vom COM-add-in während eines Speichervorgangs aufgerufen Vorgang.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndSession">
+      <MemberSignature Language="C#" Value="public void EndSession (int SessionHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndSession([in]int32 SessionHandle) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.EncryptionProvider.EndSession(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndSession (SessionHandle As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndSession(int SessionHandle);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SessionHandle" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="SessionHandle">Die ID der aktuellen Sitzung.</param>
+        <summary>Beendet die aktuelle Verschlüsselungssitzung.</summary>
+        <remarks>
+          <para>Während eines Speichervorgangs Vorgang, der <see cref="M:Microsoft.Office.Core.EncryptionProvider.CloneSession(System.Int32)" /> -Methode aufgerufen wird, von COM-add-in erstellen Sie eine zweite, Arbeitskopie von der <see cref="T:Microsoft.Office.Core.EncryptionProvider" /> des Objekts verschlüsselungssitzung für die Datei gespeichert werden sollen. Nächste der <see cref="M:Microsoft.Office.Core.EncryptionProvider.Save(System.Int32,System.Object)" /> Methode aufgerufen, um benutzerdefinierte Informationen abrufen zu Ihrer verschlüsselungseinstellungen dauerhaft möchten. Diese Informationen sind verfügbar, wenn dieses Dokument später erneut geöffnet wird. Anschließend wird die <see cref="M:Microsoft.Office.Core.EncryptionProvider.EncryptStream(System.Int32,System.String,System.Object,System.Object)" /> -Methode aufgerufen, wodurch dem Anbieter den gesamten Inhalt des Dokuments erhält. Und schließlich für die Durchführung den Prozess der <see cref="M:Microsoft.Office.Core.EncryptionProvider.EndSession(System.Int32)" /> -Methode für das Handle geklonten Sitzung.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderDetail">
+      <MemberSignature Language="C#" Value="public object GetProviderDetail (Microsoft.Office.Core.EncryptionProviderDetail encprovdet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetProviderDetail([in]valuetype Microsoft.Office.Core.EncryptionProviderDetail encprovdet) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.EncryptionProvider.GetProviderDetail(Microsoft.Office.Core.EncryptionProviderDetail)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProviderDetail (encprovdet As EncryptionProviderDetail) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetProviderDetail(Microsoft::Office::Core::EncryptionProviderDetail encprovdet);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="encprovdet" Type="Microsoft.Office.Core.EncryptionProviderDetail" />
+      </Parameters>
+      <Docs>
+        <param name="encprovdet">Gibt die gewünschten Verschlüsselungsinformationen an.</param>
+        <summary>Zeigt Informationen zur Verschlüsselung des aktuellen Dokuments an.</summary>
+        <returns>object</returns>
+        <remarks>
+          <para>Mit dieser Methode können Sie Abfragen der <see cref="T:Microsoft.Office.Core.EncryptionProvider" /> -Objekts Informationen wie Was ist die URL zum Herunterladen für Benutzer ohne Ihre benutzerdefinierten COM-add-Ins installiert, welcher Algorithmus werden Sie implementieren, und welche Verschlüsselungsmodi verwenden.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSession">
+      <MemberSignature Language="C#" Value="public int NewSession (object ParentWindow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 NewSession([in]object ParentWindow) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.EncryptionProvider.NewSession(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function NewSession (ParentWindow As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int NewSession(System::Object ^ ParentWindow);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ParentWindow" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ParentWindow">Gibt das Fenster an, das zum Anzeigen der Verschlüsselungseinstellungen aufgerufen wird.</param>
+        <summary>Anhand der <see cref="T:Microsoft.Office.Core.EncryptionProvider" /> Objekt zum Erstellen einer neuen verschlüsselungssitzung. In dieser Sitzung wird vom Anbieter zu Cache für die spezifischen Informationen über die Verschlüsselung, Benutzern und Verwaltung von Informationsrechten verwendet, während das Dokument im Arbeitsspeicher ist.</summary>
+        <returns>
+          <b>Integer</b>
+        </returns>
+        <remarks>
+          <para>Diese Methode wird vom COM-add-in aufgerufen.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public int Save (int SessionHandle, object EncryptionData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Save([in]int32 SessionHandle, [in]object EncryptionData) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.EncryptionProvider.Save(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Save (SessionHandle As Integer, EncryptionData As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Save(int SessionHandle, System::Object ^ EncryptionData);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743813)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SessionHandle" Type="System.Int32" />
+        <Parameter Name="EncryptionData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="SessionHandle">Die ID der aktuellen Sitzung.</param>
+        <param name="EncryptionData">Enthält die Verschlüsselungsinformationen.</param>
+        <summary>Speichert ein verschlüsseltes Dokument.</summary>
+        <returns>
+          <b>Integer</b>
+        </returns>
+        <remarks>
+          <para>Wenn Sie eine Datei in das Office Open XML-Dateiformat speichern (Dies ist das einzige Format, das benutzerdefinierten Datei Verschlüsselung unterstützt), wird der Anbieter vom COM-add-in zum Verschlüsseln des Dokuments aufgerufen. Wenn Sie versuchen, die in einem Format speichern, die benutzerdefinierte Datei Verschlüsselung nicht unterstützt, und Sie dazu die entsprechenden Rechte verfügen, wird das Dokument ohne Verschlüsselung von Microsoft Office speichern. Dadurch werden Dokumente in den Formaten exportiert werden sollen, die keine Verschlüsselung oder die Verwaltung von Informationsrechten unterstützen.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowSettings">
+      <MemberSignature Language="C#" Value="public void ShowSettings (int SessionHandle, object ParentWindow, bool ReadOnly, out bool Remove);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowSettings([in]int32 SessionHandle, [in]object ParentWindow, [in]bool ReadOnly, [out] bool&amp; Remove) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.EncryptionProvider.ShowSettings(System.Int32,System.Object,System.Boolean,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowSettings (SessionHandle As Integer, ParentWindow As Object, ReadOnly As Boolean, ByRef Remove As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowSettings(int SessionHandle, System::Object ^ ParentWindow, bool ReadOnly, [Runtime::InteropServices::Out] bool % Remove);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SessionHandle" Type="System.Int32" />
+        <Parameter Name="ParentWindow" Type="System.Object" />
+        <Parameter Name="ReadOnly" Type="System.Boolean" />
+        <Parameter Name="Remove" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="SessionHandle">Die ID der aktuellen Sitzung.</param>
+        <param name="ParentWindow">Gibt das Fenster an, das zum Anzeigen der Verschlüsselungseinstellungen aufgerufen wird.</param>
+        <param name="ReadOnly">Gibt an, ob der Benutzer in der Lage sein soll, die Verschlüsselungseinstellungen zu ändern.</param>
+        <param name="Remove">Wenn <b>True</b>, die Verschlüsselung für ein Dokument während des nächsten entfernt werden Speichervorgangs.</param>
+        <summary>Mit dieser Methode wird ein Dialogfeld mit den Verschlüsselungseinstellungen für das aktuelle Dokument angezeigt.</summary>
+        <remarks>
+          <para>Diese Methode kann nur für ein bereits verschlüsseltes Dokument aufgerufen werden. Verwenden Sie diese Methode in COM-add-in, um Anzeigen des Benutzers Aufträge aufbauen, wie Sie, Benutzererlebnis basiert. Beispielsweise können Sie ein Dialogfeld zum Ändern des Dokuments Kennworts in einem Verschlüsselungsszenario reine anzeigen. In einem Szenario mit Rights Management können Sie entscheiden, ob ein Dialogfeld zum Ändern der Berechtigungen anzeigen oder die Berechtigungen des Benutzers anzeigen.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

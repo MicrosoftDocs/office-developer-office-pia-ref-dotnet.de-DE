@@ -1,0 +1,2474 @@
+<Type Name="_CommandBarButton" FullName="Microsoft.Office.Core._CommandBarButton">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c6bfd8d29e589e579f5eae507ab43562f407648f" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659862" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _CommandBarButton : Microsoft.Office.Core.CommandBarControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _CommandBarButton implements class Microsoft.Office.Core.CommandBarControl" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core._CommandBarButton" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _CommandBarButton&#xA;Implements CommandBarControl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _CommandBarButton : Microsoft::Office::Core::CommandBarControl" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core.CommandBarControl</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C030E-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt ein Schaltflächen-Steuerelement auf einer Befehlsleiste dar.</summary>
+    <remarks>
+      <para>Verwenden von <b>Steuerelementen</b>(<paramref name="index" />), wobei <paramref name="index" /> ist die Indexnummer des Steuerelements, um ein <b>CommandBarButton</b> -Objekt zurückzugeben. (Der <see cref="P:Microsoft.Office.Core._CommandBarButton.Type" /> -Eigenschaft des Steuerelements muss <b>MsoControlButton</b>sein.)</para>
+      <para>Können Sie auch die <see cref="M:Microsoft.Office.Core._CommandBars.FindControl(System.Object,System.Object,System.Object,System.Object)" /> Methode, um ein <b>CommandBarButton</b> -Objekt zurückzugeben.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="accChild">
+      <MemberSignature Language="C#" Value="public object accChild[object varChild] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object accChild(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accChild(varChild As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ accChild[System::Object ^] { System::Object ^ get(System::Object ^ varChild); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accChild(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accChildCount">
+      <MemberSignature Language="C#" Value="public int accChildCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 accChildCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accChildCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accChildCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int accChildCount { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accChildCount</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accDefaultAction">
+      <MemberSignature Language="C#" Value="public string accDefaultAction[object varChild] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string accDefaultAction(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accDefaultAction(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accDefaultAction(Optional varChild As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ accDefaultAction[System::Object ^] { System::String ^ get(System::Object ^ varChild); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accDefaultAction(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5013)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5013)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accDescription">
+      <MemberSignature Language="C#" Value="public string accDescription[object varChild] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string accDescription(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accDescription(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accDescription(Optional varChild As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ accDescription[System::Object ^] { System::String ^ get(System::Object ^ varChild); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accDescription(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5005)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5005)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accDoDefaultAction">
+      <MemberSignature Language="C#" Value="public void accDoDefaultAction (object varChild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accDoDefaultAction([in]object varChild) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.accDoDefaultAction(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub accDoDefaultAction (Optional varChild As Object)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.accDoDefaultAction(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5018)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accFocus">
+      <MemberSignature Language="C#" Value="public object accFocus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object accFocus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accFocus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accFocus As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ accFocus { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accFocus</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5011)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5011)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accHelp">
+      <MemberSignature Language="C#" Value="public string accHelp[object varChild] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string accHelp(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accHelp(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accHelp(Optional varChild As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ accHelp[System::Object ^] { System::String ^ get(System::Object ^ varChild); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accHelp(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5008)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5008)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accHelpTopic">
+      <MemberSignature Language="C#" Value="public int accHelpTopic[out string pszHelpFile, object varChild] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 accHelpTopic(string, object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accHelpTopic(System.String@,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accHelpTopic(ByRef pszHelpFile As String, Optional varChild As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int accHelpTopic[System::String ^ %, System::Object ^] { int get([Runtime::InteropServices::Out] System::String ^ % pszHelpFile, System::Object ^ varChild); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accHelpTopic(System.String@,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5009)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5009)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pszHelpFile" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pszHelpFile">To be added.</param>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accHitTest">
+      <MemberSignature Language="C#" Value="public object accHitTest (int xLeft, int yTop);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object accHitTest([in]int32 xLeft, [in]int32 yTop) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.accHitTest(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function accHitTest (xLeft As Integer, yTop As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ accHitTest(int xLeft, int yTop);" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.accHitTest(System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5017)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xLeft" Type="System.Int32" />
+        <Parameter Name="yTop" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="xLeft">To be added.</param>
+        <param name="yTop">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accKeyboardShortcut">
+      <MemberSignature Language="C#" Value="public string accKeyboardShortcut[object varChild] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string accKeyboardShortcut(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accKeyboardShortcut(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accKeyboardShortcut(Optional varChild As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ accKeyboardShortcut[System::Object ^] { System::String ^ get(System::Object ^ varChild); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accKeyboardShortcut(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5010)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5010)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accLocation">
+      <MemberSignature Language="C#" Value="public void accLocation (out int pxLeft, out int pyTop, out int pcxWidth, out int pcyHeight, object varChild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accLocation([out] int32&amp; pxLeft, [out] int32&amp; pyTop, [out] int32&amp; pcxWidth, [out] int32&amp; pcyHeight, [in]object varChild) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.accLocation(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub accLocation (ByRef pxLeft As Integer, ByRef pyTop As Integer, ByRef pcxWidth As Integer, ByRef pcyHeight As Integer, Optional varChild As Object)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.accLocation(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5015)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pxLeft" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pyTop" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pcxWidth" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pcyHeight" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pxLeft">To be added.</param>
+        <param name="pyTop">To be added.</param>
+        <param name="pcxWidth">To be added.</param>
+        <param name="pcyHeight">To be added.</param>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accName">
+      <MemberSignature Language="C#" Value="public string accName[object varChild] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string accName(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Property accName(Optional varChild As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ accName[System::Object ^] { System::String ^ get(System::Object ^ varChild); void set(System::Object ^ varChild, System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accName(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5003)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5003)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-5003)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accNavigate">
+      <MemberSignature Language="C#" Value="public object accNavigate (int navDir, object varStart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object accNavigate([in]int32 navDir, [in]object varStart) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.accNavigate(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function accNavigate (navDir As Integer, Optional varStart As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.accNavigate(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5016)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="navDir" Type="System.Int32" />
+        <Parameter Name="varStart" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="navDir">To be added.</param>
+        <param name="varStart">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accParent">
+      <MemberSignature Language="C#" Value="public object accParent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object accParent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accParent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accParent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ accParent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accParent</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accRole">
+      <MemberSignature Language="C#" Value="public object accRole[object varChild] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object accRole(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accRole(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accRole(Optional varChild As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ accRole[System::Object ^] { System::Object ^ get(System::Object ^ varChild); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accRole(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5006)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5006)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accSelect">
+      <MemberSignature Language="C#" Value="public void accSelect (int flagsSelect, object varChild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void accSelect([in]int32 flagsSelect, [in]object varChild) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.accSelect(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub accSelect (flagsSelect As Integer, Optional varChild As Object)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.accSelect(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5014)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="flagsSelect" Type="System.Int32" />
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="flagsSelect">To be added.</param>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accSelection">
+      <MemberSignature Language="C#" Value="public object accSelection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object accSelection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accSelection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accSelection As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ accSelection { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accSelection</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5012)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5012)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accState">
+      <MemberSignature Language="C#" Value="public object accState[object varChild] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object accState(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property accState(Optional varChild As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ accState[System::Object ^] { System::Object ^ get(System::Object ^ varChild); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accState(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5007)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5007)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="accValue">
+      <MemberSignature Language="C#" Value="public string accValue[object varChild] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string accValue(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.accValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Property accValue(Optional varChild As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ accValue[System::Object ^] { System::String ^ get(System::Object ^ varChild); void set(System::Object ^ varChild, System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.accValue(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-5004)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-5004)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-5004)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varChild" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varChild">To be added.</param>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <b>Application</b> -Objekt, das die Container-Anwendung für das Objekt darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGroup">
+      <MemberSignature Language="C#" Value="public bool BeginGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BeginGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.BeginGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Property BeginGroup As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BeginGroup { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.BeginGroup</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874880)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874880)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874880)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen ein Werts, das angibt, ob das angegebene Befehlsleisten-Steuerelement am Anfang einer Gruppe von Steuerelementen auf der Befehlsleiste angezeigt wird.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuiltIn">
+      <MemberSignature Language="C#" Value="public bool BuiltIn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BuiltIn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.BuiltIn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltIn As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BuiltIn { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.BuiltIn</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874882)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874882)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen Wert, der angibt, ob das angegebene Befehlsleisten-Steuerelement ein integriertes Steuerelement der containeranwendung handelt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Gibt <b>true,</b> Wenn der angegebenen Befehlsleiste oder Befehlsleisten-Steuerelement eine integrierte Befehlsleiste oder das Steuerelement der Container-Anwendung und <b>False</b> ist, wenn es sich um eine benutzerdefinierte Befehlsleiste oder das Steuerelement ist, oder ist eine integrierte Steuerelement, dessen <see cref="P:Microsoft.Office.Core.CommandBar.BuiltIn" /> Eigenschaft festgelegt wurde .</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuiltInFace">
+      <MemberSignature Language="C#" Value="public bool BuiltInFace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BuiltInFace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.BuiltInFace" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuiltInFace As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BuiltInFace { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610940416)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610940416)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610940416)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen ein Werts, das angibt, ob die Oberfläche der Schaltflächensteuerelement einer Befehlsleiste die ursprüngliche integrierte Oberfläche ist.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Diese Eigenschaft kann nur auf <b>True</b>festgelegt werden, wodurch die Oberfläche auf das integrierte Symbol zurückgesetzt wird.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="public string Caption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Caption" />
+      <MemberSignature Language="VB.NET" Value="Public Property Caption As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Caption</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874883)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874883)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874883)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen den Beschriftungstext für ein Befehlsleisten-Steuerelement.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Beschriftung für ein Steuerelement wird auch als Standard-QuickInfo angezeigt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="public object Control { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Control" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Control" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Control { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Control</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874885)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874885)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CommandBarControl Copy (object Bar, object Before);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CommandBarControl Copy([in]object Bar, [in]object Before) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.Copy(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Copy (Optional Bar As Object, Optional Before As Object) As CommandBarControl" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.Copy(System.Object,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874886)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CommandBarControl</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Bar" Type="System.Object" />
+        <Parameter Name="Before" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Bar">Optionales- <b>Objekt</b>. Eine Zahl, die die Position für das neue Steuerelement auf der angegebenen Befehlsleiste angibt. Das neue Steuerelement wird vor dem Steuerelement eingefügt, das sich an dieser Position befindet. Wenn dieses Argument ausgelassen wird, wird das Element an das Ende der Befehlsleiste kopiert.</param>
+        <param name="Before">Optionales- <b>Objekt</b>. Ein <see cref="T:Microsoft.Office.Core.CommandBar" /> -Objekt, das die Ziel-Befehlsleiste darstellt. Wenn dieses Argument ausgelassen wird, wird das Steuerelement der Befehlsleiste kopiert, in dem das Steuerelement bereits vorhanden ist.</param>
+        <summary>Kopiert ein Befehlsleisten-Steuerelement in eine vorhandene Befehlsleiste.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyFace">
+      <MemberSignature Language="C#" Value="public void CopyFace ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyFace() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.CopyFace" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyFace ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyFace();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610940418)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Kopiert die Oberfläche eines Schaltflächen-Steuerelements der Befehlsleiste in die Zwischenablage.</summary>
+        <remarks>
+          <para>Verwendung der <see cref="M:Microsoft.Office.Core._CommandBarButton.PasteFace" /> -Methode, um den Inhalt der Zwischenablage in eine Schaltflächenoberseite einzufügen.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen Wert, der die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft "1297307460" zurück, die die Zeichenfolge "MSWD"; darstellt Wenn in Microsoft Excel erstellt, gibt diese Eigenschaft "1480803660" zurück. Dieser Wert kann auch durch die Konstante <b>WdCreatorCode</b> in Word oder <b>xlCreatorCode Wert</b> in Excel dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para>Die <b>Creator</b> -Eigenschaft gibt immer den numerischen Bezeichner für die aktive Anwendung zurück, genau wie die <b>Application</b> -Eigenschaft den Namen der aktiven Anwendung immer in Form einer Zeichenfolge zurückgibt. Verwenden Sie die <b>Eigenschaften CreatedBy</b> -Eigenschaft von der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, und <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> -Objekten, die den Namen der Person zurückzugeben, die diese Objekte erstellt hat. Verwenden Sie Dokumenteigenschaften, um Informationen zu den Autoren von Office-Dokumenten zurückzugeben.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete (object Temporary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete([in]object Temporary) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.Delete(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete (Optional Temporary As Object)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.Delete(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874887)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Temporary" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Temporary">Optionales- <b>Objekt</b>. <b>True</b>, wenn das Steuerelement für die aktuelle Sitzung zu löschen. Das Steuerelement wird von die Anwendung in der nächsten Sitzung erneut angezeigt.</param>
+        <summary>Löscht das angegebene Objekt aus der Auflistung.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DescriptionText">
+      <MemberSignature Language="C#" Value="public string DescriptionText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DescriptionText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.DescriptionText" />
+      <MemberSignature Language="VB.NET" Value="Public Property DescriptionText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DescriptionText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.DescriptionText</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874888)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874888)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874888)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt zurück oder legt die Beschreibung für ein Befehlsleisten-Steuerelement.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die Beschreibung wird dem Benutzer nicht angezeigt, aber es kann zum Dokumentieren des Verhaltens des Steuerelements für andere Entwickler hilfreich sein.</para>
+          <para>Diese Eigenschaft wird für die aktive Hilfe auf dem Macintosh verwendet.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Enabled</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874890)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874890)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874890)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen ein Werts, das angibt, ob das angegebene Befehlsleisten-Steuerelement aktiviert ist.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn Sie die <b>Enabled</b> -Eigenschaft auf <b>True</b>festlegen, bestimmt die Anwendung den Status des Befehlsleisten-Steuerelements; Festlegen der Steuerelementvorlage auf <b>false festgelegt</b> , wird das Steuerelement deaktiviert werden erzwingen.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public void Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Execute() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Execute ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Execute();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.Execute</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874892)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Führt die Prozedur oder den integrierten Befehl aus, das angegebene Befehlsleisten-Steuerelement zugewiesen.</summary>
+        <remarks>
+          <para>Verwenden Sie bei benutzerdefinierten Steuerelementen der <see cref="P:Microsoft.Office.Core._CommandBarButton.OnAction" /> -Eigenschaft auf die Prozedur ausgeführt werden soll.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FaceId">
+      <MemberSignature Language="C#" Value="public int FaceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FaceId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.FaceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property FaceId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FaceId { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610940419)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610940419)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610940419)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die ID-Nummer für die Oberfläche der Schaltflächensteuerelement einer Befehlsleiste.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die <b>FaceId</b> -Eigenschaft bestimmt das Aussehen, nicht die Funktion einer Befehlsleistenschaltfläche. </para>
+          <para>Der <see cref="P:Microsoft.Office.Core.CommandBarControl.Id" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Core.CommandBarControl" /> Objekt bestimmt die Funktion der Schaltfläche.</para>
+          <para>Der Wert der <b>FaceId</b> -Eigenschaft für eine Befehlsleisten-Schaltfläche mit einer benutzerdefinierten Oberfläche lautet 0 (null).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public int Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Height</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874893)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874893)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874893)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die Höhe des Steuerelements auf einer Befehlsleiste.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpContextId">
+      <MemberSignature Language="C#" Value="public int HelpContextId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HelpContextId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.HelpContextId" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpContextId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HelpContextId { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.HelpContextId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874895)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874895)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874895)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die Hilfe Kontext-ID für das Hilfethema, das Befehlsleisten-Steuerelement zugeordnet ist.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Sie müssen auch festlegen, um diese Eigenschaft verwenden zu können, die <see cref="P:Microsoft.Office.Core._CommandBarButton.HelpFile" /> Eigenschaft. Die Themen der Onlinehilfe reagieren Sie auf UMSCHALT + F1.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpFile">
+      <MemberSignature Language="C#" Value="public string HelpFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.HelpFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.HelpFile</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874897)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874897)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874897)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen der Dateiname für das Hilfethema, das Befehlsleisten-Steuerelement zugeordnet ist.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Sie müssen auch festlegen, um diese Eigenschaft verwenden zu können, die <see cref="P:Microsoft.Office.Core._CommandBarButton.HelpContextId" /> Eigenschaft. Hilfethemen mit der Tastenkombination UMSCHALT + F1.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HyperlinkType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType HyperlinkType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType HyperlinkType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.HyperlinkType" />
+      <MemberSignature Language="VB.NET" Value="Public Property HyperlinkType As MsoCommandBarButtonHyperlinkType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoCommandBarButtonHyperlinkType HyperlinkType { Microsoft::Office::Core::MsoCommandBarButtonHyperlinkType get(); void set(Microsoft::Office::Core::MsoCommandBarButtonHyperlinkType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610940428)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610940428)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610940428)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt zurück oder legt den Typ des Hyperlinks, die die angegebenen Befehlsleisten-Schaltfläche zugeordnet.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public int Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Id { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Id</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874899)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874899)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die ID für ein integriertes Befehlsleisten-Steuerelement zurück.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>ID des Steuerelements bestimmt die integrierte Aktion für dieses Steuerelement. Der Wert der <b>Id</b> -Eigenschaft für alle benutzerdefinierten Steuerelemente ist 1.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Index</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874900)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874900)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen Wert, der die Indexnummer für ein Objekt in der Auflistung angibt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die Position des ersten Befehlsleisten-Steuerelements ist 1. Trennzeichen werden nicht gezählt, der <see cref="T:Microsoft.Office.Core.CommandBarControls" /> Auflistung.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceId">
+      <MemberSignature Language="C#" Value="public int InstanceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 InstanceId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.InstanceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InstanceId { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.InstanceId</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874901)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874901)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceIdPtr">
+      <MemberSignature Language="C#" Value="public object InstanceIdPtr { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object InstanceIdPtr" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.InstanceIdPtr" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceIdPtr As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ InstanceIdPtr { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610940434)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610940434)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPriorityDropped">
+      <MemberSignature Language="C#" Value="public bool IsPriorityDropped { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPriorityDropped" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.IsPriorityDropped" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPriorityDropped As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPriorityDropped { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.IsPriorityDropped</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874925)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874925)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen Wert, der angibt, ob das Steuerelement aus dem Menü oder Symbolleiste Verwendungsstatistiken und Platzgründen basierend derzeit angezeigt wird.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Beachten Sie, dass der zurückgegebene Wert nicht die Sichtbarkeit des Steuerelements, als Satz von darstellt der <see cref="P:Microsoft.Office.Core._CommandBarButton.Visible" /> Eigenschaft. Ein Steuerelement für das <b>Visible</b> auf <b>True</b> festgelegt, werden nicht sofort in einem personalisierten Menü oder Symbolleiste sichtbar, wenn <b>IsPriorityDropped</b> auf <b>True</b>festgelegt ist.</para> Um zu bestimmen, wann Sie Set <b>IsPriorityDropped</b> auf <b>True</b> für ein bestimmtes Menüelement, Microsoft Office verwaltet die Gesamtzahl der Anzahl, wie oft das Menüelement verwendet wurde und die Anzahl der anderen Anwendung Sitzungen, in denen der Benutzer hat, einen Datensatz 
+          <para> ein weiteres Menüelement verwendet in demselben Menü als dieser Menüeintrag ohne Verwendung des bestimmten Menüelements. Wenn dieser Wert bestimmte Schwellenwerte erreicht, wird die Anzahl verringert. Wenn die Anzahl 0 (null) erreicht, wird <b>IsPriorityDropped</b> auf <b>True</b>festgelegt. Programmierer können nicht den Wert der Sitzung, den Schwellenwert oder die <b>IsPriorityDropped</b> -Eigenschaft festgelegt. Programmierer, jedoch können Sie die <see cref="P:Microsoft.Office.Core._CommandBars.AdaptiveMenus" /> -Eigenschaft adaptive Menüs für bestimmte Menüs in einer Anwendung deaktivieren.</para><para>Zu bestimmen, wann <b>IsPriorityDropped</b> auf <b>True</b> gesetzt, für eine bestimmte Symbolleiste, Office verwaltet eine Liste der Reihenfolge, in der alle Steuerelemente auf dieser Symbolleiste zuletzt ausgeführt wurden. Anzeigen einer Symbolleiste immer besitzt den verfügbaren Platz angezeigt, Anzahl von Steuerelementen in der Reihenfolge zuletzt verwendet, um am längsten verwendet. Steuerelemente mit <see cref="P:Microsoft.Office.Core._CommandBarButton.Priority" /> 1 festgelegt ist, werden immer angezeigt, und die Symbolleiste wird Zeilen umbrochen, falls erforderlich, um diese Steuerelemente anzuzeigen. Programmierer können die <b>Priority</b> -Eigenschaft verwenden, um sicherzustellen, dass bestimmte Symbolleisten-Steuerelemente werden immer angezeigt oder, Symbolleisten neu zu positionieren, damit sie genügend Speicherplatz zum Anzeigen aller Steuerelemente besitzen.</para><para>Anhand der folgenden Tabelle können Sie die Anzahl von Sitzungen Vorhersagen für die ein Menüelement in einem personalisierten Menü bleiben sichtbar, bevor das Menüelement <b>IsPriorityDropped</b> -Eigenschaft auf <b>True</b>festgelegt ist.</para><list type="table"><item><description><paramref name="0,1" /></description>3
+            </item><item><description><paramref name="2" /></description>6
+            </item><item><description><paramref name="3" /></description>9
+            </item><item><description><paramref name="4, 5" /></description>12
+            </item><item><description><paramref name="6-8" /></description>17
+            </item><item><description><paramref name="9-13" /></description>23
+            </item><item><description><paramref name="14-24" /></description>29
+            </item><item><description><paramref name="25 or more" /></description>31
+            </item></list><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public int Left { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Left" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Left</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874903)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874903)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen Wert, der die horizontale Position des angegebenen Befehlsleisten-Steuerelements (in Pixel) relativ zum linken Rand des Bildschirms angibt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Teile des Inhalts in diesem Thema treffen für bestimmte Sprachen möglicherweise nicht.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mask">
+      <MemberSignature Language="C#" Value="public stdole.IPictureDisp Mask { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class stdole.IPictureDisp Mask" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Mask" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mask As IPictureDisp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property stdole::IPictureDisp ^ Mask { stdole::IPictureDisp ^ get(); void set(stdole::IPictureDisp ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComAliasName("stdole.IPictureDisp")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610940432)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610940432)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610940432)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>stdole.IPictureDisp</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt zurück oder legt diesen fest ein <b>IPictureDisp</b> -Objekt, das Maskenbild darstellt, ein <see cref="T:Microsoft.Office.Core._CommandBarButton" /> Objekt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Das Maskenbild bestimmt, welche Teile des Schaltflächenbildes transparent sind.</para>
+          <para>, Wenn Sie erstellen ein Bild, das Sie als Maskenbild verwenden möchten, weißen allen Bereichen, das transparent werden soll sollte, und die Bereiche, die Sie anzeigen möchten schwarz sein sollte.</para>
+          <para>Immer legen Sie die Maske erst nach dem Festlegen des Bilds für eine <see cref="T:Microsoft.Office.Core.CommandBarButton" /> -Objekt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Move">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CommandBarControl Move (object Bar, object Before);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CommandBarControl Move([in]object Bar, [in]object Before) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.Move(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Move (Optional Bar As Object, Optional Before As Object) As CommandBarControl" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.Move(System.Object,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874902)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CommandBarControl</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Bar" Type="System.Object" />
+        <Parameter Name="Before" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Bar">Eine Zahl, die die Position für das Steuerelement angibt. Das Steuerelement wird vor dem Steuerelement eingefügt, das sich momentan an dieser Position befindet. Wird dieses Argument weggelassen, wird das Steuerelement am Ende derselben Befehlsleiste eingefügt.</param>
+        <param name="Before">Ein <see cref="T:Microsoft.Office.Core.CommandBar" /> -Objekt, das die Ziel-Befehlsleiste für das Steuerelement darstellt. Wenn dieses Argument ausgelassen wird, ist das Steuerelement an das Ende der Befehlsleiste verschoben, in dem sich das Steuerelement derzeit befindet.</param>
+        <summary>Verschiebt das angegebene Befehlsleisten-Steuerelement auf eine vorhandene Befehlsleiste.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OLEUsage">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoControlOLEUsage OLEUsage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoControlOLEUsage OLEUsage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.OLEUsage" />
+      <MemberSignature Language="VB.NET" Value="Public Property OLEUsage As MsoControlOLEUsage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoControlOLEUsage OLEUsage { Microsoft::Office::Core::MsoControlOLEUsage get(); void set(Microsoft::Office::Core::MsoControlOLEUsage value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.OLEUsage</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874904)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874904)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874904)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoControlOLEUsage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen der OLE-Clients und OLE-Serverrollen, in denen ein Befehlsleisten-Steuerelement beim Zusammenführen von zwei Microsoft Office-Anwendungen verwendet werden.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Diese Eigenschaft ist für die direkte Verwendung ermöglichen es Ihnen, wie einzelne Add-in-Applikationen Befehlsleiste Steuerelemente werden dargestellt werden in einer Office-Anwendung angeben, wenn es mit einer anderen Office-Anwendung zusammengeführt wird. Wenn Client und Server Befehlsleisten implementieren, werden die Befehlsleisten-Steuerelemente in der Client-Steuerelement eingebettet.</para>
+          <para>Benutzerdefinierte Steuerelemente, die nur für den Client (oder Client weder Server) werden von den Server, und Steuerelemente, die nur für den Server (oder weder Server noch Client) gelöscht werden vom Client gelöscht. Die restlichen Steuerelemente werden zusammengeführt.</para>
+          <para>Wenn eine der verbundenen Anwendungen keine Office-Anwendung ist, normale OLE-Menü-zusammenführen verwendet wird, die von gesteuert wird die <see cref="P:Microsoft.Office.Core.CommandBarPopup.OLEMenuGroup" /> -Eigenschaft.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAction">
+      <MemberSignature Language="C#" Value="public string OnAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OnAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.OnAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnAction As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OnAction { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.OnAction</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874906)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874906)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874906)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen der Name des Visual Basic-Prozedur, die ausgeführt wird, wenn der Benutzer klickt oder den Wert des Steuerelements auf einer Befehlsleiste ändert.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Der containeranwendung bestimmt, ob der Wert einer gültigen Makronamen handelt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameter">
+      <MemberSignature Language="C#" Value="public string Parameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Parameter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Parameter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parameter As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Parameter { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Parameter</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874909)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874909)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874909)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen ein Werts, das eine Anwendung verwenden kann, um einen Befehl auszuführen.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Der angegebene Parameter für ein integriertes Steuerelement festgelegt ist, kann die Anwendung Standardverhaltens ändern, wenn analysieren und des neuen Werts verwendet werden kann. Wenn der Parameter für benutzerdefinierte Steuerelemente festgelegt ist, kann zum Senden von Informationen zu Visual Basic-Prozeduren verwendet werden oder zum Speichern von Informationen über das Steuerelement verwendet werden (ähnlich einer Sekunde <see cref="P:Microsoft.Office.Core._CommandBarButton.Tag" /> Eigenschaftswert).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CommandBar Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CommandBar Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As CommandBar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CommandBar ^ Parent { Microsoft::Office::Core::CommandBar ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Parent</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874908)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874908)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CommandBar</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen Wert, der das übergeordnete Objekt des angegebenen Objekts angibt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PasteFace">
+      <MemberSignature Language="C#" Value="public void PasteFace ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PasteFace() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.PasteFace" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PasteFace ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PasteFace();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610940421)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Fügt den Inhalt der Zwischenablage in ein Button-Steuerelement der Befehlsleiste.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Picture">
+      <MemberSignature Language="C#" Value="public stdole.IPictureDisp Picture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class stdole.IPictureDisp Picture" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Picture" />
+      <MemberSignature Language="VB.NET" Value="Public Property Picture As IPictureDisp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property stdole::IPictureDisp ^ Picture { stdole::IPictureDisp ^ get(); void set(stdole::IPictureDisp ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComAliasName("stdole.IPictureDisp")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610940430)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610940430)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610940430)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>stdole.IPictureDisp</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt, oder legt ein <b>IPictureDisp</b> -Objekt, das das Bild von einer <see cref="T:Microsoft.Office.Core._CommandBarButton" /> Objekt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn Sie das Bild auf einer Schaltfläche ändern, sollten Sie auch mithilfe der <see cref="P:Microsoft.Office.Core._CommandBarButton.Mask" /> -Eigenschaft auf ein Maskenbild festlegen. Das Maskenbild bestimmt, welche Teile des Schaltflächenbildes transparent sind. Legen Sie die Maske nach dem Festlegen des Bilds für eine <see cref="T:Microsoft.Office.Core.CommandBarButton" /> Objekt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public int Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Priority</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874911)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874911)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874911)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die Priorität ein Befehlsleisten-Steuerelement.</summary>
+        <value>To be added.</value>
+        <remarks>Die Priorität <para>A Steuerelements bestimmt, ob das Steuerelement aus einer angedockten Befehlsleiste entfernt werden kann, wenn die Befehlsleisten-Steuerelemente nicht in einer einzelnen Zeile passen. Steuerelemente, die nicht in einer einzelnen Zeile passen Befehlsleiste von rechts nach links.</para><para>Gültige Werte für die Priorität sind 0 (null) bis 7, und der Standardwert ist 3. Die Priorität 1 bedeutet, dass das Steuerelement aus einer Symbolleiste entfernt werden kann. Andere Prioritätswerte werden ignoriert.</para><para>Die <b>Priority</b> -Eigenschaft wird nicht von Befehlsleisten-Steuerelemente, die Menübefehle sind.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved1">
+      <MemberSignature Language="C#" Value="public void Reserved1 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reserved1() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.Reserved1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reserved1 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reserved1();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.Reserved1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874926)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved2">
+      <MemberSignature Language="C#" Value="public void Reserved2 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reserved2() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.Reserved2" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reserved2 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reserved2();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.Reserved2</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874927)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved3">
+      <MemberSignature Language="C#" Value="public void Reserved3 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reserved3() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.Reserved3" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reserved3 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reserved3();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.Reserved3</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874928)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved4">
+      <MemberSignature Language="C#" Value="public void Reserved4 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reserved4() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.Reserved4" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reserved4 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reserved4();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.Reserved4</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874929)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved5">
+      <MemberSignature Language="C#" Value="public void Reserved5 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reserved5() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.Reserved5" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reserved5 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reserved5();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.Reserved5</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874930)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved6">
+      <MemberSignature Language="C#" Value="public void Reserved6 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reserved6() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.Reserved6" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reserved6 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reserved6();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.Reserved6</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874931)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved7">
+      <MemberSignature Language="C#" Value="public void Reserved7 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reserved7() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.Reserved7" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reserved7 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reserved7();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.Reserved7</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874932)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Für die interne Verwendung reserviert.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.Reset</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874913)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Setzt ein integriertes Befehlsleisten-Steuerelement auf die Standardfunktion und das Standardsymbol zurück.</summary>
+        <remarks>
+          <para>Zurücksetzen eines integrierten Steuerelements wird die ursprünglich für dieses Steuerelement vorgesehenen Aktionen wiederhergestellt und aller Eigenschaften des Steuerelements auf den ursprünglichen Zustand zurückgesetzt. Eine integrierte Befehlsleiste zurücksetzen entfernt benutzerdefinierte Steuerelemente und integrierten Steuerelemente wiederhergestellt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFocus">
+      <MemberSignature Language="C#" Value="public void SetFocus ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetFocus() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBarButton.SetFocus" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFocus ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFocus();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Core.CommandBarControl.SetFocus</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874914)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Verschiebt den Tastaturfokus auf das angegebene Befehlsleisten-Steuerelement.</summary>
+        <remarks>
+          <para>Diese Methode schlägt fehl, wenn das Steuerelement deaktiviert ist oder nicht sichtbar ist,.</para>
+          <para>Wird der Fokus auf das Steuerelement Subtiler. Nachdem Sie diese Methode verwenden, werden Sie bemerken, dass eine drei dimensionale Hervorhebung auf das Steuerelement. Die Pfeiltasten navigiert in Symbolleisten, als ob Sie auf das Steuerelement durch Drücken von nur Tastatur Steuerelemente eingegangen.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortcutText">
+      <MemberSignature Language="C#" Value="public string ShortcutText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShortcutText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.ShortcutText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShortcutText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShortcutText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610940422)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610940422)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610940422)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen den Text der Zugriffstaste neben ein Button-Steuerelement angezeigt wird, wenn die Schaltfläche in einem Menü, einem Untermenü oder einem Kontextmenü angezeigt wird.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Sie können diese Eigenschaft nur für Befehlsleistenschaltflächen, die enthalten Festlegen einer <see cref="P:Microsoft.Office.Core._CommandBarButton.OnAction" /> Makro.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoButtonState State { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoButtonState State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.State" />
+      <MemberSignature Language="VB.NET" Value="Public Property State As MsoButtonState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoButtonState State { Microsoft::Office::Core::MsoButtonState get(); void set(Microsoft::Office::Core::MsoButtonState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610940424)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610940424)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610940424)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt zurück oder legt das Erscheinungsbild der Schaltflächensteuerelement einer Befehlsleiste fest.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoButtonStyle Style { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoButtonStyle Style" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As MsoButtonStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoButtonStyle Style { Microsoft::Office::Core::MsoButtonStyle get(); void set(Microsoft::Office::Core::MsoButtonStyle value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610940426)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610940426)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610940426)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoButtonStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt zurück oder legt diesen fest wie die Schaltflächensteuerelement eine Befehlsleiste angezeigt wird.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tag">
+      <MemberSignature Language="C#" Value="public string Tag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Tag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tag { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Tag</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874915)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874915)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874915)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurück oder legt die Informationen über das Befehlsleisten-Steuerelement, wie Daten, die als Argument in Prozeduren verwendet werden können, oder Informationen, die das Steuerelement identifiziert.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Legen Sie zum Vermeiden von doppelten Aufrufe von der gleichen Klasse mithilfe von Ereignissen ausgelöst, die eindeutige <b>Tag</b> -Eigenschaft für die Ereignisse.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TooltipText">
+      <MemberSignature Language="C#" Value="public string TooltipText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TooltipText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.TooltipText" />
+      <MemberSignature Language="VB.NET" Value="Public Property TooltipText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TooltipText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.TooltipText</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874917)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874917)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874917)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt zurück oder legt den Text in einer Befehlsleiste des Steuerelements QuickInfo angezeigt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Standardmäßig ist der Wert der <see cref="P:Microsoft.Office.Core._CommandBarButton.Caption" /> -Eigenschaft wird als QuickInfo verwendet.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public int Top { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Top" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Top</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874919)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874919)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Abstand (in Pixeln) vom oberen Rand des angegebenen Befehlsleisten-Steuerelements und der Oberkante des Bildschirms zurück.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Teile des Inhalts in diesem Thema treffen für bestimmte Sprachen möglicherweise nicht.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoControlType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoControlType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As MsoControlType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoControlType Type { Microsoft::Office::Core::MsoControlType get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Type</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874920)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874920)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Typ des Befehlsleisten-Steuerelements zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Visible</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874921)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874921)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874921)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen ein Werts, das angibt, ob das angegebene Objekt sichtbar ist.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Teile des Inhalts in diesem Thema möglicherweise nicht in der treffen für bestimmte Sprachen.</para>
+          <para>Die <b>Visible</b> -Eigenschaft neu erstellter, benutzerdefinierter Befehlsleisten lautet <b>False</b> standardmäßig.</para>
+          <para>Der <see cref="P:Microsoft.Office.Core._CommandBarButton.Enabled" /> -Eigenschaft für eine Befehlsleiste muss auf <b>True</b> festgelegt sein, bevor die visible-Eigenschaft auf <b>True</b>festgelegt ist.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public int Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBarButton.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core.CommandBarControl.Width</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610874923)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610874923)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610874923)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die Breite (in Pixel) des angegebenen Befehlsleisten-Steuerelements.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

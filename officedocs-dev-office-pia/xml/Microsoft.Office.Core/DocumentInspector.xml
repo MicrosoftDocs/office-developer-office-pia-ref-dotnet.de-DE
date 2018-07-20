@@ -1,0 +1,259 @@
+<Type Name="DocumentInspector" FullName="Microsoft.Office.Core.DocumentInspector">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="83d3ba4e05e70ecef5955ebfa926e5bec596db14" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659955" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface DocumentInspector : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DocumentInspector implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.DocumentInspector" />
+  <TypeSignature Language="VB.NET" Value="Public Interface DocumentInspector&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class DocumentInspector : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0393-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt ein dokumentprüfungsmodul in einer <see cref="T:Microsoft.Office.Core.DocumentInspectors" /> Auflistung.</summary>
+    <remarks>
+      <para>
+        <b>DocumentInspector</b> -Objekt ermöglicht den Zugriff auf die <see cref="M:Microsoft.Office.Core.DocumentInspector.Inspect(Microsoft.Office.Core.MsoDocInspectorStatus@,System.String@)" /> und <see cref="M:Microsoft.Office.Core.DocumentInspector.Fix(Microsoft.Office.Core.MsoDocInspectorStatus@,System.String@)" /> Methoden.  Die <see cref="T:Microsoft.Office.Core.DocumentInspector" /> -Objekt darstellt, benutzerdefinierte Dokumentinspektor Module und einige "integrierten" Optionen.    Um die Liste der integrierten Optionen anzuzeigen, öffnen Sie das Dialogfeld Dokumentinspektor im Menü Datei. Die ersten beiden Optionen (<b>Kommentare, Überarbeitungen, Versionen und Anmerkungen</b>; <b>Dokumenteigenschaften und persönliche Informationen</b>) aufgelisteten nicht der <see cref="T:Microsoft.Office.Core.DocumentInspectors" /> Auflistung.  Ihre Funktionalität ist über die <b>RemoveDocumentInformation</b> -Methode verfügbar. Die restlichen Optionen in das Dialogfeld und alle installierten benutzerdefinierten Module entwickelt von Drittanbieter-Quellen sind durch Festlegen eines Indexwertes aus der <b>DocumentInspectors</b> -Auflistung verfügbar.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentInspector.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein <see cref="T:Microsoft.Office.Interop.Word._Application" /> -Objekt, das den Ersteller der stellt die <see cref="T:Microsoft.Office.Core.DocumentInspector" /> Objekt. Schreibgeschützt.</summary>
+        <value>Objekt</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentInspector.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung, in angibt der <see cref="T:Microsoft.Office.Core.DocumentInspector" /> -Objekt erstellt wurde. Schreibgeschützt.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentInspector.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Beschreibung der der <see cref="T:Microsoft.Office.Core.DocumentInspector" /> Objekt. Schreibgeschützt.</summary>
+        <value>
+          <b>String</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fix">
+      <MemberSignature Language="C#" Value="public void Fix (out Microsoft.Office.Core.MsoDocInspectorStatus Status, out string Results);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Fix([out] valuetype Microsoft.Office.Core.MsoDocInspectorStatus&amp; Status, [out] string&amp; Results) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.DocumentInspector.Fix(Microsoft.Office.Core.MsoDocInspectorStatus@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Fix (ByRef Status As MsoDocInspectorStatus, ByRef Results As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Fix([Runtime::InteropServices::Out] Microsoft::Office::Core::MsoDocInspectorStatus % Status, [Runtime::InteropServices::Out] System::String ^ % Results);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Status" Type="Microsoft.Office.Core.MsoDocInspectorStatus&amp;" RefType="out" />
+        <Parameter Name="Results" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="Status">Eine Enumeration, die den Status des Dokuments darstellt. Status ist ein Ausgabeparameter, d. h., dessen Wert zurückgegeben wird, wenn die Methode ausgeführt wurde.</param>
+        <param name="Results">Enthält die Ergebnisse der Aktion. Ergebnisse ist ein Ausgabeparameter.</param>
+        <summary>Führt eine Aktion für bestimmte Informationselemente oder Dokumenteigenschaften in Abhängigkeit vom angegebenen Dokumentprüfungsmodul aus.</summary>
+        <remarks>
+          <para>Es gibt zwei dokumentprüfungsmodule, die mit 2007 Microsoft Office System enthalten sind. Dies sind die DocumentInspectors und die Dokumenteigenschaften-Methode. Dies sind die ersten beiden Optionen, die im Dialogfeld Dokumentinspektor angezeigt, jedoch stehen nicht in der <see cref="T:Microsoft.Office.Core.DocumentInspectors" /> Auflistung.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inspect">
+      <MemberSignature Language="C#" Value="public void Inspect (out Microsoft.Office.Core.MsoDocInspectorStatus Status, out string Results);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Inspect([out] valuetype Microsoft.Office.Core.MsoDocInspectorStatus&amp; Status, [out] string&amp; Results) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.DocumentInspector.Inspect(Microsoft.Office.Core.MsoDocInspectorStatus@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Inspect (ByRef Status As MsoDocInspectorStatus, ByRef Results As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Inspect([Runtime::InteropServices::Out] Microsoft::Office::Core::MsoDocInspectorStatus % Status, [Runtime::InteropServices::Out] System::String ^ % Results);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Status" Type="Microsoft.Office.Core.MsoDocInspectorStatus&amp;" RefType="out" />
+        <Parameter Name="Results" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="Status">Eine Enumeration, die den Status des Dokuments darstellt. <paramref name="Status" />ist ein Ausgabeparameter, d. h., die der Wert zurückgegeben wird, wenn die Methode ausgeführt wurde.</param>
+        <param name="Results">Enthält eine Liste der Informationselemente oder Dokumenteigenschaften im Dokument.</param>
+        <summary>Prüft ein Dokument auf bestimmte Informationen oder Dokumenteigenschaften.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentInspector.Name" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Namen des Moduls dargestellt durch ein <see cref="T:Microsoft.Office.Core.DocumentInspector" /> Objekt. Schreibgeschützt.</summary>
+        <value>
+          <b>String</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentInspector.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein Objekt, das das übergeordnete Objekt des stellt die <see cref="T:Microsoft.Office.Core.DocumentInspector" /> Objekt. Schreibgeschützt.</summary>
+        <value>
+          <b>Objekt</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

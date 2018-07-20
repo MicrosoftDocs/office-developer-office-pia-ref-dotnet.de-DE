@@ -1,0 +1,592 @@
+<Type Name="SignatureInfo" FullName="Microsoft.Office.Core.SignatureInfo">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="506fbda47676aa10f8df2e14632798b442d70752" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659581" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SignatureInfo : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SignatureInfo implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SignatureInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SignatureInfo&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SignatureInfo : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000CD6A2-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt die Informationen dar, mit denen eine digitale oder dokumentinterne Signatur erstellt wird.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft ein <b>Application</b> -Objekt, die die Container-Anwendung für die <see cref="T:Microsoft.Office.Core.SignatureInfo" /> Objekt. Schreibgeschützt.</summary>
+        <value>
+          <b>Objekt</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateVerificationResults">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CertificateVerificationResults CertificateVerificationResults { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.CertificateVerificationResults CertificateVerificationResults" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.CertificateVerificationResults" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertificateVerificationResults As CertificateVerificationResults" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CertificateVerificationResults CertificateVerificationResults { Microsoft::Office::Core::CertificateVerificationResults get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CertificateVerificationResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft die Ergebnisse der Überprüfung eines digitalen Zertifikats ab. Schreibgeschützt.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CertificateVerificationResults" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentVerificationResults">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ContentVerificationResults ContentVerificationResults { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.ContentVerificationResults ContentVerificationResults" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.ContentVerificationResults" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentVerificationResults As ContentVerificationResults" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::ContentVerificationResults ContentVerificationResults { Microsoft::Office::Core::ContentVerificationResults get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ContentVerificationResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der die Ergebnisse der Überprüfung des hashcodiertes Inhalts eines signierten Dokuments darstellt. Schreibgeschützt.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.ContentVerificationResults" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft eine 32-Bit-Ganzzahl, die die Anwendung, in angibt der <see cref="T:Microsoft.Office.Core.SignatureInfo" /> -Objekt erstellt wurde. Schreibgeschützt.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCertificateDetail">
+      <MemberSignature Language="C#" Value="public object GetCertificateDetail (Microsoft.Office.Core.CertificateDetail certdet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetCertificateDetail([in]valuetype Microsoft.Office.Core.CertificateDetail certdet) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureInfo.GetCertificateDetail(Microsoft.Office.Core.CertificateDetail)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCertificateDetail (certdet As CertificateDetail) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetCertificateDetail(Microsoft::Office::Core::CertificateDetail certdet);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certdet" Type="Microsoft.Office.Core.CertificateDetail" />
+      </Parameters>
+      <Docs>
+        <param name="certdet">Ein Aufzählungswert, der angibt, welches Zertifikatdetail angezeigt werden soll.</param>
+        <summary>Zeigt ein angegebenes Detail für ein digitales Zertifikat an.</summary>
+        <returns>
+          <b>Objekt</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSignatureDetail">
+      <MemberSignature Language="C#" Value="public object GetSignatureDetail (Microsoft.Office.Core.SignatureDetail sigdet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetSignatureDetail([in]valuetype Microsoft.Office.Core.SignatureDetail sigdet) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureInfo.GetSignatureDetail(Microsoft.Office.Core.SignatureDetail)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSignatureDetail (sigdet As SignatureDetail) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSignatureDetail(Microsoft::Office::Core::SignatureDetail sigdet);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sigdet" Type="Microsoft.Office.Core.SignatureDetail" />
+      </Parameters>
+      <Docs>
+        <param name="sigdet">Ein Aufzählungswert, der angibt, welches Signaturdetail angezeigt werden soll.</param>
+        <summary>Zeigt ein angegebenes Detail für eine Signatur an.</summary>
+        <returns>
+          <b>Objekt</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCertificateExpired">
+      <MemberSignature Language="C#" Value="public bool IsCertificateExpired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCertificateExpired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.IsCertificateExpired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCertificateExpired As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCertificateExpired { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen <b>booleschen</b> Wert zurück, der angibt, ob das digitale Zertifikat ist abgelaufen. Schreibgeschützt.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCertificateRevoked">
+      <MemberSignature Language="C#" Value="public bool IsCertificateRevoked { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCertificateRevoked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.IsCertificateRevoked" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCertificateRevoked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCertificateRevoked { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen <b>booleschen</b> Wert zurück, der angibt, ob das digitale Zertifikat gesperrt ist. Schreibgeschützt.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCertificateUntrusted">
+      <MemberSignature Language="C#" Value="public bool IsCertificateUntrusted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCertificateUntrusted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.IsCertificateUntrusted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCertificateUntrusted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCertificateUntrusted { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen <b>booleschen</b> Wert zurück, der angibt, ob das digitale Zertifikat zum Signieren eines Dokuments aus einer vertrauenswürdigen Quelle stammt. Schreibgeschützt.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.IsValid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValid { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen <b>booleschen</b> Wert zurück, der angibt, ob die Signatur Überprüfung der folgenden Signatur erfolgreich überprüft wurde. Schreibgeschützt.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public bool ReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen <b>booleschen</b> Wert zurück, der angibt, ob die <see cref="T:Microsoft.Office.Core.SignatureInfo" /> -Objekt ist schreibgeschützt. Schreibgeschützt.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectCertificateDetailByThumbprint">
+      <MemberSignature Language="C#" Value="public void SelectCertificateDetailByThumbprint (string bstrThumbprint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectCertificateDetailByThumbprint([in]string bstrThumbprint) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureInfo.SelectCertificateDetailByThumbprint(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SelectCertificateDetailByThumbprint (bstrThumbprint As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectCertificateDetailByThumbprint(System::String ^ bstrThumbprint);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bstrThumbprint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bstrThumbprint">Enthält Informationen zu dem anhand des Fingerabdrucks identifizierten Signierer.</param>
+        <summary>Zeigt ein Dialogfeld mit Informationen zu einem digitalen Zertifikat an, nachdem der Benutzer anhand eines Fingerabdrucks überprüft wurde.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectSignatureCertificate">
+      <MemberSignature Language="C#" Value="public void SelectSignatureCertificate (object ParentWindow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectSignatureCertificate([in]object ParentWindow) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureInfo.SelectSignatureCertificate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SelectSignatureCertificate (ParentWindow As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectSignatureCertificate(System::Object ^ ParentWindow);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ParentWindow" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ParentWindow">Enthält ein Handle für das Fenster, das das Dialogfeld für die Zertifikatauswahl enthält.</param>
+        <summary>Zeigt ein Dialogfeld an, in dem Benutzer das Signaturzertifikat auswählen können, das zum Signieren eines Dokuments verwendet werden soll.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowSignatureCertificate">
+      <MemberSignature Language="C#" Value="public void ShowSignatureCertificate (object ParentWindow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowSignatureCertificate([in]object ParentWindow) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureInfo.ShowSignatureCertificate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowSignatureCertificate (ParentWindow As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowSignatureCertificate(System::Object ^ ParentWindow);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ParentWindow" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ParentWindow">Enthält das Handle für das Fenster, das das Dialogfeld Zertifikat enthält.</param>
+        <summary>Zeigt das ausgewählte oder das standardmäßige digitale Zertifikat an.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignatureComment">
+      <MemberSignature Language="C#" Value="public string SignatureComment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SignatureComment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.SignatureComment" />
+      <MemberSignature Language="VB.NET" Value="Public Property SignatureComment As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignatureComment { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der Kommentare enthält, die in einem Signaturpaket enthalten sind, oder legt diesen Wert fest. Lese-/Schreibzugriff.</summary>
+        <value>
+          <b>String</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignatureImage">
+      <MemberSignature Language="C#" Value="public stdole.IPictureDisp SignatureImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class stdole.IPictureDisp SignatureImage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.SignatureImage" />
+      <MemberSignature Language="VB.NET" Value="Public Property SignatureImage As IPictureDisp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property stdole::IPictureDisp ^ SignatureImage { stdole::IPictureDisp ^ get(); void set(stdole::IPictureDisp ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComAliasName("stdole.IPictureDisp")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>stdole.IPictureDisp</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Wert des Signaturbilds ab, das zum Signieren des Dokuments verwendet wird, oder legt ihn fest. Lese-/Schreibzugriff.</summary>
+        <value>
+          <b>IPictureDisp</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignatureProvider">
+      <MemberSignature Language="C#" Value="public string SignatureProvider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SignatureProvider" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.SignatureProvider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureProvider As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignatureProvider { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft einen Wert ab, der ein installiertes Signaturanbieter-Add-In identifiziert. Schreibgeschützt.</summary>
+        <value>
+          <b>String</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignatureText">
+      <MemberSignature Language="C#" Value="public string SignatureText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SignatureText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureInfo.SignatureText" />
+      <MemberSignature Language="VB.NET" Value="Public Property SignatureText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignatureText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ruft den Wert des Signaturtexts ab, der zum Signieren dieses Dokuments verwendet wird, oder legt ihn fest. Lese-/Schreibzugriff.</summary>
+        <value>
+          <b>String</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

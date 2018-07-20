@@ -1,0 +1,72 @@
+<Type Name="ICTPFactory" FullName="Microsoft.Office.Core.ICTPFactory">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="71c1d37324603615d1e97988c76adabe01d145c4" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660126" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ICTPFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICTPFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.ICTPFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICTPFactory" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICTPFactory" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C033D-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Mit diesem Objekt wird ein benutzerdefinierter Aufgabenbereich erstellt.</summary>
+    <remarks>
+      <para>
+        <b>Hinweis</b>: Sie können benutzerdefinierte Aufgabenbereiche erstellen, in einer beliebigen Sprache, die COM unterstützt und können Sie Dateien Dynamic-link Library (DLL) zu erstellen. Beispiel für Microsoft Visual Basic® 6.0, Microsoft Visual Basic .NET, Microsoft Visual C++®, Microsoft Visual C++ .NET und Microsoft Visual C#®. Erstellen benutzerdefinierter Aufgabenbereiche wird jedoch von Microsoft Visual Basic für Applikationen (VBA) nicht unterstützt.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateCTP">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomTaskPane CreateCTP (string CTPAxID, string CTPTitle, object CTPParentWindow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CustomTaskPane CreateCTP([in]string CTPAxID, [in]string CTPTitle, [in]object CTPParentWindow) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ICTPFactory.CreateCTP(System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCTP (CTPAxID As String, CTPTitle As String, Optional CTPParentWindow As Object) As CustomTaskPane" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomTaskPane</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="CTPAxID" Type="System.String" />
+        <Parameter Name="CTPTitle" Type="System.String" />
+        <Parameter Name="CTPParentWindow" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="CTPAxID">Die CLSID oder ProgID eines Microsoft ActiveX®-Objekts.</param>
+        <param name="CTPTitle">Der Titel für den Aufgabenbereich.</param>
+        <param name="CTPParentWindow">Das Fenster, das den Aufgabenbereich hostet. Wenn nicht vorhanden ist, ist das übergeordnete Objekt des im Aufgabenbereich die <b>ActiveWindow</b> -Eigenschaft der Host-Anwendung.</param>
+        <summary>Erstellt eine Instanz eines benutzerdefinierten Aufgabenbereichs.</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Core.CustomTaskPane" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

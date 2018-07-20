@@ -1,0 +1,610 @@
+<Type Name="Permission" FullName="Microsoft.Office.Core.Permission">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="fe6f3a417ebde79f8d262a5f2265cdc32d2f7d2c" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660472" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Permission : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Permission implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.Permission" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Permission&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Permission : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0376-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Verwenden Sie das <b>Permission</b> -Objekt zum Einschränken von Berechtigungen für das aktive Dokument und bestimmte berechtigungseinstellungen festzulegen oder zurückzugeben.</summary>
+    <remarks>
+      <para>Die <b>Permission</b> -Eigenschaft des Microsoft Office Word 2003- <b>Dokument</b> -Objekts, das Microsoft Office Excel 2003- <b>Arbeitsmappe</b> -Objekt und Microsoft Office PowerPoint 2003- <b>Präsentation</b> -Objekts gibt eine <b>Berechtigung</b> zurück. -Objekt.</para>
+      <para>Verwendung der <see cref="P:Microsoft.Office.Core.Permission.Enabled" /> Eigenschaft, um zu bestimmen, ob Berechtigungen für das aktive Dokument eingeschränkt sind. Verwendung der <see cref="P:Microsoft.Office.Core.Permission.Count" /> -Eigenschaft zum Zurückgeben der Anzahl der Benutzer mit Berechtigungen und der <see cref="M:Microsoft.Office.Core.Permission.RemoveAll" /> -Methode, um alle vorhandenen Berechtigungen zurückzusetzen.</para>
+      <para>Der <see cref="P:Microsoft.Office.Core.Permission.DocumentAuthor" />, <see cref="P:Microsoft.Office.Core.Permission.EnableTrustedBrowser" />, <see cref="P:Microsoft.Office.Core.Permission.RequestPermissionURL" />, und <see cref="P:Microsoft.Office.Core.Permission.StoreLicenses" /> Eigenschaften enthalten weitere Informationen zu berechtigungseinstellungen.</para> Die <b>Berechtigung</b><para>-Objekt ermöglicht den Zugriff auf eine Auflistung von <see cref="T:Microsoft.Office.Core.UserPermission" /> Objekte. Verwenden Sie das <b>UserPermission</b> -Objekt, um bestimmte Gruppen von rechten einzelnen Benutzern zuzuordnen. Während einige Berechtigungen über die Benutzeroberfläche (z. B. <b>MsoPermissionPrint</b>) für alle Benutzer gelten, können das <b>UserPermission</b> -Objekt eine einzelne Benutzer mit einem Ablaufdatum pro Benutzer zuweisen.</para><para>Microsoft Office Information Rights Management unterstützt die Verwendung von administrativen Berechtigungsrichtlinien, die Benutzer und Gruppen sowie deren Dokumentberechtigungen auflisten. Verwenden der <see cref="M:Microsoft.Office.Core.Permission.ApplyPolicy(System.String)" /> -Methode, um eine Berechtigungsrichtlinie angewendet und die <see cref="P:Microsoft.Office.Core.Permission.PermissionFromPolicy" />, <see cref="P:Microsoft.Office.Core.Permission.PolicyName" />, und <see cref="P:Microsoft.Office.Core.Permission.PolicyDescription" /> Eigenschaften zurückgegeben werden sollen Richtlinieninformationen.</para> Die <b>Berechtigung</b><para>-Objektmodell ist unabhängig davon, ob für das aktive Dokument über eingeschränkte Berechtigungen sind verfügbar. Die <b>Permission</b> -Eigenschaft der Objekte <b>Document</b>, <b>Workbook</b>und <b>Presentation</b> gibt nicht den <b>Wert Nothing</b> zurück, wenn das aktive Dokument nicht über eingeschränkte Berechtigungen verfügt. Verwenden Sie die <b>Enabled</b> -Eigenschaft, um zu bestimmen, ob ein Dokument über eingeschränkte Berechtigungen verfügt.</para><para>Verwendung des <b>Permission</b> -Objekts löst einen Fehler aus, wenn der Windows-Rechteverwaltungsclient nicht installiert ist.</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.UserPermission Add (string UserId, object Permission, object ExpirationDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.UserPermission Add([in]string UserId, [in]object Permission, [in]object ExpirationDate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Permission.Add(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (UserId As String, Optional Permission As Object, Optional ExpirationDate As Object) As UserPermission" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.UserPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="UserId" Type="System.String" />
+        <Parameter Name="Permission" Type="System.Object" />
+        <Parameter Name="ExpirationDate" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="UserId">Optionales- <b>Objekt</b>. Die e-Mail-Adresse (im Format <paramref name="user@domain.com" />) des Benutzers, dem Berechtigungen für das aktive Dokument erteilt werden.</param>
+        <param name="Permission">Optionale <b>Zeichenfolge</b>. Die Berechtigungen für das aktive Dokument, die dem angegebenen Benutzer erteilt werden.</param>
+        <param name="ExpirationDate">
+          <b>String</b> erforderlich. Das Ablaufdatum für die Berechtigungen, die erteilt werden. HinweisDieses-Parameter wird nicht verwendet und wird ignoriert.</param>
+        <summary>Erstellt einen neuen Satz von Berechtigungen für das aktive Dokument für den angegebenen Benutzer.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt ein <b>Application</b> -Objekt, das die Container-Anwendung für das Objekt darstellt.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyPolicy">
+      <MemberSignature Language="C#" Value="public void ApplyPolicy (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyPolicy([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Permission.ApplyPolicy(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyPolicy (FileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyPolicy(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>String</b> erforderlich. Der Pfad und der Dateiname der Vorlagedatei für die Berechtigungsrichtlinie.</param>
+        <summary>Wendet die angegebene Berechtigungsrichtlinie für das aktive Dokument an.</summary>
+        <remarks>
+          <para>Microsoft Office Information Rights Management unterstützt die Verwendung von administrativen Berechtigungsrichtlinien, die Benutzer und Gruppen sowie deren Dokumentberechtigungen auflisten. Die <b>ApplyPolicy</b> -Methode verwendet eine Berechtigungsrichtlinie auf das aktive Dokument.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine <b>ganze Zahl</b> , die die Anzahl der Elemente in der angegebenen Auflistung angibt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Gibt 0 (null) zurück, wenn Berechtigungen für das aktive Dokument nicht aktiviert sind. Wenn Berechtigungen aktiviert sind, gibt die <b>Count</b> -Eigenschaft immer mindestens 1, Darstellung der Berechtigungen des Autors des Dokuments zurück.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft "1297307460" zurück, der die Zeichenfolge MSWD darstellt. Wenn in Microsoft Excel erstellt, gibt diese Eigenschaft "1480803660" zurück. Dieser Wert kann auch durch die Konstante <b>WdCreatorCode</b> in Word oder <b>xlCreatorCode Wert</b> in Excel dargestellt werden.</para>
+          <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+          <para>Die <b>Creator</b> -Eigenschaft gibt immer den numerischen Bezeichner für die aktive Anwendung zurück, wie die <see cref="P:Microsoft.Office.Core.Permission.Application" /> -Eigenschaft gibt den Namen der aktiven Anwendung immer in Form einer Zeichenfolge zurück. Verwenden Sie die <b>Eigenschaften CreatedBy</b> -Eigenschaft von der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, und <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> -Objekten, die den Namen der Person zurückzugeben, die diese Objekte erstellt hat. Verwenden Sie Dokumenteigenschaften, um Informationen zu den Autoren von Office-Dokumenten zurückzugeben.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentAuthor">
+      <MemberSignature Language="C#" Value="public string DocumentAuthor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DocumentAuthor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.DocumentAuthor" />
+      <MemberSignature Language="VB.NET" Value="Public Property DocumentAuthor As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DocumentAuthor { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt an, oder der Name im e-Mail-Format des Autors des aktiven Dokuments festgelegt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>DocumentAuthor</b> -Eigenschaft zurückgeben oder festlegen den Autor des aktiven Dokuments. Der Autor hat immer nicht ablaufende Rechte für das Dokument, ob Besitzerberechtigung explizit gewährt wird (über eine <see cref="T:Microsoft.Office.Core.UserPermission" /> Objekt) oder nicht.</para>
+          <para>Die <b>DocumentAuthor</b> -Eigenschaft kann nur in ein anderes Konto geändert werden, die über die Benutzeroberfläche Berechtigungen eingeschränkten Inhalte auf dem lokalen Computer öffnen zertifiziert wurde. In den meisten Fällen können Benutzer mit einem einzelnen Windows-Konto nur zwischen ihren Windows- und ihren Passport-IDs wählen.</para>
+          <para>Wenn des Benutzers Microsoft Windows- und Passport-IDs dieselbe e-Mail-Adresse verwenden, verwenden Sie das Format passport:someone@example.com, um die Passport-ID als <b>DocumentAuthor</b> -Eigenschaft angeben.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt zurück oder legt einen <b>booleschen</b> Wert, der angibt, ob Berechtigungen für das aktive Dokument aktiviert sind.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Verwenden Sie die <b>Enabled</b> -Eigenschaft bestimmt, ob Berechtigungen für das aktive Dokument eingeschränkt sind und aktivieren oder Deaktivieren von Berechtigungen. Legen Sie <b>Enabled</b> auf <b>False,</b> um Berechtigungen zu deaktivieren und entfernen alle Benutzer außer den Autor des Dokuments und deren Berechtigungen.</para>
+          <para>Wenn Berechtigungen deaktiviert sind, die <see cref="P:Microsoft.Office.Core.Permission.Count" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Core.Permission" /> -Objekts gibt 0 (null); allerdings bei der Berechtigungen wieder aktiviert werden, die Berechtigungen des Autors des Dokuments bleiben.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableTrustedBrowser">
+      <MemberSignature Language="C#" Value="public bool EnableTrustedBrowser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableTrustedBrowser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.EnableTrustedBrowser" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableTrustedBrowser As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableTrustedBrowser { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder festlegen die Option, mit dem Benutzer ein Dokument mit eingeschränkten Berechtigungen in einem Webbrowser anzeigen, wenn der Benutzer nicht über die entsprechende Clientanwendung installiert verfügt.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Der Standardwert Rückgabewert ist <b>False</b>.</para> Wenn <b>True</b>, kann ein Benutzer versucht, eine Office Word 2003-Dokument mit eingeschränkten Berechtigungen zu öffnen, die nicht der Fall ist die Anwendung Office Word 2003 installiert haben, zum Anzeigen des Dokuments in 
+          <para>die <b>EnableTrustedBrowser</b> -Eigenschaft Microsoft Internet Explorer oder einen anderen Browser, die diese Funktion unterstützt. Diese Eigenschaft entspricht den Kontrollkästchen Zulassen Benutzern mit früheren Versionen von Office das Lesen mit Browsern, die Information Rights Management unterstützen. (Vergrößert die Datei) in der Benutzeroberfläche.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Permission.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.UserPermission this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.UserPermission Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Object) As UserPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::UserPermission ^ default[System::Object ^] { Microsoft::Office::Core::UserPermission ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.UserPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Optionales- <b>Objekt</b>. Der numerische Index des der <b>UserPermission</b> in der <b>Permission</b> -Auflistung oder die e-Mail-Adresse des Benutzers, dessen Satz von Berechtigungen für das aktive Dokument zurückgegeben werden soll.</param>
+        <summary>Gibt ein <see cref="T:Microsoft.Office.Core.UserPermission" /> -Objekt, das ein Mitglied ist die <see cref="T:Microsoft.Office.Core.Permission" /> Auflistung.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Das <b>UserPermission</b> -Objekt verbindet einen Satz von Berechtigungen für das aktive Dokument mit einem einzelnen Benutzer und einem optionalen Ablaufdatum.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt das <b>übergeordnete</b> Objekt des angegebenen Objekts zurück.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionFromPolicy">
+      <MemberSignature Language="C#" Value="public bool PermissionFromPolicy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PermissionFromPolicy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.PermissionFromPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionFromPolicy As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PermissionFromPolicy { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen <b>booleschen</b> Wert, der angibt, ob eine Berechtigungsrichtlinie auf das aktive Dokument angewendet wurde.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Microsoft Office 2003 Information Rights Management unterstützt die Verwendung von administrativen Berechtigungsrichtlinien, die Benutzer und Gruppen sowie deren Dokumentberechtigungen auflisten. Die <b>PermissionFromPolicy</b> -Eigenschaft gibt einen <b>booleschen</b> Wert, der angibt, ob eine Berechtigungsrichtlinie auf das aktive Dokument angewendet wurde die letzten Mal Berechtigungen für das Dokument aktiviert wurden.</para>
+          <para>Die <b>PermissionFromPolicy </b>-Eigenschaft gibt immer <b>False,</b> Wenn Sie von einem nicht-Besitzer des Dokuments, überprüft, selbst wenn der Benutzer Objektmodellberechtigungen hat.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyDescription">
+      <MemberSignature Language="C#" Value="public string PolicyDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PolicyDescription" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.PolicyDescription" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PolicyDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PolicyDescription { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt die Beschreibung der Berechtigungsrichtlinie auf das aktive Dokument zurück.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Microsoft Office Information Rights Management unterstützt die Verwendung von administrativen Berechtigungsrichtlinien, die Benutzer und Gruppen sowie deren Dokumentberechtigungen auflisten. Die <b>PolicyDescription</b> -Eigenschaft gibt die Beschreibung der Richtlinie auf das aktive Dokument oder ein Standardwert angewendet wird, wenn eine Richtlinie nicht verwendet wurde.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolicyName">
+      <MemberSignature Language="C#" Value="public string PolicyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PolicyName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.PolicyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PolicyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PolicyName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt den Namen der Berechtigungsrichtlinie für das aktive Dokument übernommen.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Microsoft Office Information Rights Management unterstützt die Verwendung von administrativen Berechtigungsrichtlinien, die Benutzer und Gruppen sowie deren Dokumentberechtigungen auflisten. Die <b>PolicyName</b> -Eigenschaft gibt den Namen der Richtlinie auf das aktive Dokument oder ein Standardwert angewendet wird, wenn eine Richtlinie nicht verwendet wurde.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAll">
+      <MemberSignature Language="C#" Value="public void RemoveAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAll() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Permission.RemoveAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAll();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Entfernt alle <see cref="T:Microsoft.Office.Core.UserPermission" /> , um Objekte aus der <see cref="T:Microsoft.Office.Core.Permission" /> Auflistung des aktiven Dokuments und der Einschränkungen im aktiven Dokument deaktiviert.</summary>
+        <remarks>
+          <para>Nach dem Aufrufen der <b>RemoveAll</b> -Methode der <see cref="P:Microsoft.Office.Core.Permission.Enabled" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Core.Permission" /> Objekt gibt <b>False</b> zurück, und die <see cref="P:Microsoft.Office.Core.Permission.Count" /> -Eigenschaft gibt 0 (null) zurück.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestPermissionURL">
+      <MemberSignature Language="C#" Value="public string RequestPermissionURL { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestPermissionURL" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.RequestPermissionURL" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestPermissionURL As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestPermissionURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Zurückgeben oder Festlegen der URL-Datei oder einer Website besuchen oder die e-Mail-Adresse für Benutzer wenden müssen, die zusätzliche Berechtigungen für das aktive Dokument benötigen.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Die <b>RequestPermissionURL</b> -Einstellung entspricht der Benutzer können hier weitere Berechtigungen anfordern Option in der Benutzeroberfläche für Berechtigungen. Verwenden Sie die <b>RequestPermissionURL</b> -Eigenschaft, um anzugeben, eine Datei, eine Website oder eine e-Mail-Adresse aus dem Benutzer anfordern können, oder erfahren Sie, wie, zusätzliche Berechtigungen für das aktive Dokument, beispielsweise anfordern:</para>
+          <list type="bullet">
+            <item>
+              <para>eine Webadresse: http://companyserver/request_permissions.asp </para>
+            </item>
+            <item>
+              <para>A Datei: \\companyserver\share\requesting_permissions.txt</para>
+            </item>
+            <item>
+              <para>eine e-Mail-Adresse: mailto:permissionsmgr@example.com?Subject=Request%20permissions</para>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreLicenses">
+      <MemberSignature Language="C#" Value="public bool StoreLicenses { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StoreLicenses" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Permission.StoreLicenses" />
+      <MemberSignature Language="VB.NET" Value="Public Property StoreLicenses As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StoreLicenses { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gibt einen <b>booleschen</b> Wert, der angibt, ob die Lizenz des Benutzers zum Anzeigen des aktiven Dokuments zwischengespeichert werden soll, damit offline angezeigt, wenn der Benutzer keine Verbindung zu einem Rechteverwaltungsserver herstellen kann.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Der Standardwert Rückgabewert ist <b>True</b>.</para>
+          <para>Die <b>StoreLicenses</b> -Eigenschaft entspricht (und dessen Wert ist das Gegenteil der) der erfordern eine Verbindung mit der Berechtigung-Option in der Benutzeroberfläche für die Berechtigungen eines Benutzers zu überprüfen. Wenn <b>StoreLicenses</b><b>False</b>ist, Benutzer, die nicht der Besitzer des Dokuments Rights Management-Server her und die Lizenz zum mit dem Dokument bei jedem Öffnen Sie darauf verweisen müssen</para>
+          <para>Wenn Inhalt mithilfe des Diensts für Microsoft Office 2003 Information Rights Management geschützt ist, wird die <b>StoreLicenses</b> -Eigenschaft ist immer <b>True</b> und kann nicht auf "false" festgelegt werden.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

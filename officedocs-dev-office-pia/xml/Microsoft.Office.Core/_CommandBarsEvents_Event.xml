@@ -1,0 +1,60 @@
+<Type Name="_CommandBarsEvents_Event" FullName="Microsoft.Office.Core._CommandBarsEvents_Event">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="da9a1e0e9ffe20ebb4f6997e2201eab06348b5ec" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660519" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _CommandBarsEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _CommandBarsEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core._CommandBarsEvents_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _CommandBarsEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _CommandBarsEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Core._CommandBarsEvents), typeof(Microsoft.Office.Core._CommandBarsEvents_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Die Schnittstelle Ereignisse für Microsoft Office <see cref="T:Microsoft.Office.Core.CommandBars" /> -Objekt Ereignisse.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnUpdate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Core._CommandBarsEvents_OnUpdateEventHandler OnUpdate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Core._CommandBarsEvents_OnUpdateEventHandler OnUpdate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Core._CommandBarsEvents_Event.OnUpdate" />
+      <MemberSignature Language="VB.NET" Value="Event OnUpdate As _CommandBarsEvents_OnUpdateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Core::_CommandBarsEvents_OnUpdateEventHandler ^ OnUpdate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core._CommandBarsEvents_OnUpdateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Tritt ein, wenn eine Änderung an einer Befehlsleiste vorgenommen wird.</summary>
+        <remarks>
+          <para>
+            <b>OnUpdate</b> -Ereignis wird erkannt, durch die <see cref="T:Microsoft.Office.Core.CommandBar" /> -Objekt und alle Befehlsleisten-Steuerelemente. Das Ereignis wird durch eine Änderung an einer Befehlsleiste oder Befehlsleisten-Steuerelement oder jede Änderung an den Status einer Befehlsleiste oder eines Befehlsleisten-Steuerelements ausgelöst. Diese Änderungen können beispielsweise eine Auswahl Text oder Zelle auftreten. Da eine große Anzahl von <b>OnUpdate</b> Ereignisse bei normaler Verwendung auftreten kann, sollten Entwickler Vorsicht dieses Ereignisses verwenden. Es wird dringend empfohlen, dass dieses Ereignis verwendet werden, um zu überprüfen, ob, dass eine benutzerdefinierte Befehlsleiste hinzugefügt oder entfernt wurde eine <see cref="T:Microsoft.Office.Core.COMAddIn" /> Objekt.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
