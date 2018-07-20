@@ -1,0 +1,479 @@
+<Type Name="FileDialogFilters" FullName="Microsoft.Office.Core.FileDialogFilters">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="02be4993f6a7f44a27c6aff6cd74a89f8bb767a0" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660450" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FileDialogFilters : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileDialogFilters implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.FileDialogFilters" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FileDialogFilters&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FileDialogFilters : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0365-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="dbd6f-101">Eine Auflistung von <see cref="T:Microsoft.Office.Core.FileDialogFilter" /> -Objekten, die die Typen der Dateien, die in einem Dateidialogfeld ausgewählt werden kann, die angezeigt wird darstellen, mit der <see cref="T:Microsoft.Office.Core.FileDialog" /> Objekt.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="dbd6f-101">A collection of <see cref="T:Microsoft.Office.Core.FileDialogFilter" /> objects that represent the types of files that can be selected in a file dialog box that is displayed using the <see cref="T:Microsoft.Office.Core.FileDialog" /> object.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="dbd6f-102">
+        <para>Verwendung der <see cref="P:Microsoft.Office.Core.FileDialog.Filters" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Core.FileDialog" /> Objekt um eine <b>FileDialogFilters</b> -Auflistung zurückzugeben.</para>
+        <para>Verwendung der <see cref="M:Microsoft.Office.Core.FileDialogFilters.Add(System.String,System.String,System.Object)" /> -Methode, um <b>FileDialogFilter</b> -Objekte zur <b>FileDialogFilters</b> -Auflistung hinzufügen.</para>
+        <para>Beim Ändern der <b>FileDialogFilters</b> -Auflistung, denken Sie daran, dass jede Anwendung nur ein <b>FileDialog</b> -Objekt instanziiert werden kann. Dies bedeutet, dass die <b>FileDialogFilters</b> -Auflistung auf seine Standardfilter zurückgesetzt wird, sobald Sie die <b>FileDialog</b> -Methode mit einem neuen Typ des Dialogfelds aufrufen.</para>
+        <para>Hinweis ein Laufzeitfehler wird auftreten, wenn die <b>Filter</b> -Eigenschaft verwendet wird, in Verbindung mit der <see cref="M:Microsoft.Office.Core.FileDialogFilters.Clear" />, <b>Hinzufügen</b>, oder <see cref="M:Microsoft.Office.Core.FileDialogFilters.Delete(System.Object)" /> Methoden, wenn Sie auf Speichern unter <b>FileDialog</b> -Objekt angewendet wird.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="dbd6f-102">
+          <para>Use the <see cref="P:Microsoft.Office.Core.FileDialog.Filters" /> property of the <see cref="T:Microsoft.Office.Core.FileDialog" /> object to return a <b>FileDialogFilters</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.FileDialogFilters.Add(System.String,System.String,System.Object)" /> method to add <b>FileDialogFilter</b> objects to the <b>FileDialogFilters</b> collection.</para>
+          <para>When changing the <b>FileDialogFilters</b> collection, remember that each application can only instantiate a single <b>FileDialog</b> object. This means that the <b>FileDialogFilters</b> collection will reset to its default filters whenever you call the <b>FileDialog</b> method with a new dialog box type.</para>
+          <para>Note   A run-time error will occur if the <b>Filters</b> property is used in conjunction with the <see cref="M:Microsoft.Office.Core.FileDialogFilters.Clear" />, <b>Add</b>, or <see cref="M:Microsoft.Office.Core.FileDialogFilters.Delete(System.Object)" /> methods when applied to a Save As <b>FileDialog</b> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.FileDialogFilter Add (string Description, string Extensions, object Position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.FileDialogFilter Add([in]string Description, [in]string Extensions, [in]object Position) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileDialogFilters.Add(System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Description As String, Extensions As String, Optional Position As Object) As FileDialogFilter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809350)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.FileDialogFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Description" Type="System.String" />
+        <Parameter Name="Extensions" Type="System.String" />
+        <Parameter Name="Position" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Description">
+          <span data-ttu-id="dbd6f-103">
+            <b>String</b> erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-103">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="dbd6f-104">Der Text, der die Beschreibung der Dateierweiterung darstellt, die Sie zur Liste der Filter hinzufügen möchten.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-104">The text representing the description of the file extension you want to add to the list of filters.</span>
+          </span>
+        </param>
+        <param name="Extensions">
+          <span data-ttu-id="dbd6f-105">
+            <b>String</b> erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-105">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="dbd6f-106">Der Text, der die Erweiterung darstellt, die Sie zur Liste der Filter hinzufügen möchten.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-106">The text representing the file extension you want to add to the list of filters.</span>
+          </span>
+          <span data-ttu-id="dbd6f-107">Mehr als eine Erweiterung angegeben werden kann und die jeweils durch ein Semikolon (;) getrennt werden muss.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-107">More than one extension may be specified and each must be separated by a semi-colon (;).</span>
+          </span>
+          <span data-ttu-id="dbd6f-108">Beispielsweise die <paramref name="Extensions" /> Argument die Zeichenfolge zugewiesen werden kann: "*.txt; *.htm". Beachten Sie, dass Klammern nicht benötigen, um die Erweiterungen hinzugefügt werden soll.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-108">For example, the <paramref name="Extensions" /> argument can be assigned to the string: "*.txt; *.htm".Note Parentheses do not need to be added around the extensions.</span>
+          </span>
+          <span data-ttu-id="dbd6f-109">Office wird automatisch die Zeichenfolge Erweiterungen in Klammern hinzufügen, wenn die Beschreibung und Erweiterungen Zeichenfolgen in eine Datei Filterobjekt verkettet sind.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-109">Office will automatically add parentheses around the extensions string when the description and extensions strings are concatenated into one file filter item.</span>
+          </span>
+        </param>
+        <param name="Position">
+          <span data-ttu-id="dbd6f-110">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-110">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="dbd6f-111">Eine Zahl, die die Position für das neue Steuerelement in der Filterliste angibt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-111">A number that indicates the position of the new control in the filter list.</span>
+          </span>
+          <span data-ttu-id="dbd6f-112">Der neue Filter wird vor dem Filter eingefügt, der sich an dieser Position befindet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-112">The new filter will be inserted before the filter at this position.</span>
+          </span>
+          <span data-ttu-id="dbd6f-113">Wenn Sie dieses Argument weglassen, wird der Filter am Ende der Liste hinzugefügt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-113">If this argument is omitted, the filter is added at the end of the list.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="dbd6f-114">Fügt einen neuen Filter zur Liste der Filter in der im Listenfeld in das Dialogfeld Datei und gibt ein <b>FileDialogFilter</b> -Objekt, das den neu hinzugefügten Dateifilter darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-114">Adds a new file filter to the list of filters in the Files of type list box in the File dialog box, and returns a <b>FileDialogFilter</b> object that represents the newly added file filter.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="dbd6f-115">
+            <para>Jedes Filters in einer Liste besteht aus zwei Teilen: der Dateierweiterung (z. B. .txt) und den beschreibenden Text für die Erweiterung (z. B. Textdateien). Zusammen, der Dateifilter in die Dateien als im Listenfeld angezeigt: Textdateien (\*.txt).</para>
+            <para>Beachten Sie, dass wenn ein Filter zur Liste hinzugefügt wird, die Standardfilter nicht entfernt werden.</para>
+            <para>Filter werden nur angezeigt, wenn die Windows-Option aktiviert ist.</para>
+            <para>Wenn <paramref name="Position" /> ist ungültig, wird ein entsprechender Laufzeitfehler angezeigt. Wenn die <paramref name="Description" /> und <paramref name="Extensions" /> Werte sind ungültig ist, wird ein Laufzeitfehler (Analysieren) angezeigt.</para>
+            <para>Ordner Personenauswahl Dialogfelder haben keine Filter. Aus diesem Grund Filter Methoden gelten nicht für die Ordnerauswahl.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-115">
+              <para>Each filter in a list is made up of two parts: the file extension (e.g. .txt) and the text description of the file extension (e.g. Text Files). Together, the file filter would appear in the Files of type list box as: Text Files (\*.txt).</para>
+              <para>Note that when a filter is added to the list, the default filters are not removed.</para>
+              <para>Filters are only displayed when the Windows option is checked.</para>
+              <para>If <paramref name="Position" /> is invalid, an out of range runtime error is displayed. If the <paramref name="Description" /> and <paramref name="Extensions" /> values are invalid, a runtime error (parse) is displayed.</para>
+              <para>Folder picker dialogs do not have filters. Therefore, filter methods do not apply to the folder picker.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileDialogFilters.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="dbd6f-116">Gibt ein <b>Application</b> -Objekt, das die Container-Anwendung für das Objekt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-116">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileDialogFilters.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="dbd6f-117">Entfernt alle Listenelemente aus einem Kombinationsfeld-Steuerelement (Dropdown-Listenfeld oder Kombinationsfeld) der Befehlsleiste und löscht das Textfeld (Bearbeitungsfeld oder Kombinationsfeld).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-117">Removes all list items from a command bar combo box control (drop-down list box or combo box) and clears the text box (edit box or combo box).</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="dbd6f-118">
+            <para>Diese Methode schlägt fehl, wenn sie auf ein integriertes Befehlsleisten-Steuerelement angewendet wird.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-118">
+              <para>This method will fail if it's applied to a built-in command bar control.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileDialogFilters.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="dbd6f-119">Gibt eine <b>ganze Zahl</b> , die die Anzahl der Elemente in der angegebenen Auflistung angibt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-119">Returns an <b>Integer</b> indicating the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileDialogFilters.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="dbd6f-120">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-120">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="dbd6f-121">
+            <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft "1297307460" zurück, der die Zeichenfolge MSWD darstellt. Wenn in Microsoft Excel erstellt, gibt diese Eigenschaft "1480803660" zurück. Dieser Wert kann auch durch die Konstante <b>WdCreatorCode</b> in Word oder <b>xlCreatorCode Wert</b> in Excel dargestellt werden.</para>
+            <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+            <para>Die <b>Creator</b> -Eigenschaft gibt immer den numerischen Bezeichner für die aktive Anwendung zurück, wie die <see cref="P:Microsoft.Office.Core.FileDialogFilters.Application" /> -Eigenschaft gibt den Namen der aktiven Anwendung immer in Form einer Zeichenfolge zurück. Verwenden Sie die <b>Eigenschaften CreatedBy</b> -Eigenschaft von der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, und <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> -Objekten, die den Namen der Person zurückzugeben, die diese Objekte erstellt hat. Verwenden Sie Dokumenteigenschaften, um Informationen zu den Autoren von Office-Dokumenten zurückzugeben.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-121">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.FileDialogFilters.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete (object filter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete([in]object filter) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileDialogFilters.Delete(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete (Optional filter As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="filter">
+          <span data-ttu-id="dbd6f-122">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-122">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="dbd6f-123">Der zu entfernende Filter.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-123">The filter to be removed.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="dbd6f-124">Entfernt einen Dateidialogfilter.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-124">Removes a file dialog filter.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileDialogFilters.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.FileDialogFilter Item (int Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.FileDialogFilter Item([in]int32 Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.FileDialogFilters.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Index As Integer) As FileDialogFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::FileDialogFilter ^ Item(int Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.FileDialogFilter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="dbd6f-125">
+            <b>Integer</b>erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-125">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="dbd6f-126">Die Indexnummer des zurückzugebenden <b>FileDialogFilter</b> -Objekts.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-126">The index number of the <b>FileDialogFilter</b> object to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="dbd6f-127">Gibt ein <see cref="T:Microsoft.Office.Core.FileDialogFilter" /> -Objekt, das ein Mitglied der angegebenen ist <see cref="T:Microsoft.Office.Core.FileDialogFilters" /> Auflistung.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-127">Returns a <see cref="T:Microsoft.Office.Core.FileDialogFilter" /> object that is a member of the specified <see cref="T:Microsoft.Office.Core.FileDialogFilters" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.FileDialogFilters.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="dbd6f-128">Gibt das <b>übergeordnete</b> Objekt des angegebenen Objekts zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="dbd6f-128">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

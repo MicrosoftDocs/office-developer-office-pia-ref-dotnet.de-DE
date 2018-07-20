@@ -1,0 +1,1482 @@
+<Type Name="Font2" FullName="Microsoft.Office.Core.Font2">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="5dfaa0196963bf6ab693c10f1fe8bcd8153a6491" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660290" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Font2 : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Font2 implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.Font2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Font2&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Font2 : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C039A-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="e66ab-101">Enthält für ein Objekt Schriftartattribute (beispielsweise Name, Größe und Farbe der Schriftart).</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="e66ab-101">Contains font attributes (for example, font name, font size, and color) for an object.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Allcaps">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Allcaps { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Allcaps" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Allcaps" />
+      <MemberSignature Language="VB.NET" Value="Public Property Allcaps As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Allcaps { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-102">
+            <b>True,</b> Wenn die Schriftart ist formatiert als vollständig in Großbuchstaben an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-102">
+              <b>True</b> if the font is formatted as all capital letters.</span>
+          </span>
+          <span data-ttu-id="e66ab-103">Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-103">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-104">Ruft ein Objekt, das die Anwendung stellt die <see cref="T:Microsoft.Office.Core.Font2" /> -Objekt wird verwendet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-104">Gets an object that represents the application the <see cref="T:Microsoft.Office.Core.Font2" /> object is used in.</span>
+          </span>
+          <span data-ttu-id="e66ab-105">Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-105">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="e66ab-106">Objekt</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-106">Object</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutorotateNumbers">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState AutorotateNumbers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState AutorotateNumbers" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.AutorotateNumbers" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutorotateNumbers As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState AutorotateNumbers { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p103">Ruft einen Wert ab oder legt einen solchen fest, der angibt, ob die Nummern in einer nummerierten Liste gedreht werden sollen, wenn der Text gedreht wird. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p103">Gets or sets a value that specifies whether the numbers in a numbered list should be rotated when the text is rotated. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaselineOffset">
+      <MemberSignature Language="C#" Value="public float BaselineOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 BaselineOffset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.BaselineOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaselineOffset As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float BaselineOffset { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-109">Dient zum Abrufen oder Festlegen eines Werts, der den horizontalen Offset der ausgewählten Schriftart angibt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-109">Gets or sets a value specifying the horizontal offset of the selected font.</span>
+          </span>
+          <span data-ttu-id="e66ab-110">Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-110">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="e66ab-111">Single</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-111">Single</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bold">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Bold { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Bold" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Bold" />
+      <MemberSignature Language="VB.NET" Value="Public Property Bold As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Bold { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p105">Ruft einen Wert ab oder legt einen solchen fest, der angibt, ob die Schriftart fett sein soll. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p105">Gets or sets a value specifying whether the font should be bold. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caps">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTextCaps Caps { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTextCaps Caps" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Caps" />
+      <MemberSignature Language="VB.NET" Value="Public Property Caps As MsoTextCaps" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTextCaps Caps { Microsoft::Office::Core::MsoTextCaps get(); void set(Microsoft::Office::Core::MsoTextCaps value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTextCaps</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p106">Ruft einen Wert ab oder legt einen solchen fest, der angibt, dass der Text in Großbuchstaben formatiert werden soll. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p106">Gets or sets a value specifying that the text should be capitalized. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p107">Ruft einen Wert ab, der die Anwendung angibt, in der das Objekt erstellt wurde. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p107">Gets a value indicating the application the object was created in. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="e66ab-118">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-118">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleStrikeThrough">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState DoubleStrikeThrough { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState DoubleStrikeThrough" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.DoubleStrikeThrough" />
+      <MemberSignature Language="VB.NET" Value="Public Property DoubleStrikeThrough As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState DoubleStrikeThrough { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-119">
+            <b>True,</b> Wenn die angegebene Schriftart ist formatiert als doppelt durchgestrichen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-119">
+              <b>True</b> if the specified font is formatted as double strikethrough text.</span>
+          </span>
+          <span data-ttu-id="e66ab-120">Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-120">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Embeddable">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Embeddable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Embeddable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Embeddable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Embeddable As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Embeddable { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p109">Ruft einen Wert ab, der angibt, ob die Schriftart in eine Seite eingebettet werden kann. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p109">Gets a value indicating whether the font can be embedded in a page. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Embedded">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Embedded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Embedded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Embedded" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Embedded As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Embedded { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p110">Ruft einen Wert ab, der angibt, ob die Schriftart in eine Seite eingebettet ist. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p110">Gets a value specifying whether the font is embedded in a page. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equalize">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Equalize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Equalize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Equalize" />
+      <MemberSignature Language="VB.NET" Value="Public Property Equalize As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Equalize { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p111">Ruft einen Wert ab oder legt einen solchen fest, der angibt, ob der Text für eine Auswahl einen gleichmäßigen Textabstand aufweisen soll. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p111">Gets or sets a value specifying whether the text for a selection should be spaced equal distances apart. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fill">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.FillFormat Fill { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.FillFormat Fill" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Fill" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As FillFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::FillFormat ^ Fill { Microsoft::Office::Core::FillFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.FillFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Glow">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.GlowFormat Glow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.GlowFormat Glow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Glow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Glow As GlowFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::GlowFormat ^ Glow { Microsoft::Office::Core::GlowFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.GlowFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p112">Ruft einen Wert ab, der angibt, ob die Schriftart als Leuchteffekt angezeigt wird. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p112">Gets a value indicating whether the font is displayed as a glow effect.  Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.GlowFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Highlight">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ColorFormat Highlight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.ColorFormat Highlight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Highlight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Highlight As ColorFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::ColorFormat ^ Highlight { Microsoft::Office::Core::ColorFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ColorFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p113">Ruft einen Wert ab, der angibt, ob die Schriftart als hervorgehoben angezeigt wird. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p113">Gets a value indicating whether the font is displayed as highlighted. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.ColorFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Italic">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Italic { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Italic" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Italic" />
+      <MemberSignature Language="VB.NET" Value="Public Property Italic As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Italic { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p114">Ruft einen Wert ab oder legt einen solchen fest, der angibt, ob der Text für eine Auswahl kursiv ist. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p114">Gets or sets a value specifying whether the text for a selection is italic. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kerning">
+      <MemberSignature Language="C#" Value="public float Kerning { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Kerning" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Kerning" />
+      <MemberSignature Language="VB.NET" Value="Public Property Kerning As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Kerning { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p115">Ruft einen Wert ab oder legt einen solchen fest, der den Abstand zwischen zwei Textzeichen angibt. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p115">Gets or sets a value specifying the amount of spacing between text characters. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="e66ab-135">
+            <b>Single</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-135">
+              <b>Single</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Line">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.LineFormat Line { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.LineFormat Line" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Line" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line As LineFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::LineFormat ^ Line { Microsoft::Office::Core::LineFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.LineFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p116">Ruft einen Wert ab, der das Format einer Zeile angibt. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p116">Gets a value specifiying the format of a line. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.LineFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(30)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(30)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(30)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p117">Ruft einen Wert ab oder legt einen solchen fest, der die für eine Auswahl zu verwendende Schriftart angibt. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p117">Gets or sets a value specifying the font to use for a selection.  Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="e66ab-140">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-140">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameAscii">
+      <MemberSignature Language="C#" Value="public string NameAscii { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NameAscii" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.NameAscii" />
+      <MemberSignature Language="VB.NET" Value="Public Property NameAscii As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameAscii { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(31)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(31)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(31)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p118">Ruft die Schriftart ab oder legt sie fest, die für westlichen Text (Zeichen mit den Zeichencodes von 0 (null) bis 127) verwendet wird. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p118">Gets or sets the font used for Latin text (characters with character codes from 0 (zero) through 127).  Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="e66ab-143">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-143">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameComplexScript">
+      <MemberSignature Language="C#" Value="public string NameComplexScript { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NameComplexScript" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.NameComplexScript" />
+      <MemberSignature Language="VB.NET" Value="Public Property NameComplexScript As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameComplexScript { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(32)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(32)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(32)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p119">Ruft den Namen der Schriftart für komplexe Schriftzeichen ab oder legt ihn fest. Wird für Text in verschiedenen Sprachen verwendet. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p119">Gets or sets the complex script font name. Used for mixed language text. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="e66ab-147">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-147">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameFarEast">
+      <MemberSignature Language="C#" Value="public string NameFarEast { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NameFarEast" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.NameFarEast" />
+      <MemberSignature Language="VB.NET" Value="Public Property NameFarEast As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameFarEast { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(33)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(33)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(33)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p120">Ruft den Namen einer ostasiatischen Schriftart ab oder legt ihn fest. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p120">Gets or sets an East Asian font name. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="e66ab-150">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-150">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameOther">
+      <MemberSignature Language="C#" Value="public string NameOther { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NameOther" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.NameOther" />
+      <MemberSignature Language="VB.NET" Value="Public Property NameOther As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameOther { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(34)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(34)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(34)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p121">Ruft die Schriftart für Zeichen ab, deren Zeichensatznummern größer sind als 127, oder legt sie fest. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p121">Gets or sets the font used for characters whose character set numbers are greater than 127. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="e66ab-153">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-153">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-154">Ruft das übergeordnete Objekt des der <see cref="T:Microsoft.Office.Core.Font2" /> Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-154">Gets the parent of the <see cref="T:Microsoft.Office.Core.Font2" /> object.</span>
+          </span>
+          <span data-ttu-id="e66ab-155">Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-155">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="e66ab-156">
+            <b>Objekt</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-156">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reflection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ReflectionFormat Reflection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.ReflectionFormat Reflection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Reflection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reflection As ReflectionFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::ReflectionFormat ^ Reflection { Microsoft::Office::Core::ReflectionFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ReflectionFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p123">Ruft einen Wert ab, der den Typ des Spiegelungsformats für die Textauswahl angibt. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p123">Gets a value specifying the type of reflection format for the selection of text. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.ReflectionFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shadow">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ShadowFormat Shadow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.ShadowFormat Shadow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Shadow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shadow As ShadowFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::ShadowFormat ^ Shadow { Microsoft::Office::Core::ShadowFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ShadowFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p124">Ruft den Wert ab, der den Typ des Schatteneffekts für die Textauswahl angibt. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p124">Gets the value specifying the type of shadow effect for the selection of text.  Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.ShadowFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public float Size { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Size" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Size { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p125">Ruft einen Wert ab oder legt einen solchen fest, der die Größe der Schriftart angibt. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p125">Gets or sets a value specifying the size of the font. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="e66ab-163">
+            <b>Single</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-163">
+              <b>Single</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Smallcaps">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Smallcaps { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Smallcaps" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Smallcaps" />
+      <MemberSignature Language="VB.NET" Value="Public Property Smallcaps As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Smallcaps { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-164">Dient zum Abrufen oder Festlegen eines Werts, der angibt, ob Kapitälchen mit der Auswahl von Text verwendet werden soll.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-164">Gets or sets a value specifying whether small caps should be used with the selection of text.</span>
+          </span>
+          <span data-ttu-id="e66ab-165">Kapitälchen weisen die gleiche Höhe wie Kleinbuchstaben in einer Auswahl von Text.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-165">Small caps are the same height as the lowercase letters in a selection of text.</span>
+          </span>
+          <span data-ttu-id="e66ab-166">Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-166">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoftEdgeFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoSoftEdgeType SoftEdgeFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoSoftEdgeType SoftEdgeFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.SoftEdgeFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property SoftEdgeFormat As MsoSoftEdgeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoSoftEdgeType SoftEdgeFormat { Microsoft::Office::Core::MsoSoftEdgeType get(); void set(Microsoft::Office::Core::MsoSoftEdgeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoSoftEdgeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p127">Ruft einen Wert ab oder legt einen solchen fest, der den Typ von weicher Kante angibt, der in einer Textauswahl verwendet wird. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p127">Gets or sets a value specifying the type of soft edge effect used in a selection of text. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoSoftEdgeType" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Spacing">
+      <MemberSignature Language="C#" Value="public float Spacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Spacing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Spacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property Spacing As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Spacing { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p128">Ruft einen Wert ab oder legt einen solchen fest, der den Abstand zwischen Zeichen in einer Textauswahl angibt. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p128">Gets or sets a value specifying the  spacing between characters in a selection of text. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="e66ab-171">
+            <b>Single</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-171">
+              <b>Single</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Strike">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTextStrike Strike { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTextStrike Strike" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Strike" />
+      <MemberSignature Language="VB.NET" Value="Public Property Strike As MsoTextStrike" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTextStrike Strike { Microsoft::Office::Core::MsoTextStrike get(); void set(Microsoft::Office::Core::MsoTextStrike value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTextStrike</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p129">Ruft einen Wert ab oder legt einen solchen fest, der das Strichformat für eine Textauswahl angibt. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p129">Gets or sets a value specifying the strike format used for a selection of text. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTextStrike" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrikeThrough">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState StrikeThrough { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState StrikeThrough" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.StrikeThrough" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrikeThrough As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState StrikeThrough { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p130">Ruft einen Wert ab oder legt einen solchen fest, der angibt, dass der Text durchgestrichen angezeigt werden soll. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p130">Gets or sets a value specifying the text should be rendered in a strikethrough appearance. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscript">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Subscript { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Subscript" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Subscript" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subscript As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Subscript { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p131">Ruft einen Wert ab, der angibt, dass der ausgewählte Text tiefgestellt angezeigt werden soll, oder legt ihn fest. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p131">Gets or sets a value specifying that the selected text should be displayed as subscript. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Superscript">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Superscript { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Superscript" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.Superscript" />
+      <MemberSignature Language="VB.NET" Value="Public Property Superscript As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Superscript { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p132">Ruft einen Wert ab, der angibt, dass der ausgewählte Text hochgestellt angezeigt werden soll, oder legt ihn fest. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p132">Gets or sets a value specifying that the selected text should be displayed as superscript. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnderlineColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ColorFormat UnderlineColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.ColorFormat UnderlineColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.UnderlineColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlineColor As ColorFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::ColorFormat ^ UnderlineColor { Microsoft::Office::Core::ColorFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ColorFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p133">Ruft einen Wert ab, der die Farbe für die Unterstreichung des ausgewählten Texts angibt. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p133">Gets a value specifying the color of the underline for the selected text. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.ColorFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnderlineStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTextUnderlineType UnderlineStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTextUnderlineType UnderlineStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.UnderlineStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnderlineStyle As MsoTextUnderlineType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTextUnderlineType UnderlineStyle { Microsoft::Office::Core::MsoTextUnderlineType get(); void set(Microsoft::Office::Core::MsoTextUnderlineType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTextUnderlineType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p134">Ruft einen Wert ab oder legt einen solchen fest, der den Unterstreichungsstil für den ausgewählten Text angibt. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p134">Gets or sets a value specifying the underline style for the selected text. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTextUnderlineType" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WordArtformat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoPresetTextEffect WordArtformat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoPresetTextEffect WordArtformat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Font2.WordArtformat" />
+      <MemberSignature Language="VB.NET" Value="Public Property WordArtformat As MsoPresetTextEffect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoPresetTextEffect WordArtformat { Microsoft::Office::Core::MsoPresetTextEffect get(); void set(Microsoft::Office::Core::MsoPresetTextEffect value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoPresetTextEffect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e66ab-p135">Ruft einen Wert ab oder legt einen solchen fest, der den Texteffekt für den ausgewählten Text angibt. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e66ab-p135">Gets or sets a value specifying the text effect for the selected text. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

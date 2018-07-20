@@ -1,0 +1,300 @@
+<Type Name="ODSOColumn" FullName="Microsoft.Office.Core.ODSOColumn">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="201b9aaf1b0f631a45b60bb27fcaf4408e26d202" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659813" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ODSOColumn : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ODSOColumn implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.ODSOColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ODSOColumn&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ODSOColumn : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C1531-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="391bd-101">Stellt ein Feld in einer Datenquelle dar.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="391bd-101">Represents a field in a data source.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="391bd-102">
+        <para>
+          <b>ODSOColumn</b> -Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Core.ODSOColumns" /> Auflistung. Die <b>ODSOColumns</b> -Auflistung enthält alle Datenfelder in einer Seriendruck-Datenquelle (beispielsweise Name, Adresse und Ort).</para>
+        <para>Verwendung <see cref="P:Microsoft.Office.Core.OfficeDataSourceObject.Columns" />(<paramref name="index" />), wobei <paramref name="index" /> ist der Name des Felds Daten oder die Indexzahl darstellt, um ein einzelnes <b>ODSOColumn</b> -Objekt zurückzugeben. Die Indexnummer stellt die Position des Datenfelds in der Seriendruck-Datenquelle.</para>
+        <para>Der <b>ODSOColumns</b> -Auflistung Felder hinzugefügt werden kann. Alle Datenfelder in einer Datenquelle werden automatisch in der <b>ODSOColumns</b> -Auflistung aufgenommen.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="391bd-102">
+          <para>The <b>ODSOColumn</b> object is a member of the <see cref="T:Microsoft.Office.Core.ODSOColumns" /> collection. The <b>ODSOColumns</b> collection includes all the data fields in a mail merge data source (for example, Name, Address, and City).</para>
+          <para>Use <see cref="P:Microsoft.Office.Core.OfficeDataSourceObject.Columns" />(<paramref name="index" />), where <paramref name="index" /> is the data field name or index number, to return a single <b>ODSOColumn</b> object. The index number represents the position of the data field in the mail merge data source.</para>
+          <para>You cannot add fields to the <b>ODSOColumns</b> collection. All data fields in a data source are automatically included in the <b>ODSOColumns</b> collection.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ODSOColumn.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="391bd-103">Gibt ein <b>Application</b> -Objekt, das die Container-Anwendung für das Objekt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="391bd-103">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ODSOColumn.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="391bd-104">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="391bd-104">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="391bd-105">
+            <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft "1297307460" zurück, der die Zeichenfolge MSWD darstellt. Wenn in Microsoft Excel erstellt, gibt diese Eigenschaft "1480803660" zurück. Dieser Wert kann auch durch die Konstante <b>WdCreatorCode</b> in Word oder <b>xlCreatorCode Wert</b> in Excel dargestellt werden.</para>
+            <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+            <para>Die <b>Creator</b> -Eigenschaft gibt immer den numerischen Bezeichner für die aktive Anwendung zurück, wie die <see cref="P:Microsoft.Office.Core.ODSOColumn.Application" /> -Eigenschaft gibt den Namen der aktiven Anwendung immer in Form einer Zeichenfolge zurück. Verwenden Sie die <b>Eigenschaften CreatedBy</b> -Eigenschaft von der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, und <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> -Objekten, die den Namen der Person zurückzugeben, die diese Objekte erstellt hat. Verwenden Sie Dokumenteigenschaften, um Informationen zu den Autoren von Office-Dokumenten zurückzugeben.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="391bd-105">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.ODSOColumn.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ODSOColumn.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="391bd-106">Gibt eine <b>ganze Zahl</b> , die Indexnummer eines Objekts in der Auflistung darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="391bd-106">Returns an <b>Integer</b> representing the index number for an object in the collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="391bd-107">
+            <para>Die Position des ersten Befehlsleisten-Steuerelements ist 1. Trennzeichen werden nicht gezählt, der <see cref="T:Microsoft.Office.Core.CommandBarControls" /> Auflistung.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="391bd-107">
+              <para>The position of the first command bar control is 1. Separators are not counted in the <see cref="T:Microsoft.Office.Core.CommandBarControls" /> collection.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ODSOColumn.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="391bd-108">Gibt den Namen des angegebenen Objekts zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="391bd-108">Returns the name of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="391bd-109">
+            <para>Diese Eigenschaft gibt eine <b>Zeichenfolge</b> mit Lese-/Schreibzugriff für die <see cref="T:Microsoft.Office.Core.CommandBar" />, <see cref="T:Microsoft.Office.Core.DocumentProperty" />, und <see cref="T:Microsoft.Office.Core.SharedWorkspace" /> Objekte und eine nur-Lese- <b>Zeichenfolge</b> für alle anderen Objekte.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="391bd-109">
+              <para>This property returns a read/write <b>String</b> for the <see cref="T:Microsoft.Office.Core.CommandBar" />, <see cref="T:Microsoft.Office.Core.DocumentProperty" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspace" /> objects and a read-only <b>String</b> for all other objects.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ODSOColumn.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="391bd-110">Gibt das <b>übergeordnete</b> Objekt des angegebenen Objekts zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="391bd-110">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ODSOColumn.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="391bd-111">Gibt den Wert eines Felds in einer Datenquelle zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="391bd-111">Returns the value of a field in a data source.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

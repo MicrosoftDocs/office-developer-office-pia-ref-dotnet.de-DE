@@ -1,0 +1,249 @@
+<Type Name="IRibbonControl" FullName="Microsoft.Office.Core.IRibbonControl">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="68773fd86e42dc3132be028386c9b8eeaf465f51" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660259" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IRibbonControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRibbonControl" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.IRibbonControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRibbonControl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRibbonControl" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0395-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="0d1e1-101">Stellt das Objekt in jeder Menüband Benutzeroberfläche (UI) des Benutzersteuerelements Callback-Prozedur übergeben.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0d1e1-101">Represents the object passed into every Ribbon user interface (UI) control's callback procedure.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="0d1e1-102">
+        <para>Das <b>IRibbonControl</b> -Objekt enthält den Namen (ID) des Steuerelements und das aktuelle <b>Window</b> -Objekt für das Steuerelement der Menüband-Benutzeroberfläche.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0d1e1-102">
+          <para>The <b>IRibbonControl</b> object  contains the name (ID) of the control and the current <b>Window</b> object for the Ribbon UI control.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+    <example>
+      <span data-ttu-id="0d1e1-103">
+        <para>Im folgenden in c# geschriebene Beispiel zeigt die folgenden beiden Verfahren aus den <b>OnAction</b> -Ereignisprozedur ein Button-Steuerelement und ein ToggleButton-Steuerelement aufgerufen. In der ersten Prozedur das <b>IRibbonControl</b> -Objekt, das das Steuerelement darstellt, wird an die Prozedur übergeben, und ein Meldungsfeld wird angezeigt, dass die zusammen mit der ID der Schaltfläche gedrückt wurde. Die zweite Prozedur ist ähnlich wie die erste zusätzlich eine <b>boolesche</b> Parameter gibt an, dass die Taste gedrückt wurde.</para>
+        <code>&lt;span class="label"&gt;public void ButtonOnAction(IRibbonControl control) 
+   MessageBox.Show("Button clicked: " + control.Id); 
+} 
+ 
+public void ToggleButtonOnAction(IRibbonControl control, bool pressed) 
+{ 
+ 
+ 
+...if (pressed) 
+ 
+      MessageBox.Show("ToggleButton was switched on."); 
+ 
+ 
+   else 
+      MessageBox.Show("ToggleButton was switched off."); 
+ 
+}&lt;/span&gt;</code>
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0d1e1-103">
+          <para>The following example, written in C#,  shows two procedures called from the <b>onAction</b> event procedure  of a Button control and a ToggleButton control. In the first procedure, the <b>IRibbonControl</b> object representing the control is passed into the procedure and a message box is displayed indicating that the button was pressed along with the ID of the button. The second procedure is similar to the first with the addition of a <b>Boolean</b> parameter indicating that the button was pressed.</para>
+          <code>&lt;span class="label"&gt;public void ButtonOnAction(IRibbonControl control) 
+   MessageBox.Show("Button clicked: " + control.Id); 
+} 
+ 
+public void ToggleButtonOnAction(IRibbonControl control, bool pressed) 
+{ 
+ 
+ 
+...if (pressed) 
+ 
+      MessageBox.Show("ToggleButton was switched on."); 
+ 
+ 
+   else 
+      MessageBox.Show("ToggleButton was switched off."); 
+ 
+}&lt;/span&gt;</code>
+        </span>
+      </span>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public object Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Context" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.IRibbonControl.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Context { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d1e1-p101">Stellt das aktive Fenster dar, das die Menüband-Benutzeroberfläche enthält, die eine Rückrufprozedur auslöst. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d1e1-p101">Represents the active window containing the Ribbon user interface that triggers a callback procedure. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0d1e1-106">Objekt</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d1e1-106">Object</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.IRibbonControl.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d1e1-p102">Ruft die ID des Steuerelements ab, das in der Menüband-XML-Markup-Anpassungsdatei angegeben ist. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d1e1-p102">Gets the ID of the control specified in the Ribbon XML markup customization file. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0d1e1-109">Zeichenfolge</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d1e1-109">String</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tag">
+      <MemberSignature Language="C#" Value="public string Tag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Tag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.IRibbonControl.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tag As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tag { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d1e1-p103">Wird verwendet, um beliebige Zeichenfolgen zu speichern und zur Laufzeit abzurufen. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d1e1-p103">Used to store arbitrary strings and fetch them at runtime. Read-only</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0d1e1-112">Zeichenfolge</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d1e1-112">String</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="0d1e1-113">
+            <para>Normalerweise können Sie zwischen Steuerelementen in einem Menüband Benutzer Schnittstelle XML-Anpassungsdatei mithilfe der <b>Id</b> -Eigenschaft unterscheiden. Es gibt jedoch Einschränkungen auf was IDs enthalten können (keine nicht alphanumerische Zeichen enthält, und sie müssen alle eindeutig sein).  Die <b>Tag</b> -Eigenschaft verfügt nicht über diese Beschränkungen und daher in den folgenden Situationen, wobei ID funktioniert nicht verwendet werden können:</para>
+            <list type="bullet">
+              <item>
+                <para>, wenn Sie eine spezielle Zeichenfolge mit dem Steuerelement wie eines Dateinamens speichern müssen.  Beispiel: Tag="C:\path\file.xlsm."</para>
+              </item>
+              <item>
+                <para>, Wenn Sie mehrere Steuerelemente werden sollen die gleiche Weise behandelt, von der Rückrufprozedur, aber Sie möchten nicht beibehalten einer Liste von deren IDs (die eindeutig sein müssen).  Angenommen, Sie haben Schaltflächen auf verschiedenen Registerkarten auf dem Menüband, alle mit Tag = "Blue" und überprüfen Sie dann die <b>Tag</b> -Eigenschaft anstelle der <b>ID</b> -Eigenschaft nur konnte bei der Ausführung gängiger Aktionen.</para>
+              </item>
+            </list>
+            <para />
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d1e1-113">
+              <para>Normally you can distinguish between controls in a Ribbon user interface XML customization file using the <b>Id</b> property. However, there are restrictions on what IDs can contain (no non-alphanumeric characters, and they must all be unique).  The <b>Tag</b> property doesn’t have these restrictions and so it can be used in the following situations, where ID doesn’t work:</para>
+              <list type="bullet">
+                <item>
+                  <para>If you need to store a special string with your control such as a filename.  For example: tag=”C:\path\file.xlsm.”</para>
+                </item>
+                <item>
+                  <para>If you want multiple controls to be treated the same way by your callback procedures, but you don’t want to maintain a list of all of their IDs (which must be unique).  For example, you could have buttons on different tabs on the Ribbon, all with tag=”blue”, and then just check the <b>Tag</b> property instead of the <b>ID</b> property when perfroming some common action.</para>
+                </item>
+              </list>
+              <para />
+              <para />
+            </span>
+          </span>
+        </remarks>
+        <example>
+          <span data-ttu-id="0d1e1-114">
+            <para>In den XML-Code zum Anpassen der Multifunktionsleisten-Benutzeroberfläche verwendet können Sie ein Tag wie folgt festlegen. Wenn die Aktion MyFunction aufgerufen wird, können Sie die <b>Tag</b> -Eigenschaft lesen auf "eine Zeichenfolge" entspricht.</para>
+            <code>&lt;span class="label"&gt;&amp;lt;button id=”mybutton” tag=”some string” onAction=”MyFunction”/&amp;gt;&lt;/span&gt;</code>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d1e1-114">
+              <para>In the  XML used to customize the Ribbon user interface, you can set a tag as follows. When the MyFunction action is called, you can read the <b>Tag</b> property, which will be equal to “some string”. </para>
+              <code>&lt;span class="label"&gt;&amp;lt;button id=”mybutton” tag=”some string” onAction=”MyFunction”/&amp;gt;&lt;/span&gt;</code>
+            </span>
+          </span>
+        </example>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

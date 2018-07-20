@@ -1,0 +1,753 @@
+<Type Name="SharedWorkspaceTask" FullName="Microsoft.Office.Core.SharedWorkspaceTask">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="269af9eed73565e3123231fe6db6c8beaa6ea80c" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659808" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SharedWorkspaceTask : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SharedWorkspaceTask implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SharedWorkspaceTask" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SharedWorkspaceTask&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SharedWorkspaceTask : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0379-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="add57-101">Dieses Objekt, Member oder -Enumeration ist veraltet und ist nicht für die direkte Verwendung in Ihrem Code verwendet werden. Das <b>SharedWorkspaceTask</b> -Objekt stellt eine Aufgabe in einem freigegebenen Dokumentarbeitsbereich dar.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="add57-101">This object, member, or enumeration is deprecated and is not intended to be used in your code.The <b>SharedWorkspaceTask</b> object represents a task in a shared document workspace.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="add57-102">
+        <para>Dieses Objekt ist ein Mitglied der <see cref="T:Microsoft.Office.Core.SharedWorkspaceTasks" /> Auflistung.</para>
+        <para>Verwenden Sie das <b>SharedWorkspaceTask</b> -Objekt zum Verwalten von Aufgaben zugewiesen sind, die Mitgliedern sind die Dokumente im freigegebenen Arbeitsbereich bearbeiten.</para>
+        <para>Verwenden Sie das <b>Element</b>(<paramref name="index" />)-Methode der <b>SharedWorkspaceTasks</b> -Auflistung, um ein bestimmtes <b>SharedWorkspaceTask</b> -Objekt zurückzugeben.</para>
+        <para>Verwendung der <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Title" /> -Eigenschaft legen Sie den Text des Vorgangs, der angezeigt wird, auf der Registerkarte Aufgaben im Aufgabenbereich Freigegebener Arbeitsbereich und auf der Webseite des freigegebenen Arbeitsbereichs. Verwendung der <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Description" /> Eigenschaft, um zusätzliche Informationen über den Vorgang bereitzustellen.</para>
+        <para>Weist die Aufgabe Mitglied des Arbeitsbereichs mithilfe der <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.AssignedTo" /> -Eigenschaft und der Domänen-und Benutzername des Mitglieds. Geben Sie ein Fälligkeitsdatum für die Aufgabe unter Verwendung der <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.DueDate" /> -Eigenschaft.</para>
+        <para>Verwenden die <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Priority" /> und <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Status" /> Eigenschaften, um die relative Bedeutung der Aufgabe anzugeben und der Status der Aufgabe zu aktualisieren.</para>
+        <para>Verwendung der <see cref="M:Microsoft.Office.Core.SharedWorkspaceTask.Save" /> -Methode, um Änderungen auf den Server hochzuladen, nachdem Eigenschaften des <b>SharedWorkspaceTask</b> -Objekts geändert wurden.</para>
+        <para>Verwenden die <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.CreatedBy" />, <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.CreatedDate" />, <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.ModifiedBy" />, und <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.ModifiedDate" /> Eigenschaften, um Informationen zum Verlauf jeder Aufgabe zurückzugeben.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="add57-102">
+          <para>This object is a member of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceTasks" /> collection.</para>
+          <para>Use the <b>SharedWorkspaceTask</b> object to manage tasks assigned to the members who are collaborating on the document(s) in the shared workspace.</para>
+          <para>Use the <b>Item</b>(<paramref name="index" />) method of the <b>SharedWorkspaceTasks</b> collection to return a specific <b>SharedWorkspaceTask</b> object.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Title" /> property to set the text of the task that will appear on the Tasks tab of the Shared Workspace task pane and on the shared workspace Web page. Use the <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Description" /> property to supply additional information about the task.</para>
+          <para>Assign the task to a member of the workspace using the <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.AssignedTo" /> property and the member's domain user name. Specify a due date for the task using the <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.DueDate" /> property.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Priority" /> and <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Status" /> properties to indicate the relative importance of the task and to update the task's status.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.SharedWorkspaceTask.Save" /> method to upload changes to the server after you modify properties of the <b>SharedWorkspaceTask</b> object.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.CreatedBy" />, <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.CreatedDate" />, <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.ModifiedBy" />, and <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.ModifiedDate" /> properties to return information about the history of each task.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-103">Gibt ein <b>Application</b> -Objekt, das die Container-Anwendung für das Objekt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-103">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssignedTo">
+      <MemberSignature Language="C#" Value="public string AssignedTo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AssignedTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.AssignedTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssignedTo As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssignedTo { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-104">Zurückgeben oder Festlegen der <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> , denen die Aufgabe zugewiesen ist.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-104">Returns or sets the <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> to whom the task is assigned.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="add57-105">
+            <para>Das optionale <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.AssignedTo" /> -Eigenschaft der Aufgabe eines freigegebenen Arbeitsbereichs gibt den Anzeigenamen zurück oder <see cref="P:Microsoft.Office.Core.SharedWorkspaceMember.Name" /> -Eigenschaft des der <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> , denen die Aufgabe zugewiesen ist. Verwenden Sie jedoch die <see cref="P:Microsoft.Office.Core.SharedWorkspaceMember.DomainName" /> -Eigenschaft des ein <b>SharedWorkspaceMember-Objekts</b> zum Festlegen dieser Eigenschaft.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-105">
+              <para>The optional <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.AssignedTo" /> property of a shared workspace task returns the display name or <see cref="P:Microsoft.Office.Core.SharedWorkspaceMember.Name" /> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> to whom the task is assigned. However, use the <see cref="P:Microsoft.Office.Core.SharedWorkspaceMember.DomainName" /> property of a <b>SharedWorkspaceMember</b> to set this property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedBy">
+      <MemberSignature Language="C#" Value="public string CreatedBy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreatedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.CreatedBy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedBy As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CreatedBy { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-106">Gibt den Anzeigenamen des Mitglieds, das Erstellen des freigegebenen Arbeitsbereichs-Objekts zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-106">Returns the friendly name of the member who created the shared workspace object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="add57-107">
+            <para>Die <b>Eigenschaften CreatedBy</b> -Eigenschaft gibt den Anzeigenamen in die <b>Name</b> -Eigenschaft des <b>DWSMember</b> -Objekts gespeichert.</para>
+            <para>Der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> und <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> Objekte verfügen nicht über die <b>CreatedBy</b> -Eigenschaft.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-107">
+              <para>The <b>CreatedBy</b> property returns the friendly name stored in the <b>Name</b> property of the <b>DWSMember</b> object.</para>
+              <para>The <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> and <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> objects do not have a <b>CreatedBy</b> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedDate">
+      <MemberSignature Language="C#" Value="public object CreatedDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CreatedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.CreatedDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedDate As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CreatedDate { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-108">Gibt das Datum und die Uhrzeit der Erstellung des freigegebenen Arbeitsbereichs-Objekts.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-108">Returns the date and time when the shared workspace object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="add57-109">
+            <para>Die <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> und <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> Objekte verfügen nicht über eine <b>CreatedDate</b> -Eigenschaft.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-109">
+              <para>The <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> and <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> objects do not have a <b>CreatedDate</b> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-110">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-110">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="add57-111">
+            <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft "1297307460" zurück, der die Zeichenfolge MSWD darstellt. Wenn in Microsoft Excel erstellt, gibt diese Eigenschaft "1480803660" zurück. Dieser Wert kann auch durch die Konstante <b>WdCreatorCode</b> in Word oder <b>xlCreatorCode Wert</b> in Excel dargestellt werden.</para>
+            <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+            <para>Die <b>Creator</b> -Eigenschaft gibt immer den numerischen Bezeichner für die aktive Anwendung zurück, wie die <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Application" /> -Eigenschaft gibt den Namen der aktiven Anwendung immer in Form einer Zeichenfolge zurück. Verwenden Sie die <b>Eigenschaften CreatedBy</b> -Eigenschaft von der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, und <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> -Objekten, die den Namen der Person zurückzugeben, die diese Objekte erstellt hat. Verwenden Sie Dokumenteigenschaften, um Informationen zu den Autoren von Office-Dokumenten zurückzugeben.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-111">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspaceTask.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-112">Löscht das aktuelle Objekt an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-112">Deletes the current object.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="add57-113">
+            <para>Diese Methode schlägt fehl, wenn der Benutzer nicht über die Berechtigung zum Löschen des aktuellen Objekts aus dem freigegebenen Arbeitsbereich verfügt.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-113">
+              <para>This method will fail if the user does not have permission to delete the current object from the shared workspace.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-114">Gibt, oder legt einen beschreibenden <b>String</b> -Wert für den angegebenen <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-114">Returns or sets a descriptive <b>String</b> value for the specified <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="add57-115">
+            <para>Die <b>Description</b> -Eigenschaft ist optional, wenn eine neue Verknüpfung des freigegebenen Arbeitsbereichs oder Aufgabe wird erstellt und kann leer sein.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-115">
+              <para>The <b>Description</b> property is optional when a new shared workspace link or task is created, and may be empty.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DueDate">
+      <MemberSignature Language="C#" Value="public object DueDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DueDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.DueDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property DueDate As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DueDate { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-116">Zurückgeben oder Festlegen der optionale Fälligkeitsdatum Datum und Uhrzeit des ein <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-116">Returns or sets the optional due date and time of a <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifiedBy">
+      <MemberSignature Language="C#" Value="public string ModifiedBy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ModifiedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.ModifiedBy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModifiedBy As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ModifiedBy { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-117">Gibt den Namen des Benutzers, der das Objekt zuletzt geändert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-117">Returns the name of the user who last modified the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="add57-118">
+            <para>Für freigegebene Arbeitsbereichsobjekte gibt die <b>ModifiedBy</b> -Eigenschaft den Anzeigenamen in die <b>Name</b> -Eigenschaft des <b>DWSMember</b> -Objekts gespeichert.</para>
+            <para>Der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> und <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> Objekte verfügen nicht über die <b>ModifiedBy</b> -Eigenschaft.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-118">
+              <para>For shared workspace objects, the <b>ModifiedBy</b> property returns the friendly name stored in the <b>Name</b> property of the <b>DWSMember</b> object.</para>
+              <para>The <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> and <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> objects do not have a <b>ModifiedBy</b> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifiedDate">
+      <MemberSignature Language="C#" Value="public object ModifiedDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ModifiedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.ModifiedDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModifiedDate As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ModifiedDate { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-119">Gibt das Datum und die Uhrzeit der letzten das freigegebenen Arbeitsbereich-Objekt Änderung.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-119">Returns the date and time when the shared workspace object was last modified.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="add57-120">
+            <para>Die <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> und <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> Objekte verfügen nicht über die <b>ModifiedDate</b> -Eigenschaft.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-120">
+              <para>The <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> and <see cref="T:Microsoft.Office.Core.SharedWorkspaceMember" /> objects do not have a <b>ModifiedDate</b> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-121">Gibt das <b>übergeordnete</b> Objekt des angegebenen Objekts zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-121">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoSharedWorkspaceTaskPriority Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoSharedWorkspaceTaskPriority Priority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As MsoSharedWorkspaceTaskPriority" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoSharedWorkspaceTaskPriority Priority { Microsoft::Office::Core::MsoSharedWorkspaceTaskPriority get(); void set(Microsoft::Office::Core::MsoSharedWorkspaceTaskPriority value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoSharedWorkspaceTaskPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-122">Gibt zurück oder legt den Status des angegebenen freigegebenen Arbeitsbereichsaufgabe.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-122">Returns or sets the status of the specified shared workspace task.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="add57-123">
+            <para>Das Schema der freigegebenen Arbeitsbereichsaufgabe auf dem Server kann angepasst werden. Anpassung des Schemas beeinträchtigen die <see cref="T:Microsoft.Office.Core.MsoSharedWorkspaceTaskPriority" /> festlegen, wann die <see cref="M:Microsoft.Office.Core.SharedWorkspaceTasks.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> oder <see cref="M:Microsoft.Office.Core.SharedWorkspaceTask.Save" /> -Methode aufgerufen wird. <b>Priority</b> -Eigenschaftswerte werden wie folgt zugeordnet:</para>
+            <list type="bullet">
+              <item>
+                <para>heruntergeladene Wert 1 <b>MsoSharedWorkspaceTaskPriority</b> 1 (<b>MsoSharedWorkspaceTaskPriorityHigh</b>) zugeordnet ist. Heruntergeladenen Werte 2 bis N-1 werden zu <b>MsoSharedWorkspaceTaskPriority</b> 2 (<b>MsoSharedWorkspaceTaskPriorityNormal</b>) zugeordnet. Heruntergeladene Wert N wird zu <b>MsoSharedWorkspaceTaskPriority</b> 3 (<b>MsoSharedWorkspaceTaskPriorityLow</b>) zugeordnet.</para>
+              </item>
+              <item>
+                <para>Hochladen Enumerationswerte 1 bis 3 werden Schemawerte 1 bis 3 zugeordnet. Wenn ein vom Benutzer angegebener Wert nicht auf einen beliebigen Wert im Schema definiert zugeordnet werden, wird automatisch vom Benutzer angegebener Wert ignoriert und das <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Status" /> -Eigenschaft wird auf dem Server nicht aktualisiert.</para>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-123">
+              <para>The shared workspace task schema on the server can be customized. Customization of the schema may affect the <see cref="T:Microsoft.Office.Core.MsoSharedWorkspaceTaskPriority" /> setting when the <see cref="M:Microsoft.Office.Core.SharedWorkspaceTasks.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> or <see cref="M:Microsoft.Office.Core.SharedWorkspaceTask.Save" /> method is called. <b>Priority</b> property values are mapped as follows:</para>
+              <list type="bullet">
+                <item>
+                  <para>Downloaded value 1 is mapped to <b>msoSharedWorkspaceTaskPriority</b> 1 (<b>msoSharedWorkspaceTaskPriorityHigh</b>). Downloaded values 2 through N-1 are mapped to <b>msoSharedWorkspaceTaskPriority</b> 2 (<b>msoSharedWorkspaceTaskPriorityNormal</b>). Downloaded value N is mapped to <b>msoSharedWorkspaceTaskPriority</b> 3 (<b>msoSharedWorkspaceTaskPriorityLow</b>).</para>
+                </item>
+                <item>
+                  <para>Uploaded enumeration values 1 through 3 are mapped to schema values 1 through 3. If a user-specified value does not map to any value defined in the schema, the user-specified value is silently ignored and the <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Status" /> property is not updated on the server.</para>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspaceTask.Save" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-124">Lädt programmgesteuert vorgenommenen Änderungen hoch ein <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> an den Server.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-124">Uploads changes made programmatically to a <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> to the server.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="add57-125">
+            <para>Verwenden Sie die <b>Save</b> -Methode, um die Änderungen an den Server hochzuladen, nachdem die Eigenschaften einer Verknüpfung des freigegebenen Arbeitsbereichs oder die Aufgabe.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-125">
+              <para>Use the <b>Save</b> method to upload changes to the server after changing the properties of a shared workspace link or task.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoSharedWorkspaceTaskStatus Status { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoSharedWorkspaceTaskStatus Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.Status" />
+      <MemberSignature Language="VB.NET" Value="Public Property Status As MsoSharedWorkspaceTaskStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoSharedWorkspaceTaskStatus Status { Microsoft::Office::Core::MsoSharedWorkspaceTaskStatus get(); void set(Microsoft::Office::Core::MsoSharedWorkspaceTaskStatus value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoSharedWorkspaceTaskStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-126">Gibt zurück oder legt den Status des angegebenen freigegebenen Arbeitsbereichsaufgabe.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-126">Returns or sets the status of the specified shared workspace task.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="add57-127">
+            <para>Das Schema der freigegebenen Arbeitsbereichsaufgabe auf dem Server kann angepasst werden. Anpassung des Schemas beeinträchtigen die <see cref="T:Microsoft.Office.Core.MsoSharedWorkspaceTaskPriority" /> festlegen, wann die <see cref="M:Microsoft.Office.Core.SharedWorkspaceTasks.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> oder <see cref="M:Microsoft.Office.Core.SharedWorkspaceTask.Save" /> -Methode aufgerufen wird. <b>Status</b> -Eigenschaftswerte werden wie folgt zugeordnet:</para>
+            <list type="bullet">
+              <item>
+                <para>heruntergeladene Werte 1 bis 5 <b>MsoSharedWorkspaceTaskStatus</b> -Enumerationswerte 1 bis 5 zugeordnet sind. Schemawerte als 5-Enumerationswert ab 1 (<b>MsoSharedWorkspaceTaskStatusInProgress</b>) zugeordnet sind.</para>
+              </item>
+              <item>
+                <para>Hochladen Enumerationswerte 1 bis 5 werden Schemawerte 1 bis 5 zugeordnet. Wenn Sie ein vom Benutzer angegebener Wert nicht auf einen beliebigen Wert im Schema definiert zugeordnet werden, der vom Benutzer angegebener Wert im Hintergrund ignoriert, und die <b>Status</b> -Eigenschaft wird auf dem Server nicht aktualisiert.</para>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-127">
+              <para>The shared workspace task schema on the server can be customized. Customization of the schema may affect the <see cref="T:Microsoft.Office.Core.MsoSharedWorkspaceTaskPriority" /> setting when the <see cref="M:Microsoft.Office.Core.SharedWorkspaceTasks.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> or <see cref="M:Microsoft.Office.Core.SharedWorkspaceTask.Save" /> method is called. <b>Status</b> property values are mapped as follows:</para>
+              <list type="bullet">
+                <item>
+                  <para>Downloaded values 1 through 5 are mapped to <b>msoSharedWorkspaceTaskStatus</b> enumeration values 1 through 5. Schema values beyond 5 are mapped to enumeration value 1 (<b>msoSharedWorkspaceTaskStatusInProgress</b>).</para>
+                </item>
+                <item>
+                  <para>Uploaded enumeration values 1 through 5 are mapped to schema values 1 through 5. If a user-specified value does not map to any value defined in the schema, the user-specified value is silently ignored and the <b>Status</b> property is not updated on the server.</para>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceTask.Title" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="add57-128">Zurückgeben oder Festlegen des Titels des ein <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-128">Returns or sets the title of a <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="add57-129">
+            <para>Die <b>Title</b> -Eigenschaft ist die einzige erforderliche Eigenschaft einer freigegebenen Arbeitsbereichsaufgabe an. Verwenden Sie die optionale <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Description" /> Eigenschaft, um zusätzliche Informationen über die Aufgabe bereitzustellen oder zurückzugeben.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="add57-129">
+              <para>The <b>Title</b> property is the single required property of a shared workspace task. Use the optional <see cref="P:Microsoft.Office.Core.SharedWorkspaceTask.Description" /> property to provide or return additional information about the task.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
