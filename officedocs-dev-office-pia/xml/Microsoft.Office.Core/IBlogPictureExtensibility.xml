@@ -1,0 +1,142 @@
+<Type Name="IBlogPictureExtensibility" FullName="Microsoft.Office.Core.IBlogPictureExtensibility">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a64edcdfc7bd03b46db1665de7ed6c161387ef95" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659712" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IBlogPictureExtensibility" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBlogPictureExtensibility" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.IBlogPictureExtensibility" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBlogPictureExtensibility" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IBlogPictureExtensibility" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C03C5-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stellt ein Objekt dar, das die Möglichkeit zum Bearbeiten von Blogbildern bietet.</summary>
+    <remarks>
+      <para>Bilder werden bei Bildanbietern in einer vom Benutzer eingerichteten Konto gespeichert.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BlogPictureProviderProperties">
+      <MemberSignature Language="C#" Value="public void BlogPictureProviderProperties (out string BlogPictureProvider, out string FriendlyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BlogPictureProviderProperties([out] string&amp; BlogPictureProvider, [out] string&amp; FriendlyName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IBlogPictureExtensibility.BlogPictureProviderProperties(System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BlogPictureProviderProperties (ByRef BlogPictureProvider As String, ByRef FriendlyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BlogPictureProviderProperties([Runtime::InteropServices::Out] System::String ^ % BlogPictureProvider, [Runtime::InteropServices::Out] System::String ^ % FriendlyName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="BlogPictureProvider" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="FriendlyName" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="BlogPictureProvider">Die ID des Bildanbieters.</param>
+        <param name="FriendlyName">Der Anzeigename des Bildanbieters.</param>
+        <summary>Ermöglicht es Bildanbietern, sich selbst als Uploadspeicherort für Blogbilder anzubieten.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePictureAccount">
+      <MemberSignature Language="C#" Value="public void CreatePictureAccount (string Account, string BlogProvider, int ParentWindow, object Document);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreatePictureAccount([in]string Account, [in]string BlogProvider, [in]int32 ParentWindow, [in]object Document) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IBlogPictureExtensibility.CreatePictureAccount(System.String,System.String,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CreatePictureAccount (Account As String, BlogProvider As String, ParentWindow As Integer, Document As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreatePictureAccount(System::String ^ Account, System::String ^ BlogProvider, int ParentWindow, System::Object ^ Document);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Account" Type="System.String" />
+        <Parameter Name="BlogProvider" Type="System.String" />
+        <Parameter Name="ParentWindow" Type="System.Int32" />
+        <Parameter Name="Document" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Account">Stellt die GUID eines Kontoregistrierungsschlüssels dar. Blogkontoeinstellungen werden gespeichert, in der Registrierung unter \\HKCU\Software\Microsoft\Office\Common\Blog\Account.</param>
+        <param name="BlogProvider">Die ID des Anbieters.</param>
+        <param name="ParentWindow">Enthält den HWND für das Fenster, dem Microsoft Office Word den Aufruf ausführt.</param>
+        <param name="Document">Das aktuelle Dokument.</param>
+        <summary>Ermöglicht es einem Bildanbieter, die Benutzeroberfläche anzuzeigen, die erforderlich ist, um dem Benutzer beim Einrichten eines Bildkontos zu helfen.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublishPicture">
+      <MemberSignature Language="C#" Value="public void PublishPicture (string Account, int ParentWindow, object Document, object Image, out string PictureURI, int ImageType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PublishPicture([in]string Account, [in]int32 ParentWindow, [in]object Document, [in]object Image, [out] string&amp; PictureURI, [in]int32 ImageType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IBlogPictureExtensibility.PublishPicture(System.String,System.Int32,System.Object,System.Object,System.String@,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PublishPicture (Account As String, ParentWindow As Integer, Document As Object, Image As Object, ByRef PictureURI As String, ImageType As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PublishPicture(System::String ^ Account, int ParentWindow, System::Object ^ Document, System::Object ^ Image, [Runtime::InteropServices::Out] System::String ^ % PictureURI, int ImageType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Account" Type="System.String" />
+        <Parameter Name="ParentWindow" Type="System.Int32" />
+        <Parameter Name="Document" Type="System.Object" />
+        <Parameter Name="Image" Type="System.Object" />
+        <Parameter Name="PictureURI" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="ImageType" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Account">Stellt die GUID eines Kontoregistrierungsschlüssels dar. Blogkontoeinstellungen werden gespeichert, in der Registrierung unter \\HKCU\Software\Microsoft\Office\Common\Blog\Account.</param>
+        <param name="ParentWindow">Enthält den HWND für das Fenster, dem Microsoft Office Word den Aufruf ausführt.</param>
+        <param name="Document">Das aktuelle Dokument.</param>
+        <param name="Image">Stellt den Namen der Bilddatei dar.</param>
+        <param name="PictureURI">Die URI des Bilds.</param>
+        <param name="ImageType">To be added.</param>
+        <summary>Wird verwendet, um ein Bildobjekt am endgültigen Ziel in einem Blog bereitzustellen.</summary>
+        <remarks>
+          <para>Diese Methode wird während der xHTML-Generierung aufgerufen und übergibt ein. PNG-Darstellung des Bilds. Der Speicherort, in dem es veröffentlicht wurde, wird zurückgegeben, anschließend ein IMG-Tag in der xHTML-Ausgabe hinzugefügt wird.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
