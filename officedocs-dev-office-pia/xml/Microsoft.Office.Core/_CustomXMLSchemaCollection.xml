@@ -1,0 +1,666 @@
+<Type Name="_CustomXMLSchemaCollection" FullName="Microsoft.Office.Core._CustomXMLSchemaCollection">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8cde1797eb568b4867921087523a23f2ea785704" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659585" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _CustomXMLSchemaCollection : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _CustomXMLSchemaCollection implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core._CustomXMLSchemaCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _CustomXMLSchemaCollection&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _CustomXMLSchemaCollection : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000CDB02-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="76492-101">Stellt eine Auflistung von <see cref="T:Microsoft.Office.Core.CustomXMLSchema" /> Objekte mit einem Datenstrom verbunden.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="76492-101">Represents a collection of <see cref="T:Microsoft.Office.Core.CustomXMLSchema" /> objects attached to a data stream.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="76492-102">
+        <para>
+          <b>Hinweis</b>: Verweise auf DTDs von benutzerdefinierten XML-Komponenten werden nicht unterstützt. DTD-Verweise im benutzerdefinierten XML-Komponenten können nicht aufgelöst werden, und benutzerdefinierte XML-Komponenten mit DTD Verweisen generieren eine Ausnahme aus, wenn versucht wird, um Inhalt der Datei in ein flaches XML-Datei zu speichern.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="76492-102">
+          <para>
+            <b>Note</b>: References to DTDs from custom XML parts are not supported. DTD references in custom XML parts will not resolve, and custom XML parts containing DTD references generate an exception when an attempt is made to save the file's content to a flat XML file.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLSchema Add (string NamespaceURI = &quot;&quot;, string Alias = &quot;&quot;, string FileName = &quot;&quot;, bool InstallForAllUsers = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CustomXMLSchema Add([in]string NamespaceURI, [in]string Alias, [in]string FileName, [in]bool InstallForAllUsers) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CustomXMLSchemaCollection.Add(System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Optional NamespaceURI As String = &quot;&quot;, Optional Alias As String = &quot;&quot;, Optional FileName As String = &quot;&quot;, Optional InstallForAllUsers As Boolean = false) As CustomXMLSchema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLSchema</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="NamespaceURI" Type="System.String" />
+        <Parameter Name="Alias" Type="System.String" />
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="NamespaceURI">
+          <span data-ttu-id="76492-103">Optionale <b>Zeichenfolge</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-103">Optional <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="76492-104">Enthält den Namespace des Schemas, das der Auflistung hinzugefügt werden soll.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-104">Contains the namespace of the schema to be added to the collection.</span>
+          </span>
+          <span data-ttu-id="76492-105">Falls das Schema bereits in der Schemabibliothek vorhanden ist, wird es mit dieser Methode von dort abgerufen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-105">If the schema already exists in the Schema Library, the method will retrieve it from there.</span>
+          </span>
+        </param>
+        <param name="Alias">
+          <span data-ttu-id="76492-106">Optionale <b>Zeichenfolge</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-106">Optional <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="76492-107">Enthält den Alias des Schemas, das der Auflistung hinzugefügt werden soll.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-107">Contains the alias of the schema to be added to the collection.</span>
+          </span>
+          <span data-ttu-id="76492-108">Falls der Alias bereits in der Schemabibliothek vorhanden ist, kann er mithilfe dieses Arguments von der Methode gefunden werden.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-108">If the alias already exists in the Schema Library, the method can find it using this argument.</span>
+          </span>
+        </param>
+        <param name="FileName">
+          <span data-ttu-id="76492-109">Optionale <b>Zeichenfolge</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-109">Optional <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="76492-110">Enthält den Speicherort des Schemas auf einem Datenträger.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-110">Contains the location of the schema on a disk.</span>
+          </span>
+          <span data-ttu-id="76492-111">Wenn dieser Parameter angegeben wird, wird das Schema der Auflistung und der Schemabibliothek hinzugefügt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-111">If this parameter is specified, the schema is added to the collection and to the Schema Library.</span>
+          </span>
+        </param>
+        <param name="InstallForAllUsers">
+          <span data-ttu-id="76492-112">Optionaler <b>Boolean</b>-Wert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-112">Optional <b>Boolean</b>.</span>
+          </span>
+          <span data-ttu-id="76492-113">Gibt an, ob im Fall, in dem die Methode das Schema zur Schemabibliothek hinzufügen wird, der Schemabibliothek Schlüssel in der Registrierung (HKey_Local_Machine für alle Benutzer) oder HKey_Current_User für nur den aktuellen Benutzer geschrieben werden sollen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-113">Specifies whether, in the case where the method is adding the schema to the Schema Library, the Schema Library keys should be written to the registry(HKey_Local_Machine for all users or HKey_Current_User for just the current user).</span>
+          </span>
+          <span data-ttu-id="76492-114">Der Parameter standardmäßig auf <b>false festgelegt</b> und schreibt in HKey_Current_User.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-114">The parameter defaults to <b>False</b> and writes to HKey_Current_User.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="76492-115">Ermöglicht das Hinzufügen von mindestens einem Schema zu einer Schemaauflistung, die dann einem Datenstrom im Datenspeicher und der Schemabibliothek hinzugefügt werden kann.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-115">Allows you to add one or more schemas to a schema collection that can then be added to a stream in the data store and to the Schema Library.</span>
+          </span>
+        </summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Core.CustomXMLSchema" />
+        </returns>
+        <remarks>
+          <span data-ttu-id="76492-116">
+            <para>
+              <b>Hinweis</b>: Verweise auf DTDs von benutzerdefinierten XML-Komponenten werden nicht unterstützt. DTD-Verweise im benutzerdefinierten XML-Komponenten können nicht aufgelöst werden, und benutzerdefinierte XML-Komponenten mit DTD Verweisen generieren eine Ausnahme aus, wenn versucht wird, um Inhalt der Datei in ein flaches XML-Datei zu speichern.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-116">
+              <para>
+                <b>Note</b>: References to DTDs from custom XML parts are not supported. DTD references in custom XML parts will not resolve, and custom XML parts containing DTD references generate an exception when an attempt is made to save the file's content to a flat XML file.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCollection">
+      <MemberSignature Language="C#" Value="public void AddCollection (Microsoft.Office.Core.CustomXMLSchemaCollection SchemaCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddCollection([in]class Microsoft.Office.Core.CustomXMLSchemaCollection SchemaCollection) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CustomXMLSchemaCollection.AddCollection(Microsoft.Office.Core.CustomXMLSchemaCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCollection (SchemaCollection As CustomXMLSchemaCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCollection(Microsoft::Office::Core::CustomXMLSchemaCollection ^ SchemaCollection);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SchemaCollection" Type="Microsoft.Office.Core.CustomXMLSchemaCollection" />
+      </Parameters>
+      <Docs>
+        <param name="SchemaCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLSchemaCollection.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="76492-117">Ruft ein <b>Application</b> -Objekt, die die Container-Anwendung für die <see cref="T:Microsoft.Office.Core._CustomXMLSchemaCollection" /> Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-117">Gets an <b>Application</b> object that represents the container application for the <see cref="T:Microsoft.Office.Core._CustomXMLSchemaCollection" /> object.</span>
+          </span>
+          <span data-ttu-id="76492-118">Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-118">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="76492-119">
+            <b>Objekt</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-119">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="76492-120">
+            <para>
+              <b>Hinweis</b>: Verweise auf DTDs von benutzerdefinierten XML-Komponenten werden nicht unterstützt. DTD-Verweise im benutzerdefinierten XML-Komponenten können nicht aufgelöst werden, und benutzerdefinierte XML-Komponenten mit DTD Verweisen generieren eine Ausnahme aus, wenn versucht wird, um Inhalt der Datei in ein flaches XML-Datei zu speichern.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-120">
+              <para>
+                <b>Note</b>: References to DTDs from custom XML parts are not supported. DTD references in custom XML parts will not resolve, and custom XML parts containing DTD references generate an exception when an attempt is made to save the file's content to a flat XML file.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLSchemaCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="76492-121">Ruft die Anzahl der Elemente in der <see cref="T:Microsoft.Office.Core._CustomXMLSchemaCollection" /> Auflistung.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-121">Gets the number of items in the <see cref="T:Microsoft.Office.Core._CustomXMLSchemaCollection" /> collection.</span>
+          </span>
+          <span data-ttu-id="76492-122">Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-122">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="76492-123">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-123">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="76492-124">
+            <para>
+              <b>Hinweis</b>: Verweise auf DTDs von benutzerdefinierten XML-Komponenten werden nicht unterstützt. DTD-Verweise im benutzerdefinierten XML-Komponenten können nicht aufgelöst werden, und benutzerdefinierte XML-Komponenten mit DTD Verweisen generieren eine Ausnahme aus, wenn versucht wird, um Inhalt der Datei in ein flaches XML-Datei zu speichern.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-124">
+              <para>
+                <b>Note</b>: References to DTDs from custom XML parts are not supported. DTD references in custom XML parts will not resolve, and custom XML parts containing DTD references generate an exception when an attempt is made to save the file's content to a flat XML file.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLSchemaCollection.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="76492-125">Ruft eine 32-Bit-Ganzzahl, die die Anwendung, in angibt der <see cref="T:Microsoft.Office.Core._CustomXMLSchemaCollection" /> -Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-125">Gets a 32-bit integer that indicates the application in which the <see cref="T:Microsoft.Office.Core._CustomXMLSchemaCollection" /> object was created.</span>
+          </span>
+          <span data-ttu-id="76492-126">Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-126">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="76492-127">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-127">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="76492-128">
+            <para>
+              <b>Hinweis</b>: Verweise auf DTDs von benutzerdefinierten XML-Komponenten werden nicht unterstützt. DTD-Verweise im benutzerdefinierten XML-Komponenten können nicht aufgelöst werden, und benutzerdefinierte XML-Komponenten mit DTD Verweisen generieren eine Ausnahme aus, wenn versucht wird, um Inhalt der Datei in ein flaches XML-Datei zu speichern.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-128">
+              <para>
+                <b>Note</b>: References to DTDs from custom XML parts are not supported. DTD references in custom XML parts will not resolve, and custom XML parts containing DTD references generate an exception when an attempt is made to save the file's content to a flat XML file.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CustomXMLSchemaCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>
+          <span data-ttu-id="76492-129">Gibt <see cref="T:System.Collections.IEnumerator" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-129">Returns <see cref="T:System.Collections.IEnumerator" />.</span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLSchema this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLSchema Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLSchemaCollection.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Object) As CustomXMLSchema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLSchema ^ default[System::Object ^] { Microsoft::Office::Core::CustomXMLSchema ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLSchema</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="76492-130">
+            <b>Objekt</b>erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-130">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="76492-131">Der Name oder die Indexnummer des der <see cref="T:Microsoft.Office.Core.CustomXMLSchema" /> Objekt zurückgegeben werden soll.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-131">The name or index number of the <see cref="T:Microsoft.Office.Core.CustomXMLSchema" /> object to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="76492-132">Ruft ein <see cref="T:Microsoft.Office.Core.CustomXMLSchema" /> -Objekt aus der <see cref="T:Microsoft.Office.Core._CustomXMLSchemaCollection" /> Auflistung.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-132">Gets a <see cref="T:Microsoft.Office.Core.CustomXMLSchema" /> object from the <see cref="T:Microsoft.Office.Core._CustomXMLSchemaCollection" /> collection.</span>
+          </span>
+          <span data-ttu-id="76492-133">Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-133">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLSchema" />
+        </value>
+        <remarks>
+          <span data-ttu-id="76492-134">
+            <para>
+              <b>Hinweis</b>: Verweise auf DTDs von benutzerdefinierten XML-Komponenten werden nicht unterstützt. DTD-Verweise im benutzerdefinierten XML-Komponenten können nicht aufgelöst werden, und benutzerdefinierte XML-Komponenten mit DTD Verweisen generieren eine Ausnahme aus, wenn versucht wird, um Inhalt der Datei in ein flaches XML-Datei zu speichern.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-134">
+              <para>
+                <b>Note</b>: References to DTDs from custom XML parts are not supported. DTD references in custom XML parts will not resolve, and custom XML parts containing DTD references generate an exception when an attempt is made to save the file's content to a flat XML file.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceURI">
+      <MemberSignature Language="C#" Value="public string NamespaceURI[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NamespaceURI(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLSchemaCollection.NamespaceURI(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceURI(Index As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceURI[int] { System::String ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="76492-135">
+            <b>Integer</b>erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-135">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="76492-136">Die Indexnummer des der <see cref="T:Microsoft.Office.Core.CustomXMLSchema" /> Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-136">The index number of the <see cref="T:Microsoft.Office.Core.CustomXMLSchema" /> object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="76492-137">Dient zum Abrufen des Adresse eindeutigen Bezeichners für den Namespace der der <see cref="T:Microsoft.Office.Core._CustomXMLSchemaCollection" /> Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-137">Gets the unique address identifier for the namespace of the <see cref="T:Microsoft.Office.Core._CustomXMLSchemaCollection" /> object.</span>
+          </span>
+          <span data-ttu-id="76492-138">Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-138">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="76492-139">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-139">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="76492-140">
+            <para>
+              <b>Hinweis</b>: Verweise auf DTDs von benutzerdefinierten XML-Komponenten werden nicht unterstützt. DTD-Verweise im benutzerdefinierten XML-Komponenten können nicht aufgelöst werden, und benutzerdefinierte XML-Komponenten mit DTD Verweisen generieren eine Ausnahme aus, wenn versucht wird, um Inhalt der Datei in ein flaches XML-Datei zu speichern.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-140">
+              <para>
+                <b>Note</b>: References to DTDs from custom XML parts are not supported. DTD references in custom XML parts will not resolve, and custom XML parts containing DTD references generate an exception when an attempt is made to save the file's content to a flat XML file.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLSchemaCollection.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="76492-141">Ruft ab, der übergeordnete Objekt für das <see cref="T:Microsoft.Office.Core._CustomXMLSchemaCollection" /> Objekt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-141">Gets the parent object for the <see cref="T:Microsoft.Office.Core._CustomXMLSchemaCollection" /> object.</span>
+          </span>
+          <span data-ttu-id="76492-142">Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-142">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="76492-143">
+            <b>Objekt</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-143">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="76492-144">
+            <para>
+              <b>Hinweis</b>: Verweise auf DTDs von benutzerdefinierten XML-Komponenten werden nicht unterstützt. DTD-Verweise im benutzerdefinierten XML-Komponenten können nicht aufgelöst werden, und benutzerdefinierte XML-Komponenten mit DTD Verweisen generieren eine Ausnahme aus, wenn versucht wird, um Inhalt der Datei in ein flaches XML-Datei zu speichern.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-144">
+              <para>
+                <b>Note</b>: References to DTDs from custom XML parts are not supported. DTD references in custom XML parts will not resolve, and custom XML parts containing DTD references generate an exception when an attempt is made to save the file's content to a flat XML file.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public bool Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Validate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CustomXMLSchemaCollection.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Function Validate () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Validate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809350)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="76492-145">Gibt an, ob die Schemas in einer Schemaauflistung gültig sind (den syntaktischen Regeln von XML und den Regeln für ein angegebenes Vokabular entsprechen; ein Standard zum Strukturieren von XML).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-145">Specifies whether the schemas in a schema collection are valid (conforms to the syntactic rules of XML and the rules for a specified vocabulary; a standard for structuring XML).</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="76492-146">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-146">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="76492-147">
+            <para>
+              <b>Hinweis</b>: Verweise auf DTDs von benutzerdefinierten XML-Komponenten werden nicht unterstützt. DTD-Verweise im benutzerdefinierten XML-Komponenten können nicht aufgelöst werden und benutzerdefinierte XML-Komponenten mit DTD Verweisen generieren eine Ausnahme aus, wenn versucht wird, um Inhalt der Datei in ein flaches XML-Datei zu speichern.</para>
+            <para>Zusätzlich zu bestimmen, ob die Schemas gültig sind, diese Methode auch die <b>enthalten</b> Anweisungen für jedes Schema in der Auflistung durchläuft und fügt die referenzierten Schemas dem Quellschema.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="76492-147">
+              <para>
+                <b>Note</b>: References to DTDs from custom XML parts are not supported. DTD references in custom XML parts will not resolve, and custom XML parts containing DTD references generate an exception when an attempt is made to save the file's content to a flat XML file.</para>
+              <para>In addition to determining whether the schemas are valid, this method also traverses the <b>include</b> statements for each schema in the collection and adds the referenced schemas to the source schema.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

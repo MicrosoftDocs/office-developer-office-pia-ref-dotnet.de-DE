@@ -1,0 +1,406 @@
+<Type Name="SharedWorkspaceFolders" FullName="Microsoft.Office.Core.SharedWorkspaceFolders">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="483be4792e8830460fecf744f801be687ea9b7d4" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659572" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SharedWorkspaceFolders : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SharedWorkspaceFolders implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SharedWorkspaceFolders" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SharedWorkspaceFolders&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SharedWorkspaceFolders : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C037E-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="a0441-101">Dieses Objekt, Member oder -Enumeration ist veraltet und ist nicht für die direkte Verwendung in Ihrem Code verwendet werden. Eine Auflistung von der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> -Objekte im aktuellen freigegebenen Arbeitsbereich.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="a0441-101">This object, member, or enumeration is deprecated and is not intended to be used in your code.A collection of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> objects in the current shared workspace.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SharedWorkspaceFolder Add (string FolderName, object ParentFolder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.SharedWorkspaceFolder Add([in]string FolderName, [in]object ParentFolder) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspaceFolders.Add(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (FolderName As String, Optional ParentFolder As Object) As SharedWorkspaceFolder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SharedWorkspaceFolder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FolderName" Type="System.String" />
+        <Parameter Name="ParentFolder" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="FolderName">
+          <span data-ttu-id="a0441-102">
+            <b>String</b> erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-102">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="a0441-103">Der Name des Ordners, der dem aktuellen freigegebenen Arbeitsbereich hinzugefügt werden soll.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-103">The name of the folder to be added to the current shared workspace.</span>
+          </span>
+        </param>
+        <param name="ParentFolder">
+          <span data-ttu-id="a0441-104">Optionale <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-104">Optional <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />.</span>
+          </span>
+          <span data-ttu-id="a0441-105">Der Unterordner, in dem der neue Ordner platziert werden soll, wenn er nicht im Hauptordner der Dokumentbibliothek im freigegebenen Arbeitsbereich platziert werden soll.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-105">The subfolder in which to place the new folder, if not the main document library folder within the shared workspace.</span>
+          </span>
+          <span data-ttu-id="a0441-106">Fügen Sie den Ordner dem Hauptordner der Dokumentbibliothek hinzu, indem Sie dieses optionale Argument leer lassen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-106">Add the folder to the main document library folder by leaving this optional argument empty.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="a0441-107">Fügt der Dokumentbibliothek in einem freigegebenen Arbeitsbereich einen Ordner hinzu.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-107">Adds a folder to the document library in a shared workspace.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceFolders.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a0441-108">Gibt ein <b>Application</b> -Objekt, das die Container-Anwendung für das Objekt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-108">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceFolders.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a0441-109">Gibt eine <b>ganze Zahl</b> , die die Anzahl der Elemente in der angegebenen Auflistung angibt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-109">Returns an <b>Integer</b> indicating the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceFolders.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a0441-110">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-110">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="a0441-111">
+            <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft "1297307460" zurück, der die Zeichenfolge MSWD darstellt. Wenn in Microsoft Excel erstellt, gibt diese Eigenschaft "1480803660" zurück. Dieser Wert kann auch durch die Konstante <b>WdCreatorCode</b> in Word oder <b>xlCreatorCode Wert</b> in Excel dargestellt werden.</para>
+            <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+            <para>Die <b>Creator</b> -Eigenschaft gibt immer den numerischen Bezeichner für die aktive Anwendung zurück, wie die <see cref="P:Microsoft.Office.Core.SharedWorkspaceFolders.Application" /> -Eigenschaft gibt den Namen der aktiven Anwendung immer in Form einer Zeichenfolge zurück. Die <b>Eigenschaften CreatedBy</b> -Eigenschaft verwendet die <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, und <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> -Objekten, die den Namen der Person zurückzugeben, die diese Objekte erstellt hat. Verwenden Sie Dokumenteigenschaften, um Informationen zu den Autoren von Office-Dokumenten zurückzugeben.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-111">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.SharedWorkspaceFolders.Application" /> property always returns the name of the active application in string form. Used the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspaceFolders.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SharedWorkspaceFolder this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SharedWorkspaceFolder Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceFolders.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As SharedWorkspaceFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SharedWorkspaceFolder ^ default[int] { Microsoft::Office::Core::SharedWorkspaceFolder ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SharedWorkspaceFolder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="a0441-112">
+            <b>Integer</b>erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-112">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="a0441-113">Gibt das <b>SharedWorkspaceFolder</b> an der angegebenen Position zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-113">Returns the <b>SharedWorkspaceFolder</b> at the position specified.</span>
+          </span>
+          <span data-ttu-id="a0441-114">
+            <paramref name="Index" />entspricht nicht der Reihenfolge, in der die Elemente im freigegebenen Arbeitsbereich angezeigt werden, und wird vom erneuten Sortieren der Anzeige nicht beeinflusst.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-114">
+              <paramref name="Index" /> does not correspond to the order in which the items are displayed in the Shared Workspace pane, and is not affected by re-sorting the display.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="a0441-115">Gibt ein <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> -Objekt aus der <b>Folders</b> -Auflistung des freigegebenen Arbeitsbereichs.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-115">Returns a <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> object from the <b>Folders</b> collection of the shared workspace.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemCountExceeded">
+      <MemberSignature Language="C#" Value="public bool ItemCountExceeded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ItemCountExceeded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceFolders.ItemCountExceeded" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemCountExceeded As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ItemCountExceeded { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a0441-116">Gibt einen <b>booleschen</b> Wert, der angibt, ob die Anzahl der Elemente in der Auflistung der 99 überschritten hat, die im Aufgabenbereich Freigegebener Arbeitsbereich angezeigt werden kann.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-116">Returns a <b>Boolean</b> value that indicates whether the number of items in the collection has exceeded the 99 that can be displayed in the Shared Workspace task pane.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="a0441-117">
+            <para>Der freigegebenen Arbeitsbereich-Aufgabenbereich kann nur 99 freigegebenen Arbeitsbereich-Dateien und Ordner, Verknüpfungen, Mitglieder oder Aufgaben anzeigen. Wenn eine der folgenden Auflistungen mehr als 99 Elemente hinzugefügt werden, geschieht Folgendes:</para>
+            <list type="bullet">
+              <item>
+                <para>die entsprechende Registerkarte des Aufgabenbereichs Freigegebener Arbeitsbereich beendet die Anzeige der Liste der Elemente und zeigt stattdessen einen Link zur Seite Site freigegebenen Arbeitsbereich.</para>
+              </item>
+              <item>
+                <para>Die Auflistung wird nicht mehr vervollständigt, und die zugehörige <see cref="P:Microsoft.Office.Core.SharedWorkspaceFolders.Count" /> -Eigenschaft gibt 0 (null) zurück.</para>
+              </item>
+            </list>
+            <para>Furthermore, nachdem die <b>ItemCountExceeded</b> -Eigenschaft <b>True</b> , bei der angegebenen Auflistung zurückgibt kann der Entwickler nicht mehr programmgesteuert Abhilfemaßnahmen durch Löschen von Elementen aus der Auflistung, um die Anzahl der unter 99, zu verringern, da die Auflistung wird nicht mehr aufgefüllt.</para>
+            <para>Der <b>ItemCountExceeded</b> -Eigenschaft des der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFiles" /> und die <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolders" /> Sammlungen gibt <b>True</b> zurück, wenn die kombinierte Anzahl von Dateien und Ordnern 99 überschreitet, da beide Listen kombiniert und zusammen auf der Registerkarte Dokumente angezeigt der Aufgabenbereich ' Freigegebener Arbeitsbereich '.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-117">
+              <para>The Shared Workspace task pane can only display 99 shared workspace files and folders, links, members, or tasks. If more than 99 items are added to any of these collections, the following occurs:</para>
+              <list type="bullet">
+                <item>
+                  <para>The corresponding tab of the Shared Workspace task pane will stop displaying the list of items and will display a link to the shared workspace site Web page instead.</para>
+                </item>
+                <item>
+                  <para>The collection will no longer be populated locally, and its <see cref="P:Microsoft.Office.Core.SharedWorkspaceFolders.Count" /> property will return 0 (zero).</para>
+                </item>
+              </list>
+              <para>Furthermore, once the <b>ItemCountExceeded</b> property returns <b>True</b> for the specified collection, the developer can no longer remedy the situation programmatically by deleting items from the collection to reduce the count below 99, because the collection is no longer populated.</para>
+              <para>The <b>ItemCountExceeded</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFiles" /> and the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolders" /> collections returns <b>True</b> when the combined count of files and folders exceeds 99, because both lists are combined and displayed together on the Documents tab of the Shared Workspace task pane.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceFolders.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a0441-118">Gibt das <b>übergeordnete</b> Objekt des angegebenen Objekts zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a0441-118">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

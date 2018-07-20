@@ -1,0 +1,1673 @@
+<Type Name="_CommandBars" FullName="Microsoft.Office.Core._CommandBars">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="3690a288cdc35a5dc583d70da726bfd1516db3f6" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660042" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _CommandBars : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _CommandBars implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core._CommandBars" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _CommandBars&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _CommandBars : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0302-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="c878f-101">Eine Auflistung von <see cref="T:Microsoft.Office.Core.CommandBar" /> -Objekten, die die Befehlsleisten in der containeranwendung darstellen.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="c878f-101">A collection of <see cref="T:Microsoft.Office.Core.CommandBar" /> objects that represent the command bars in the container application.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="c878f-102">
+        <para>Verwendung der <see cref="P:Microsoft.Office.Core.MsoEnvelopeClass.CommandBars" /> Eigenschaft, um die <b>CommandBars</b> -Auflistung zurückzugeben.</para>
+        <para>Verwendung der <see cref="M:Microsoft.Office.Core._CommandBars.Add(System.Object,System.Object,System.Object,System.Object)" /> -Methode, um der Auflistung eine neue Befehlsleiste hinzugefügt.</para>
+        <para>Verwendung <b>CommandBars</b>(<paramref name="index" />) (Visual Basic.NET) oder <b>CommandBars</b>[<paramref name="index" />] (c#), wobei <paramref name="index" /> ist der Name oder die Indexnummer des eine Befehlsleiste, um ein einzelnes <b>CommandBar</b> -Objekt zurückzugeben.</para>
+        <para>
+          <b>Hinweis</b>: Sie können den Namen oder die Indexnummer Sie eine Menüleiste oder Symbolleiste in der Liste der verfügbaren Menüs und Symbolleisten in der containeranwendung angeben. Jedoch müssen Sie den Namen verwenden, um anzugeben, ein Menü, Kontextmenü oder Untermenü (alle dargestellt durch <b>CommandBar</b> -Objekte). Wenn mindestens zwei benutzerdefinierte Menüs oder Untermenüs, <b>CommandBars</b>gleichnamige (<paramref name="index" />) gibt das erste zurück. Um sicherzustellen, dass Sie die richtige Menü oder Untermenü zurückgeben, suchen Sie das Popup-Steuerelement, das das Menü anzeigt. Wenden Sie dann die <see cref="P:Microsoft.Office.Core.CommandBarPopup.CommandBar" /> -Eigenschaft auf das Popup-Steuerelement die Befehlsleiste zurückgegeben, die dieses Menü darstellt.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="c878f-102">
+          <para>Use the <see cref="P:Microsoft.Office.Core.MsoEnvelopeClass.CommandBars" /> property to return the <b>CommandBars</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core._CommandBars.Add(System.Object,System.Object,System.Object,System.Object)" /> method to add a new command bar to the collection.</para>
+          <para>Use <b>CommandBars</b>(<paramref name="index" />) (Visual Basic.NET) or <b>CommandBars</b>[<paramref name="index" />] (C#), where <paramref name="index" /> is the name or index number of a command bar, to return a single <b>CommandBar</b> object.</para>
+          <para>
+            <b>Note</b>: You can use the name or index number to specify a menu bar or toolbar in the list of available menu bars and toolbars in the container application. However, you must use the name to specify a menu, shortcut menu, or submenu (all of which are represented by <b>CommandBar</b> objects). If two or more custom menus or submenus have the same name, <b>CommandBars</b>(<paramref name="index" />) returns the first one. To ensure that you return the correct menu or submenu, locate the pop-up control that displays that menu. Then apply the <see cref="P:Microsoft.Office.Core.CommandBarPopup.CommandBar" /> property to the pop-up control to return the command bar that represents that menu.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActionControl">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CommandBarControl ActionControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CommandBarControl ActionControl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.ActionControl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActionControl As CommandBarControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CommandBarControl ^ ActionControl { Microsoft::Office::Core::CommandBarControl ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CommandBarControl</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-103">Gibt die <see cref="T:Microsoft.Office.Core.CommandBarControl" /> -Objekt, dessen <see cref="P:Microsoft.Office.Core.CommandBarControl.OnAction" /> -Eigenschaft auf die laufende Prozedur festgelegt ist.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-103">Returns the <see cref="T:Microsoft.Office.Core.CommandBarControl" /> object whose <see cref="P:Microsoft.Office.Core.CommandBarControl.OnAction" /> property is set to the running procedure.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="c878f-104">
+            <para>Wenn die laufende Prozedur nicht durch ein Befehlsleisten-Steuerelement initiiert wurde, gibt diese Eigenschaft <b>Nothing zurück</b>.</para>
+            <para>Rufen Sie diese Eigenschaft und die <see cref="P:Microsoft.Office.Core.CommandBarControl.Tag" /> Eigenschaft, um zu bestimmen, welche Befehlsleistenschaltfläche zuvor geklickt wurde.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-104">
+              <para>If the running procedure was not initiated by a command bar control, this property returns <b>Nothing</b>.</para>
+              <para>Call this property and the <see cref="P:Microsoft.Office.Core.CommandBarControl.Tag" /> property to determine which command bar button was previously clicked.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveMenuBar">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CommandBar ActiveMenuBar { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CommandBar ActiveMenuBar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.ActiveMenuBar" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveMenuBar As CommandBar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CommandBar ^ ActiveMenuBar { Microsoft::Office::Core::CommandBar ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CommandBar</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-105">Gibt ein <see cref="T:Microsoft.Office.Core.CommandBar" /> -Objekt, das die aktiven Menüleiste in der containeranwendung darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-105">Returns a <see cref="T:Microsoft.Office.Core.CommandBar" /> object that represents the active menu bar in the container application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdaptiveMenus">
+      <MemberSignature Language="C#" Value="public bool AdaptiveMenus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AdaptiveMenus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.AdaptiveMenus" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdaptiveMenus As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AdaptiveMenus { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-106">Steuerelement aktiviert oder deaktiviert das Kontrollkästchen für die Option in Microsoft Office als vollständige oder personalisierte Menüs angezeigt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-106">Checks or unchecks the check box control for the option to show menus in Microsoft Office as full or personalized.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="c878f-107">
+            <para>Diese Eigenschaft gibt <b>True</b> zurück, wenn adaptive Menüs für alle Webanwendungen in Microsoft Office aktiviert sind. <b>False</b> andernfalls.</para>
+            <para>Wenn dieses Steuerelement in einer beliebigen Anwendung festlegen möchten, gehen Sie folgendermaßen vor:</para>
+            <list type="number">
+              <item>
+                <description>Im Menü Extras die Option anpassen.</description>
+              </item>
+              <item>
+                <description>Wählen Sie die Registerkarte Optionen aus.</description>
+              </item>
+              <item>
+                <description>Immer anzeigen, die Option Unbeschränkte Menüs anzeigen sich im Abschnitt personalisierte Menüs und Symbolleisten befindet.</description>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-107">
+              <para>This property returns <b>True</b> if adaptive menus are enabled for all applications in Microsoft Office; <b>False</b> otherwise.</para>
+              <para>To set this control in any application, do the following:</para>
+              <list type="number">
+                <item>
+                  <description>On the Tools menu, select Customize.</description>
+                </item>
+                <item>
+                  <description>Select the Options tab.</description>
+                </item>
+                <item>
+                  <description>The Always show full menus option is located in the Personalized Menus and Toolbars section.</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CommandBar Add (object Name, object Position, object MenuBar, object Temporary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CommandBar Add([in]object Name, [in]object Position, [in]object MenuBar, [in]object Temporary) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.Add(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Optional Name As Object, Optional Position As Object, Optional MenuBar As Object, Optional Temporary As Object) As CommandBar" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CommandBar</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.Object" />
+        <Parameter Name="Position" Type="System.Object" />
+        <Parameter Name="MenuBar" Type="System.Object" />
+        <Parameter Name="Temporary" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Name">
+          <span data-ttu-id="c878f-108">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-108">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="c878f-109">Der Name der neuen Befehlsleiste.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-109">The name of the new command bar.</span>
+          </span>
+          <span data-ttu-id="c878f-110">Wenn dieses Argument ausgelassen wird, wird der Befehlsleiste (z. B. Benutzerdefiniert 1) ein Standardname zugewiesen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-110">If this argument is omitted, a default name is assigned to the command bar (such as Custom 1).</span>
+          </span>
+        </param>
+        <param name="Position">
+          <span data-ttu-id="c878f-111">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-111">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="c878f-112">Die Position oder der Typ der neuen Befehlsleiste.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-112">The position or type of the new command bar.</span>
+          </span>
+          <span data-ttu-id="c878f-113">Kann eine der der <see cref="T:Microsoft.Office.Core.MsoBarPosition" /> Konstanten, die in der folgenden Tabelle aufgelistet. ConstantDescription<b>MsoBarLeft</b>, <b>MsoBarTop</b>, <b>MsoBarRight</b>, <b>MsoBarBottom</b>gibt an, die Links, oben, rechts und unten Koordinaten des der neuen Befehl Leiste<b>MsoBarFloating</b>gibt an, das die neue Befehlsleiste wird nicht angedockten<b>MsoBarPopup</b>gibt an, dass die neue Befehlsleiste ist eine Verknüpfung im Menü<b>MsoBarMenuBar</b>Macintosh nur</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-113">Can be one of the <see cref="T:Microsoft.Office.Core.MsoBarPosition" /> constants listed in the following table.ConstantDescription<b>msoBarLeft</b>, <b>msoBarTop</b>, <b>msoBarRight</b>, <b>msoBarBottom</b>Indicates the left, top, right, and bottom coordinates of the new command bar<b>msoBarFloating</b>Indicates that the new command bar won't be docked<b>msoBarPopup</b>Indicates that the new command bar will be a shortcut menu<b>msoBarMenuBar</b>Macintosh only</span>
+          </span>
+        </param>
+        <param name="MenuBar">
+          <span data-ttu-id="c878f-114">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-114">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="c878f-115">
+            <b>True</b> , wenn die aktive Menüleiste durch die neue Befehlsleiste ersetzen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-115">
+              <b>True</b> to replace the active menu bar with the new command bar.</span>
+          </span>
+          <span data-ttu-id="c878f-116">Der Standardwert lautet <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-116">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="Temporary">
+          <span data-ttu-id="c878f-117">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-117">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="c878f-118">
+            <b>True</b> , wenn die neue Befehlsleiste temporäre erstellen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-118">
+              <b>True</b> to make the new command bar temporary.</span>
+          </span>
+          <span data-ttu-id="c878f-119">Temporäre Befehlsleisten werden gelöscht, wenn die Container-Anwendung geschlossen wird.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-119">Temporary command bars are deleted when the container application is closed.</span>
+          </span>
+          <span data-ttu-id="c878f-120">Der Standardwert lautet <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-120">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c878f-121">Erstellt eine neue Befehlsleiste und fügt sie der Auflistung der Befehlsleisten hinzu.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-121">Creates a new command bar and adds it to the collection of command bars.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEx">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CommandBar AddEx (object TbidOrName, object Position, object MenuBar, object Temporary, object TbtrProtection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CommandBar AddEx([in]object TbidOrName, [in]object Position, [in]object MenuBar, [in]object Temporary, [in]object TbtrProtection) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.AddEx(System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddEx (Optional TbidOrName As Object, Optional Position As Object, Optional MenuBar As Object, Optional Temporary As Object, Optional TbtrProtection As Object) As CommandBar" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809366)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CommandBar</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="TbidOrName" Type="System.Object" />
+        <Parameter Name="Position" Type="System.Object" />
+        <Parameter Name="MenuBar" Type="System.Object" />
+        <Parameter Name="Temporary" Type="System.Object" />
+        <Parameter Name="TbtrProtection" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="TbidOrName">To be added.</param>
+        <param name="Position">To be added.</param>
+        <param name="MenuBar">To be added.</param>
+        <param name="Temporary">To be added.</param>
+        <param name="TbtrProtection">To be added.</param>
+        <summary>
+          <span data-ttu-id="c878f-122">Für die interne Verwendung reserviert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-122">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-123">Gibt ein <b>Application</b> -Objekt, das die Container-Anwendung für das Objekt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-123">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommitRenderingTransaction">
+      <MemberSignature Language="C#" Value="public void CommitRenderingTransaction (int hwnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CommitRenderingTransaction([in]int32 hwnd) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.CommitRenderingTransaction(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CommitRenderingTransaction (hwnd As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CommitRenderingTransaction(int hwnd);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809381)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">To be added.</param>
+        <summary>
+          <span data-ttu-id="c878f-p105">Führt ein Commit für die renderingtransaktion. Gibt <b>Nothing zurück</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-p105">Commits the rendering transaction. Returns <b>Nothing</b>.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-126">Gibt, oder legt einen <b>ganzzahligen</b> Wert zurück, der die Anzahl der Elemente in der angegebenen Auflistung angibt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-126">Returns or sets an <b>Integer</b> value indicating the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="c878f-127">
+            <para>Die Anzahl die enthält nur Menüleisten, Symbolleisten und Kontextmenüs.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-127">
+              <para>The count includes only menu bars, toolbars, and shortcut menus.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-128">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-128">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="c878f-129">
+            <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft "1297307460" zurück, die die Zeichenfolge "MSWD"; darstellt Wenn in Microsoft Excel erstellt, gibt diese Eigenschaft "1480803660" zurück. Dieser Wert kann auch durch die Konstante <b>WdCreatorCode</b> in Word oder <b>xlCreatorCode Wert</b> in Excel dargestellt werden.</para>
+            <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+            <para>Die <b>Creator</b> -Eigenschaft gibt immer den numerischen Bezeichner für die aktive Anwendung zurück, genau wie die <b>Application</b> -Eigenschaft den Namen der aktiven Anwendung immer in Form einer Zeichenfolge zurückgibt. Verwenden Sie die <b>Eigenschaften CreatedBy</b> -Eigenschaft von der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, und <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> -Objekten, die den Namen der Person zurückzugeben, die diese Objekte erstellt hat. Verwenden Sie Dokumenteigenschaften, um Informationen zu den Autoren von Office-Dokumenten zurückzugeben.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-129">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string "MSWD"; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <b>Application</b> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableAskAQuestionDropdown">
+      <MemberSignature Language="C#" Value="public bool DisableAskAQuestionDropdown { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisableAskAQuestionDropdown" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.DisableAskAQuestionDropdown" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableAskAQuestionDropdown As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisableAskAQuestionDropdown { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809371)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809371)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809371)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-130">Bestimmt, ob das Antwort-Assistent-Dropdownmenü aktiviert ist.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-130">Determines if the Answer Wizard dropdown menu is enabled.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="c878f-131">
+            <para>Der zurückgegebene Wert ist <b>True</b> , wenn das Dropdownmenü Antwort-Assistent aktiviert ist; <b>"False"</b> Wenn deaktiviert.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-131">
+              <para>The returned value is <b>True</b> if the Answer Wizard dropdown menu is enabled; <b>False</b> if disabled.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableCustomize">
+      <MemberSignature Language="C#" Value="public bool DisableCustomize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisableCustomize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.DisableCustomize" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableCustomize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisableCustomize { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809369)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809369)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809369)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-132">Bestimmt, ob die Anpassung der Symbolleiste deaktiviert ist.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-132">Determines if toolbar customization is disabled.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="c878f-133">
+            <para>Der zurückgegebene Wert ist <b>True</b> , wenn die Anpassung der Symbolleiste deaktiviert ist; <b>False</b> , wenn aktiviert.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-133">
+              <para>The returned value is <b>True</b> if toolbar customization is disabled; <b>False</b> if enabled.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayFonts">
+      <MemberSignature Language="C#" Value="public bool DisplayFonts { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayFonts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.DisplayFonts" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayFonts As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayFonts { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809367)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809367)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809367)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-134">Bestimmt, ob die Schriftartnamen im Feld Schriftart in der tatsächlichen Schriftart angezeigt werden.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-134">Determines if the font names in the Font box are displayed in their actual fonts.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="c878f-135">
+            <para>Der zurückgegebene Wert ist <b>True</b> , wenn die Schriftartnamen im Feld Schriftart in der tatsächlichen Schriftart angezeigt werden; <b>False,</b> Wenn diese nicht angezeigt werden.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-135">
+              <para>The returned value is <b>True</b> if the font names in the Font box are displayed in their actual fonts; <b>False</b> if they are not displayed.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayKeysInTooltips">
+      <MemberSignature Language="C#" Value="public bool DisplayKeysInTooltips { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayKeysInTooltips" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.DisplayKeysInTooltips" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayKeysInTooltips As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayKeysInTooltips { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809350)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809350)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809350)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-136">Bestimmt, ob Tastenkombinationen in QuickInfos für jede Befehlsleisten-Steuerelement angezeigt werden.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-136">Determines if shortcut keys are displayed in the ToolTips for each command bar control.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="c878f-137">
+            <para>Der zurückgegebene Wert ist <b>True</b> , wenn Tastenkombinationen in QuickInfos für jede Befehlsleisten-Steuerelement angezeigt werden; <b>False,</b> Wenn diese nicht angezeigt werden.</para>
+            <para>Um Tastenkombinationen in QuickInfos angezeigt werden, müssen Sie auch Festlegen der <see cref="P:Microsoft.Office.Core._CommandBars.DisplayTooltips" /> -Eigenschaft auf <b>True</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-137">
+              <para>The returned value is <b>True</b> if shortcut keys are displayed in the ToolTips for each command bar control; <b>False</b> if they are not displayed.</para>
+              <para>To display shortcut keys in ToolTips, you must also set the <see cref="P:Microsoft.Office.Core._CommandBars.DisplayTooltips" /> property to <b>True</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayTooltips">
+      <MemberSignature Language="C#" Value="public bool DisplayTooltips { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayTooltips" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.DisplayTooltips" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayTooltips As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayTooltips { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-138">Bestimmt, ob QuickInfos angezeigt werden, sobald der Benutzer den Mauszeiger auf Befehlsleisten-Steuerelemente positioniert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-138">Determines if ScreenTips are displayed whenever the user positions the pointer over command bar controls.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="c878f-139">
+            <para>Der zurückgegebene Wert ist <b>True</b> , wenn QuickInfos angezeigt werden, sobald der Benutzer den Mauszeiger auf Befehlsleisten-Steuerelemente positioniert. <b>False,</b> Wenn diese nicht angezeigt werden.</para>
+            <para>Festlegen von sofort die <b>DisplayTooltips</b> -Eigenschaft in einer containeranwendung wirkt sich auf alle Befehlsleisten in jeder ausgeführten Microsoft Office-Anwendung, und in jeder Office-Anwendung geöffnet, nachdem die Eigenschaft festgelegt ist.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-139">
+              <para>The returned value is <b>True</b> if ScreenTips are displayed whenever the user positions the pointer over command bar controls; <b>False</b> if they are not displayed.</para>
+              <para>Setting the <b>DisplayTooltips</b> property in a container application immediately affects every command bar in every running Microsoft Office application, and in every Office application opened after the property is set.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteMso">
+      <MemberSignature Language="C#" Value="public void ExecuteMso (string idMso);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExecuteMso([in]string idMso) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.ExecuteMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExecuteMso (idMso As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExecuteMso(System::String ^ idMso);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809373)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idMso" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="idMso">
+          <span data-ttu-id="c878f-140">ID für das Steuerelement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-140">Identifier for the control.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c878f-141">Führt das angegebene Steuerelement aus der <paramref name="idMso" /> Parameter.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-141">Executes the control identified by the <paramref name="idMso" /> parameter.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="c878f-142">
+            <para>
+              <b>Hinweis</b>: der Microsoft Office-Assistent ist veraltet in der Version 2007 von Microsoft Office System.</para>
+            <para>Diese Methode ist nützlich, in Fällen, in denen keine-Objektmodell für einen bestimmten Befehl vorhanden ist. Funktioniert mit Steuerelementen, die integrierte Schaltflächen, Umschaltflächen und geteilte Schaltflächen sind. Bei einem Fehler gibt es <b>E_InvalidArg</b> für einen ungültigen <paramref name="idMso" />, und <b>E_Fail</b> für Steuerelemente, die nicht aktiviert oder nicht sichtbar sind.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-142">
+              <para>
+                <b>Note</b>: The Microsoft Office Assistant has been deprecated in the 2007 release of the Microsoft Office system.</para>
+              <para>This method is useful in cases where there is no object model for a particular command. Works on controls that are built-in buttons, toggleButtons and splitButtons. On failure it returns <b>E_InvalidArg</b> for an invalid <paramref name="idMso" />, and <b>E_Fail</b> for controls that are not enabled or not visible.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindControl">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CommandBarControl FindControl (object Type, object Id, object Tag, object Visible);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CommandBarControl FindControl([in]object Type, [in]object Id, [in]object Tag, [in]object Visible) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.FindControl(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindControl (Optional Type As Object, Optional Id As Object, Optional Tag As Object, Optional Visible As Object) As CommandBarControl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809352)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CommandBarControl</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="System.Object" />
+        <Parameter Name="Id" Type="System.Object" />
+        <Parameter Name="Tag" Type="System.Object" />
+        <Parameter Name="Visible" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="c878f-143">Optionale <see cref="T:Microsoft.Office.Core.MsoControlType" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-143">Optional <see cref="T:Microsoft.Office.Core.MsoControlType" />.</span>
+          </span>
+          <span data-ttu-id="c878f-144">Der Typ des Steuerelements.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-144">The type of control.</span>
+          </span>
+        </param>
+        <param name="Id">
+          <span data-ttu-id="c878f-145">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-145">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="c878f-146">Der Bezeichner des Steuerelements.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-146">The identifier of the control.</span>
+          </span>
+        </param>
+        <param name="Tag">
+          <span data-ttu-id="c878f-147">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-147">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="c878f-148">Der Wert der Markierung des Steuerelements.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-148">The tag value of the control.</span>
+          </span>
+        </param>
+        <param name="Visible">
+          <span data-ttu-id="c878f-149">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-149">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="c878f-150">
+            <b>True</b> , wenn nur sichtbare Befehlsleisten-Steuerelemente in die Suche einzubeziehen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-150">
+              <b>True</b> to include only visible command bar controls in the search.</span>
+          </span>
+          <span data-ttu-id="c878f-151">Der Standardwert lautet <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-151">The default value is <b>False</b>.</span>
+          </span>
+          <span data-ttu-id="c878f-152">Sichtbare Befehlsleisten sind sichtbare Symbolleisten und alle Menüs, die öffnen zur Zeit sind, wenn die <b>FindControl</b> -Methode ausgeführt wird.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-152">Visible command bars include all visible toolbars and any menus that are open at the time the <b>FindControl</b> method is executed.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c878f-153">Gibt ein <see cref="T:Microsoft.Office.Core.CommandBarControl" /> -Objekt, das den angegebenen Kriterien entspricht.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-153">Returns a <see cref="T:Microsoft.Office.Core.CommandBarControl" /> object that fits the specified criteria.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="c878f-154">
+            <para>Wenn die <see cref="T:Microsoft.Office.Core.CommandBars" /> -Auflistung enthält mindestens zwei Steuerelemente, die den Suchkriterien entsprechen, <b>FindControl</b> gibt das erste Steuerelement, das gefunden wird. Wenn kein Steuerelement, das die Kriterien erfüllt, gefunden wird, gibt <b>FindControl</b><b>Nothing zurück</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-154">
+              <para>If the <see cref="T:Microsoft.Office.Core.CommandBars" /> collection contains two or more controls that fit the search criteria, <b>FindControl</b> returns the first control that's found. If no control that fits the criteria is found, <b>FindControl</b> returns <b>Nothing</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindControls">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CommandBarControls FindControls (object Type, object Id, object Tag, object Visible);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CommandBarControls FindControls([in]object Type, [in]object Id, [in]object Tag, [in]object Visible) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.FindControls(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindControls (Optional Type As Object, Optional Id As Object, Optional Tag As Object, Optional Visible As Object) As CommandBarControls" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809365)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CommandBarControls</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="System.Object" />
+        <Parameter Name="Id" Type="System.Object" />
+        <Parameter Name="Tag" Type="System.Object" />
+        <Parameter Name="Visible" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="c878f-155">Optionale <see cref="T:Microsoft.Office.Core.MsoControlType" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-155">Optional <see cref="T:Microsoft.Office.Core.MsoControlType" />.</span>
+          </span>
+          <span data-ttu-id="c878f-156">Der Typ des Steuerelements.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-156">The type of control.</span>
+          </span>
+        </param>
+        <param name="Id">
+          <span data-ttu-id="c878f-157">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-157">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="c878f-158">Bezeichner des Steuerelements.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-158">The control’s identifier.</span>
+          </span>
+        </param>
+        <param name="Tag">
+          <span data-ttu-id="c878f-159">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-159">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="c878f-160">Tag-Wert des Steuerelements.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-160">The control’s tag value.</span>
+          </span>
+        </param>
+        <param name="Visible">
+          <span data-ttu-id="c878f-161">Optionales- <b>Objekt</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-161">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="c878f-162">
+            <b>True</b> , wenn nur sichtbare Befehlsleisten-Steuerelemente in die Suche einzubeziehen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-162">
+              <b>True</b> to include only visible command bar controls in the search.</span>
+          </span>
+          <span data-ttu-id="c878f-163">Der Standardwert lautet <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-163">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c878f-164">Gibt die <see cref="T:Microsoft.Office.Core.CommandBarControls" /> -Auflistung, die den angegebenen Kriterien entspricht.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-164">Returns the <see cref="T:Microsoft.Office.Core.CommandBarControls" /> collection that fits the specified criteria.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="c878f-165">
+            <para>Wenn keine Steuerelemente, die den Kriterien entsprechen gefunden werden, gibt die <b>FindControls</b> -Methode <b>Nothing zurück</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-165">
+              <para>If no controls that fit the criteria are found, the <b>FindControls</b> method returns <b>Nothing</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnabledMso">
+      <MemberSignature Language="C#" Value="public bool GetEnabledMso (string idMso);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetEnabledMso([in]string idMso) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.GetEnabledMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnabledMso (idMso As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetEnabledMso(System::String ^ idMso);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809374)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idMso" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="idMso">
+          <span data-ttu-id="c878f-166">ID für das Steuerelement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-166">Identifier for the control.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c878f-167">Gibt <b>True</b> zurück, wenn das Steuerelement identifizierte der <paramref name="idMso" /> Parameter aktiviert ist.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-167">Returns <b>True</b> if the control identified by the <paramref name="idMso" /> parameter  is enabled.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="c878f-168">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-168">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImageMso">
+      <MemberSignature Language="C#" Value="public stdole.IPictureDisp GetImageMso (string idMso, int Width, int Height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class stdole.IPictureDisp GetImageMso([in]string idMso, [in]int32 Width, [in]int32 Height) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.GetImageMso(System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetImageMso (idMso As String, Width As Integer, Height As Integer) As IPictureDisp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; stdole::IPictureDisp ^ GetImageMso(System::String ^ idMso, int Width, int Height);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809380)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>stdole.IPictureDisp</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName>System.Runtime.InteropServices.ComAliasName("stdole.IPictureDisp")</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idMso" Type="System.String" />
+        <Parameter Name="Width" Type="System.Int32" />
+        <Parameter Name="Height" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="idMso">
+          <span data-ttu-id="c878f-169">ID für das Steuerelement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-169">Identifier for the control.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="c878f-170">Die Höhe des Bilds.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-170">The width of the image.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="c878f-171">Die Höhe des Bilds.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-171">The height of the image.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c878f-172">Gibt ein <b>IPictureDisp</b> -Objekt angegeben wird, durch die <paramref name="idMso" /> Parameter skaliert die Abmessung von Height und Width angegeben wird.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-172">Returns an <b>IPictureDisp</b> object of the control image identified by the <paramref name="idMso" /> parameter  scaled to the dimensions specified by width and height.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="c878f-173">IPictureDisp</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-173">IPictureDisp</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="c878f-174">
+            <para>Die <paramref name="Width" /> und <paramref name="Height" /> Parameter müssen zwischen 16 und 128 Zeichen sein.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-174">
+              <para>The <paramref name="Width" /> and <paramref name="Height" /> parameters must be between 16 and 128.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLabelMso">
+      <MemberSignature Language="C#" Value="public string GetLabelMso (string idMso);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetLabelMso([in]string idMso) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.GetLabelMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLabelMso (idMso As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetLabelMso(System::String ^ idMso);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809377)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idMso" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="idMso">
+          <span data-ttu-id="c878f-175">ID für das Steuerelement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-175">Identifier for the control.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c878f-176">Gibt die Beschriftung des vom Steuerelement die <paramref name="idMso" /> Parameter als <b>Zeichenfolge</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-176">Returns the label of the control identified by the <paramref name="idMso" /> parameter as a <b>String</b>.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="c878f-177">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-177">
+              <b>String</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPressedMso">
+      <MemberSignature Language="C#" Value="public bool GetPressedMso (string idMso);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetPressedMso([in]string idMso) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.GetPressedMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPressedMso (idMso As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetPressedMso(System::String ^ idMso);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809376)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idMso" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="idMso">
+          <span data-ttu-id="c878f-178">ID für das Steuerelement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-178">Identifier for the control.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c878f-179">Gibt einen Wert zurück, der angibt, ob das ToggleButton-Steuerelement durch identifiziert die <paramref name="idMso" /> Parameter gedrückt wird.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-179">Returns a value indicating whether the toggleButton control identified by the <paramref name="idMso" /> parameter  is pressed.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="c878f-180">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-180">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScreentipMso">
+      <MemberSignature Language="C#" Value="public string GetScreentipMso (string idMso);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetScreentipMso([in]string idMso) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.GetScreentipMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetScreentipMso (idMso As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetScreentipMso(System::String ^ idMso);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809378)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idMso" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="idMso">
+          <span data-ttu-id="c878f-181">ID für das Steuerelement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-181">Identifier for the control.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c878f-182">Gibt die QuickInfo des vom Steuerelement die <paramref name="idMso" /> Parameter als <b>Zeichenfolge</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-182">Returns the screentip of the control identified by the <paramref name="idMso" /> parameter as a <b>String</b>.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="c878f-183">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-183">
+              <b>String</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSupertipMso">
+      <MemberSignature Language="C#" Value="public string GetSupertipMso (string idMso);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSupertipMso([in]string idMso) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.GetSupertipMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSupertipMso (idMso As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetSupertipMso(System::String ^ idMso);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809379)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idMso" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="idMso">
+          <span data-ttu-id="c878f-184">ID für das Steuerelement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-184">Identifier for the control.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c878f-185">Gibt zurück, der einen zusätzlichen Tipp zum vom Steuerelement die <paramref name="idMso" /> Parameter als <b>Zeichenfolge</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-185">Returns the supertip of the control identified by the <paramref name="idMso" /> parameter as a <b>String</b>.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="c878f-186">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-186">
+              <b>String</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisibleMso">
+      <MemberSignature Language="C#" Value="public bool GetVisibleMso (string idMso);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetVisibleMso([in]string idMso) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.GetVisibleMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetVisibleMso (idMso As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetVisibleMso(System::String ^ idMso);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809375)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="idMso" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="idMso">
+          <span data-ttu-id="c878f-187">ID für das Steuerelement.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-187">Identifier for the control.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c878f-188">Gibt <b>True</b> zurück, wenn das Steuerelement identifizierte der <paramref name="idMso" /> Parameter sichtbar ist.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-188">Returns <b>True</b> if the control identified by the <paramref name="idMso" /> parameter is visible.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="c878f-189">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-189">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdsString">
+      <MemberSignature Language="C#" Value="public int IdsString[int ids, out string pbstrName] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IdsString(int32, string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.IdsString(System.Int32,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IdsString(ids As Integer, ByRef pbstrName As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IdsString[int, System::String ^ %] { int get(int ids, [Runtime::InteropServices::Out] System::String ^ % pbstrName); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ids" Type="System.Int32" />
+        <Parameter Name="pbstrName" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ids">To be added.</param>
+        <param name="pbstrName">To be added.</param>
+        <summary>
+          <span data-ttu-id="c878f-190">Für die interne Verwendung reserviert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-190">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CommandBar this[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CommandBar Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Object) As CommandBar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CommandBar ^ default[System::Object ^] { Microsoft::Office::Core::CommandBar ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CommandBar</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="c878f-191">
+            <b>Objekt</b>erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-191">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="c878f-192">Der Name oder die Indexzahl des zurückzugebenden Objekts.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-192">The name or index number of the object to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c878f-193">Gibt ein <see cref="T:Microsoft.Office.Core.CommandBar" /> -Objekt aus der <see cref="T:Microsoft.Office.Core.CommandBars" /> Auflistung.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-193">Returns a <see cref="T:Microsoft.Office.Core.CommandBar" /> object from the <see cref="T:Microsoft.Office.Core.CommandBars" /> collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LargeButtons">
+      <MemberSignature Language="C#" Value="public bool LargeButtons { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LargeButtons" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.LargeButtons" />
+      <MemberSignature Language="VB.NET" Value="Public Property LargeButtons As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LargeButtons { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809354)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809354)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809354)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-194">Bestimmt, ob die Symbolleisten-Schaltflächen angezeigt normalen Größe überschreiten.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-194">Determines if the toolbar buttons displayed are larger than normal size.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="c878f-195">
+            <para>Der zurückgegebene Wert ist <b>True</b> , wenn die Symbolleisten-Schaltflächen angezeigt normalen Größe überschreiten; <b>False,</b> Wenn diese kleiner sind.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-195">
+              <para>The returned value is <b>True</b> if the toolbar buttons displayed are larger than normal size; <b>False</b> if they are smaller.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuAnimationStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoMenuAnimation MenuAnimationStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoMenuAnimation MenuAnimationStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.MenuAnimationStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property MenuAnimationStyle As MsoMenuAnimation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoMenuAnimation MenuAnimationStyle { Microsoft::Office::Core::MsoMenuAnimation get(); void set(Microsoft::Office::Core::MsoMenuAnimation value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809356)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809356)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809356)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoMenuAnimation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-196">Gibt zurück oder legt fest, wie eine Befehlsleiste animiert wird.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-196">Returns or sets the way a command bar is animated.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-197">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-197">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseFocus">
+      <MemberSignature Language="C#" Value="public void ReleaseFocus ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseFocus() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CommandBars.ReleaseFocus" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseFocus ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseFocus();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809360)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="c878f-198">Löst den Benutzeroberflächenfokus von allen Befehlsleisten.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-198">Releases the user interface focus from all command bars.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TmcGetName">
+      <MemberSignature Language="C#" Value="public int TmcGetName[int tmc, out string pbstrName] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TmcGetName(int32, string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CommandBars.TmcGetName(System.Int32,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TmcGetName(tmc As Integer, ByRef pbstrName As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TmcGetName[int, System::String ^ %] { int get(int tmc, [Runtime::InteropServices::Out] System::String ^ % pbstrName); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809362)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809362)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tmc" Type="System.Int32" />
+        <Parameter Name="pbstrName" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="tmc">To be added.</param>
+        <param name="pbstrName">To be added.</param>
+        <summary>
+          <span data-ttu-id="c878f-199">Für die interne Verwendung reserviert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c878f-199">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

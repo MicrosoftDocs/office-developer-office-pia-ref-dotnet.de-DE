@@ -1,0 +1,600 @@
+<Type Name="SignatureSet" FullName="Microsoft.Office.Core.SignatureSet">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7006f76cd0254449f0e19db46a3a09720e5be962" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660187" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SignatureSet : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SignatureSet implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SignatureSet" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SignatureSet&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SignatureSet : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0410-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="23cf3-101">Eine Auflistung von <see cref="T:Microsoft.Office.Core.Signature" /> -Objekten, die die digitalen Signaturen entspricht, die an ein Dokument angefügt.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="23cf3-101">A collection of <see cref="T:Microsoft.Office.Core.Signature" /> objects that correspond to the digital signatures attached to a document.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="23cf3-102">
+        <para>Verwenden Sie die <b>Signatures</b> -Eigenschaft des <b>Document</b> -Objekts, um eine <b>SignatureSet</b> -Auflistung zurückzugeben.</para>
+        <para>Hinweis Änderungen der <b>SignatureSet</b> -Auflistung eines Dokuments werden nicht beibehalten, es sei denn, Sie rufen Sie die <see cref="M:Microsoft.Office.Core.SignatureSet.Commit" /> -Methode.</para> Sie können ein <b>Signature</b> -Objekt hinzufügen, um eine <b>SignatureSet</b> -Auflistung mit 
+      <para>der <see cref="M:Microsoft.Office.Core.SignatureSet.Add" /> -Methode, und Sie können ein vorhandenes Element mithilfe Zurückgeben der <see cref="P:Microsoft.Office.Core.SignatureSet.Item(System.Int32)" /> Methode. Wenn eine <b>Signatur</b> aus einer <b>SignatureSet</b> -Auflistung entfernen möchten, verwenden Sie die <see cref="M:Microsoft.Office.Core.Signature.Delete" /> -Methode des <b>Signature</b> -Objekts.</para><para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="23cf3-102">
+          <para>Use the <b>Signatures</b> property of the <b>Document</b> object to return a <b>SignatureSet</b> collection.</para>
+          <para>Note   Changes that you make to the <b>SignatureSet</b> collection of a document will not persist unless you call the <see cref="M:Microsoft.Office.Core.SignatureSet.Commit" /> method.</para>
+          <para>You can add a <b>Signature</b> object to a <b>SignatureSet</b> collection using the <see cref="M:Microsoft.Office.Core.SignatureSet.Add" /> method, and you can return an existing member using the <see cref="P:Microsoft.Office.Core.SignatureSet.Item(System.Int32)" /> method. To remove a <b>Signature</b> from a <b>SignatureSet</b> collection, use the <see cref="M:Microsoft.Office.Core.Signature.Delete" /> method of the <b>Signature</b> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.Signature Add ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.Signature Add() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureSet.Add" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add () As Signature" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::Signature ^ Add();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.Signature</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="23cf3-103">Gibt ein <see cref="T:Microsoft.Office.Core.Signature" /> -Objekt, das eine neue e-Mail-Signatur repräsentiert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-103">Returns a <see cref="T:Microsoft.Office.Core.Signature" /> object that represents a new e-mail signature.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddNonVisibleSignature">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.Signature AddNonVisibleSignature (object varSigProv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.Signature AddNonVisibleSignature([in]object varSigProv) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureSet.AddNonVisibleSignature(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddNonVisibleSignature (Optional varSigProv As Object) As Signature" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809350)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.Signature</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varSigProv" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varSigProv">
+          <span data-ttu-id="23cf3-104">Stellt die ID des Signaturanbieters dar.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-104">Represents the ID of the signature provider.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="23cf3-105">Erstellt beim digitalen Signieren eines Dokuments ein Signaturpaket.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-105">Creates a signature packet when digitally signing a document.</span>
+          </span>
+        </summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Core.Signature" />
+        </returns>
+        <remarks>
+          <span data-ttu-id="23cf3-106">
+            <para>Um einen Einstiegspunkt zum Auslösen dieser Methode bereitzustellen, müssen Sie eine Benutzeroberfläche mit dem Signaturanbieter-add-in erstellen. Dieser Einstiegspunkt wird dem Benutzer in der Regel als Menüoption bereitgestellt.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-106">
+              <para>To provide an entry point to trigger this method, you need to create a user interface with the signature provider add-in. This entry point is typically provided to the user  as a menu option.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSignatureLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.Signature AddSignatureLine (object varSigProv);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.Signature AddSignatureLine([in]object varSigProv) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureSet.AddSignatureLine(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddSignatureLine (Optional varSigProv As Object) As Signature" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809352)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.Signature</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varSigProv" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="varSigProv">
+          <span data-ttu-id="23cf3-107">Stellt die ID des Signaturanbieters dar.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-107">Represents the ID of the signature provider.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="23cf3-108">Fügt einem Dokument Zeilen hinzu, in denen Signaturen gesammelt werden.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-108">Adds lines to a document where signatures are collected.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="23cf3-109">Signature</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-109">Signature</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="23cf3-110">
+            <para>Nachdem die Zeile hinzugefügt wird, kann der Autor des Dokuments die erforderliche Informationen hinzufügen, sodass jeder Signaturzeile der Name und (optional) den Titel der Person ein, die die Anmeldung. Wenn ein Benutzer geöffnet wird, die das Dokument, Microsoft Office erkennt, dass eine oder mehrere Signaturzeilen sind vorhanden, aber leer. Office warnt dann der Benutzer, den dieses Dokument und hilft Where finden sie in das Dokument die angeforderten Signaturen signiert werden muss, befinden.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-110">
+              <para>After the line is added, the author of the document can add  the necessary information so that each signature line shows the name and (optionally) the title of the person who should sign. When a user opens the document, Microsoft Office recognizes that one or more signature lines are present, but blank. Office then alerts the user that they need to sign this document and helps them find where in the document the requested signatures are located.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureSet.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="23cf3-111">Gibt ein <b>Application</b> -Objekt, das die Container-Anwendung für das Objekt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-111">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanAddSignatureLine">
+      <MemberSignature Language="C#" Value="public bool CanAddSignatureLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanAddSignatureLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureSet.CanAddSignatureLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanAddSignatureLine As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanAddSignatureLine { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="23cf3-p101">Ruft einen <b>booleschen</b> Wert zurück, der angibt, ob ein Dokument eine Signaturzeile hinzugefügt werden können. Schreibgeschützt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-p101">Gets a <b>Boolean</b> value indicating whether you can add a signature line to a document. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="23cf3-114">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-114">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="public void Commit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Commit() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureSet.Commit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Commit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="23cf3-115">Führt ein Commit für alle Änderungen des angegebenen <see cref="T:Microsoft.Office.Core.SignatureSet" /> Auflistung auf dem Datenträger.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-115">Commits all changes of the specified <see cref="T:Microsoft.Office.Core.SignatureSet" /> collection to disk.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="23cf3-116">
+            <para>Bis die Methode <b>Commit</b> ausgeführt wird, werden die Änderungen an der <b>SignatureSet</b> -Auflistung gespeichert.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-116">
+              <para>Until the <b>Commit</b> method is executed, none of the changes to the <b>SignatureSet</b> collection are saved.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureSet.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="23cf3-117">Gibt eine <b>ganze Zahl</b> , die die Anzahl der Elemente in der angegebenen Auflistung angibt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-117">Returns an <b>Integer</b> indicating the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureSet.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="23cf3-118">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-118">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="23cf3-119">
+            <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft "1297307460" zurück, der die Zeichenfolge MSWD darstellt. Wenn in Microsoft Excel erstellt, gibt diese Eigenschaft "1480803660" zurück. Dieser Wert kann auch durch die Konstante <b>WdCreatorCode</b> in Word oder <b>xlCreatorCode Wert</b> in Excel dargestellt werden.</para>
+            <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+            <para>Die <b>Creator</b> -Eigenschaft gibt immer den numerischen Bezeichner für die aktive Anwendung zurück, wie die <see cref="P:Microsoft.Office.Core.SignatureSet.Application" /> -Eigenschaft gibt den Namen der aktiven Anwendung immer in Form einer Zeichenfolge zurück. Verwenden Sie die <b>Eigenschaften CreatedBy</b> -Eigenschaft von der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, und <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> -Objekten, die den Namen der Person zurückzugeben, die diese Objekte erstellt hat. Verwenden Sie Dokumenteigenschaften, um Informationen zu den Autoren von Office-Dokumenten zurückzugeben.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-119">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.SignatureSet.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureSet.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.Signature this[int iSig] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.Signature Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureSet.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(iSig As Integer) As Signature" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::Signature ^ default[int] { Microsoft::Office::Core::Signature ^ get(int iSig); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.Signature</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iSig" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="iSig">
+          <span data-ttu-id="23cf3-120">
+            <b>Integer</b>erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-120">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="23cf3-121">Bestimmt, welches <b>Signature</b> -Objekt zurückzugeben.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-121">Determines which <b>Signature</b> object to return.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="23cf3-122">Gibt eine <see cref="T:Microsoft.Office.Core.Signature" /> Objekt, das einer der digitalen Signaturen entspricht mit dem das Dokument derzeit angemeldet ist.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-122">Returns a <see cref="T:Microsoft.Office.Core.Signature" /> object that corresponds to one of the digital signatures with which the document is currently signed.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureSet.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="23cf3-123">Gibt das <b>übergeordnete</b> Objekt des angegebenen Objekts zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-123">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowSignaturesPane">
+      <MemberSignature Language="C#" Value="public bool ShowSignaturesPane { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowSignaturesPane" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureSet.ShowSignaturesPane" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowSignaturesPane As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowSignaturesPane {  void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="23cf3-p103">Dient zum Abrufen oder Festlegen eines <b>booleschen</b> Werts, der angibt, ob der Signatur-Aufgabenbereich angezeigt werden soll. Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-p103">Gets or sets a <b>Boolean</b> value indicating whether the Signature task pane should be displayed. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="23cf3-126">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-126">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subset">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoSignatureSubset Subset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoSignatureSubset Subset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SignatureSet.Subset" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subset As MsoSignatureSubset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoSignatureSubset Subset { Microsoft::Office::Core::MsoSignatureSubset get(); void set(Microsoft::Office::Core::MsoSignatureSubset value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoSignatureSubset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="23cf3-127">Dient zum Abrufen oder Festlegen eines Werts, der als Filter für die verfügbaren fungiert <see cref="T:Microsoft.Office.Core.Signature" /> -Objekten für ein Dokument.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-127">Gets or sets a value that acts as a filter on the available <see cref="T:Microsoft.Office.Core.Signature" /> objects for a document.</span>
+          </span>
+          <span data-ttu-id="23cf3-128">Lese-/Schreibzugriff.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="23cf3-128">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoSignatureSubset" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,346 @@
+<Type Name="SearchFolders" FullName="Microsoft.Office.Core.SearchFolders">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7a476b21fef9f00a9963e00ce596a95e24442282" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20659563" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SearchFolders : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SearchFolders implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SearchFolders" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SearchFolders&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SearchFolders : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C036A-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="55950-101">Eine Auflistung von <see cref="T:Microsoft.Office.Core.ScopeFolder" /> -Objekten, die bestimmt, welche Ordner durchsucht werden bei der <see cref="M:Microsoft.Office.Core.FileSearch.Execute(Microsoft.Office.Core.MsoSortBy,Microsoft.Office.Core.MsoSortOrder,System.Boolean)" /> -Methode des der <see cref="T:Microsoft.Office.Core.FileSearch" /> -Objekts aufgerufen wird.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="55950-101">A collection of <see cref="T:Microsoft.Office.Core.ScopeFolder" /> objects that determines which folders are searched when the <see cref="M:Microsoft.Office.Core.FileSearch.Execute(Microsoft.Office.Core.MsoSortBy,Microsoft.Office.Core.MsoSortOrder,System.Boolean)" /> method of the <see cref="T:Microsoft.Office.Core.FileSearch" /> object is called.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="55950-102">
+        <para>Verwendung der <see cref="P:Microsoft.Office.Core.FileSearch.SearchFolders" /> -Eigenschaft mit der <b>FileSearch</b> -Objekt, um die <b>SearchFolders</b> -Auflistung zurückzugeben.</para>
+        <para>Für jede Anwendung nur eine <b>SearchFolders</b> -Auflistung vorhanden ist. Der Inhalt der Auflistung bleibt nach der Ausführung des Codes, die es aufruft beendet wurde. Aus diesem Grund, es ist wichtig, die Auflistung zu löschen, es sei denn, Sie Ihre Suchinformationen werden in Ordnern aus vorangegangenen Suchvorgängen einschließen möchten.</para>
+        <para>Können Sie die <see cref="M:Microsoft.Office.Core.SearchFolders.Add(Microsoft.Office.Core.ScopeFolder)" /> -Methode der <b>SearchFolders</b> -Auflistung hinzufügen ein <b>ScopeFolder</b> -Objekts zur <b>SearchFolders</b> -Auflistung; es ist jedoch in der Regel einfacher, verwenden Sie die <see cref="M:Microsoft.Office.Core.ScopeFolder.AddToSearchFolders" /> -Methode des <b>ScopeFolder</b> , die Sie hinzufügen möchten, wie es nur eine <b>SearchFolders</b> -Auflistung für alle Suchvorgänge ist.</para>
+        <para>Der <b>SearchFolders</b> -Auflistung angezeigt werden kann, als Ergänzung zu den <see cref="P:Microsoft.Office.Core.FileSearch.LookIn" /> -Eigenschaft des <b>FileSearch</b> -Objekts. Beide geben Sie den Ordner für die Suche, und beide werden verwendet, wenn die Suche ausgeführt wird. Jedoch, wenn Sie nur die <b>LookIn</b> -Eigenschaft verwenden möchten, sollten Sie sicherstellen, dass die <b>SearchFolders</b> -Auflistung leer ist. Dagegen, wenn Sie nur die <b>SearchFolders</b> -Auflistung verwenden möchten, setzen Sie die <b>LookIn</b> -Eigenschaft auf den Pfad des ersten Elements der <b>SearchFolders</b> -Auflistung vor dem Aufruf der <b>Execute</b> -Methode.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="55950-102">
+          <para>Use the <see cref="P:Microsoft.Office.Core.FileSearch.SearchFolders" /> property with the <b>FileSearch</b> object to return the <b>SearchFolders</b> collection.</para>
+          <para>For each application there is only a single <b>SearchFolders</b> collection. The content of the collection remains after the code that calls it has finished executing. Consequently, it is important to clear the collection unless you want to include folders from previous searches in your search.</para>
+          <para>You can use the <see cref="M:Microsoft.Office.Core.SearchFolders.Add(Microsoft.Office.Core.ScopeFolder)" /> method of the <b>SearchFolders</b> collection to add a <b>ScopeFolder</b> object to the <b>SearchFolders</b> collection; however, it is usually simpler to use the <see cref="M:Microsoft.Office.Core.ScopeFolder.AddToSearchFolders" /> method of the <b>ScopeFolder</b> that you want to add, as there is only one <b>SearchFolders</b> collection for all searches.</para>
+          <para>The <b>SearchFolders</b> collection can be seen as a compliment to the <see cref="P:Microsoft.Office.Core.FileSearch.LookIn" /> property of the <b>FileSearch</b> object. Both specify the folders to search and both are used when the search is executed. However, if you only want to use the <b>LookIn</b> property, you should make sure that the <b>SearchFolders</b> collection is empty. Conversely, if you only want to use the <b>SearchFolders</b> collection, set the <b>LookIn</b> property to the path of the first member of the <b>SearchFolders</b> collection before you call the <b>Execute</b> method.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.Office.Core.ScopeFolder ScopeFolder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add([in]class Microsoft.Office.Core.ScopeFolder ScopeFolder) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SearchFolders.Add(Microsoft.Office.Core.ScopeFolder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Microsoft::Office::Core::ScopeFolder ^ ScopeFolder);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ScopeFolder" Type="Microsoft.Office.Core.ScopeFolder" />
+      </Parameters>
+      <Docs>
+        <param name="ScopeFolder">
+          <span data-ttu-id="55950-103">Erforderliche <see cref="T:Microsoft.Office.Core.ScopeFolder" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-103">Required <see cref="T:Microsoft.Office.Core.ScopeFolder" />.</span>
+          </span>
+          <span data-ttu-id="55950-104">Der Ordner, der der Suche hinzugefügt werden soll.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-104">The folder to add to the search.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="55950-105">Fügt einer Dateisuche einen Suchordner hinzu.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-105">Adds a search folder to a file search.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SearchFolders.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="55950-106">Gibt ein <b>Application</b> -Objekt, das die Container-Anwendung für das Objekt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-106">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SearchFolders.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="55950-107">Gibt eine <b>ganze Zahl</b> , die die Anzahl der Elemente in der angegebenen Auflistung angibt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-107">Returns an <b>Integer</b> indicating the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SearchFolders.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="55950-108">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-108">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="55950-109">
+            <para>Wenn das angegebene Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft "1297307460" zurück, der die Zeichenfolge MSWD darstellt. Wenn in Microsoft Excel erstellt, gibt diese Eigenschaft "1480803660" zurück. Dieser Wert kann auch durch die Konstante <b>WdCreatorCode</b> in Word oder <b>xlCreatorCode Wert</b> in Excel dargestellt werden.</para>
+            <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+            <para>Die <b>Creator</b> -Eigenschaft gibt immer den numerischen Bezeichner für die aktive Anwendung zurück, wie die <see cref="P:Microsoft.Office.Core.SearchFolders.Application" /> -Eigenschaft gibt den Namen der aktiven Anwendung immer in Form einer Zeichenfolge zurück. Verwenden Sie die <b>Eigenschaften CreatedBy</b> -Eigenschaft von der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, und <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> -Objekten, die den Namen der Person zurückzugeben, die diese Objekte erstellt hat. Verwenden Sie Dokumenteigenschaften, um Informationen zu den Autoren von Office-Dokumenten zurückzugeben.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-109">
+              <para>If the specified object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; if created in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.SearchFolders.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SearchFolders.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ScopeFolder this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.ScopeFolder Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SearchFolders.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As ScopeFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::ScopeFolder ^ default[int] { Microsoft::Office::Core::ScopeFolder ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ScopeFolder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="55950-110">
+            <b>Integer</b>erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-110">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="55950-111">Bestimmt, welcher Unterordner zurückgegeben wird.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-111">Determines which subfolder to return.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="55950-112">Gibt ein <see cref="T:Microsoft.Office.Core.ScopeFolder" /> -Objekt, das einen Unterordner des übergeordneten Objekts darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-112">Returns a <see cref="T:Microsoft.Office.Core.ScopeFolder" /> object that represents a subfolder of the parent object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (int Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove([in]int32 Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SearchFolders.Remove(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (Index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(int Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="55950-113">
+            <b>Integer</b>erforderlich.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-113">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="55950-114">Die Indexnummer des Eigenschaftstests entfernt werden soll.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-114">The index number of the property test to be removed.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="55950-115">Entfernt das angegebene Objekt aus der Auflistung.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="55950-115">Removes the specified object from the collection.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

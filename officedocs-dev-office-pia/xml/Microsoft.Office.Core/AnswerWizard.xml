@@ -1,0 +1,301 @@
+<Type Name="AnswerWizard" FullName="Microsoft.Office.Core.AnswerWizard">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2f63a7e2898af1d9dea244a238d194201a4ece2f" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660140" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface AnswerWizard : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AnswerWizard implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.AnswerWizard" />
+  <TypeSignature Language="VB.NET" Value="Public Interface AnswerWizard&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class AnswerWizard : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0360-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="0e35a-101">Die Antwort-Assistent in einer Microsoft Office-Anwendung darstellt.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0e35a-101">Represents the Answer Wizard in a Microsoft Office application.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="0e35a-102">
+        <para>Teile des Inhalts in diesem Thema möglicherweise nicht in der treffen für bestimmte Sprachen.</para>
+        <para>Ist nur eine Antwort-Assistent pro Anwendung und alle Änderungen auf das <b>AnswerWizard</b> -Objekt oder die <see cref="T:Microsoft.Office.Core.AnswerWizardFiles" /> Auflistung Einfluss auf die aktive Office-Anwendung sofort.</para>
+        <para>Verwenden die <see cref="M:Microsoft.Office.Core.AnswerWizard.ClearFileList" /> -Methode entfernen Sie alle Einträge aus der Liste der Dateien im aktuellen Antwort-Assistenten zur Verfügung. Mit dieser Methode wird sichergestellt, dass die Standard-Dateien für die Office-hostanwendung verfügbar nicht mehr über die Antwort-Assistent sind, z. B., wenn Sie die Antwort-Assistent-Dateien mit benutzerdefinierten ersetzen. AW Dateien.</para>
+        <para>Verwendung der <see cref="M:Microsoft.Office.Core.AnswerWizard.ResetFileList" /> -Methode, um die Liste der Dateien für den aktuellen Antwort-Assistenten, um die standardmäßige Liste der Dateien für die Office-hostanwendung wiederherstellen. Sie können auch eine benutzerdefinierte Standardliste des-Datei in der Windows-Registrierung einrichten, indem Sie den entsprechenden Registrierungsschlüssel die Namen der benutzerdefinierten Dateien hinzufügen; in diesem Registrierungsschlüssel angegebenen Dateien werden dann wiederhergestellt, wenn ResetFileList aufgerufen wird.</para>
+        <para>Verwendung der <see cref="P:Microsoft.Office.Core.AnswerWizard.Files" /> Eigenschaft, um die Auflistung der integrierten Dateiverweise abzurufen. Die <b>Files</b> -Eigenschaft gibt eine Auflistung von Zeichenfolgen, die auf verweisen. AW Dateien.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0e35a-102">
+          <para>Some of the content in this topic may not be applicable to some languages.</para>
+          <para>There is only one Answer Wizard per application, and all changes to the <b>AnswerWizard</b> object or the <see cref="T:Microsoft.Office.Core.AnswerWizardFiles" /> collection affect the active Office application immediately.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.AnswerWizard.ClearFileList" /> method to remove all entries from the list of files available to the current Answer Wizard. Using this method ensures that the default files available to the Office host application are no longer accessible through the Answer Wizard, such as when you’re replacing the Answer Wizard files with custom .AW files.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.AnswerWizard.ResetFileList" /> method to restore the list of files for the current Answer Wizard to the default list of files for the Office host application. You can also establish a custom default file list in the Windows registry by adding the names of the custom files to the appropriate registry key; the files specified in that registry key will then be restored when ResetFileList is called.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Core.AnswerWizard.Files" /> property to get the collection of Answer Wizard file references. The <b>Files</b> property returns a collection of strings that refer to .AW files.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.AnswerWizard.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0e35a-103">Gibt ein <b>Application</b> -Objekt, das die Container-Anwendung für das Objekt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0e35a-103">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearFileList">
+      <MemberSignature Language="C#" Value="public void ClearFileList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearFileList() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.AnswerWizard.ClearFileList" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearFileList ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearFileList();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="0e35a-104">Löscht die Liste der Dateien für die aktuelle AnswerWizard, einschließlich der Standardliste der Dateien für die Microsoft Office-hostanwendung.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0e35a-104">Clears the list of files for the current AnswerWizard, including the default list of files for the Microsoft Office host application.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="0e35a-105">
+            <para>Verwenden Sie diese Methode, um alle Einträge aus der aktuellen Dateiliste für die angegebene Anwendung zu entfernen. Sie können es auch verwenden, um sicherzustellen, dass keine der standardmäßigen AnswerWizard-Dateien für die Host-Anwendung für Benutzer verfügbar sind. Anschließend können Sie eine benutzerdefinierte Liste von Dateien erstellen, mit der <see cref="M:Microsoft.Office.Core.AnswerWizardFiles.Add(System.String)" /> -Methode des der <see cref="T:Microsoft.Office.Core.AnswerWizardFiles" /> Auflistung.</para>
+            <para>Verwenden, um die standardmäßige AnswerWizard-Datei für die Host-Anwendung festlegen wiederherzustellen, die <see cref="M:Microsoft.Office.Core.AnswerWizard.ResetFileList" /> -Methode.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0e35a-105">
+              <para>Use this method to remove all entries from the current file list for the specified application. You can also use it to ensure that none of the default AnswerWizard files for the host application are available to users. You can then build a custom list of files by using the <see cref="M:Microsoft.Office.Core.AnswerWizardFiles.Add(System.String)" /> method of the <see cref="T:Microsoft.Office.Core.AnswerWizardFiles" /> collection.</para>
+              <para>To restore the default AnswerWizard file set for the host application, use the <see cref="M:Microsoft.Office.Core.AnswerWizard.ResetFileList" /> method.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.AnswerWizard.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0e35a-106">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0e35a-106">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0e35a-107">
+            <para>Als ein Beispiel dafür, wie diese Eigenschaft funktioniert gibt sie zurück "1297307460" zurück, die die Zeichenfolge "MSWD", darstellt, wenn das Objekt in Microsoft Word erstellt wurde. Diese Eigenschaft gibt "1480803660" zurück, wenn das Objekt in Microsoft Excel erstellt wurde. Dieser Wert kann auch durch die Konstante <b>WdCreatorCode</b> in Word oder <b>xlCreatorCode Wert</b> in Excel dargestellt werden.</para>
+            <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+            <para>Die <b>Creator</b> -Eigenschaft gibt immer den numerischen Bezeichner für die aktive Anwendung zurück, genau wie die <b>Application</b> -Eigenschaft den Namen der aktiven Anwendung immer in Form einer Zeichenfolge zurückgibt. Verwenden Sie die <b>Eigenschaften CreatedBy</b> -Eigenschaft von der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, und <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> -Objekten, die den Namen der Person zurückzugeben, die diese Objekte erstellt hat. Verwenden Sie Dokumenteigenschaften, um Informationen zu den Autoren von Office-Dokumenten zurückzugeben.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0e35a-107">
+              <para>As an example of how this property works, it returns 1297307460, which represents the string "MSWD", if the object was created in Microsoft Word; this property returns 1480803660 if the object was created in Microsoft Excel. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <b>Application</b> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Files">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.AnswerWizardFiles Files { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.AnswerWizardFiles Files" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.AnswerWizard.Files" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Files As AnswerWizardFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::AnswerWizardFiles ^ Files { Microsoft::Office::Core::AnswerWizardFiles ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.AnswerWizardFiles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0e35a-108">Gibt ein <see cref="T:Microsoft.Office.Core.AnswerWizardFiles" /> -Auflistung, die die Liste der verfügbaren Dateien im aktuellen Antwort-Assistenten darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0e35a-108">Returns an <see cref="T:Microsoft.Office.Core.AnswerWizardFiles" /> collection that represents the list of files available to the current AnswerWizard.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.AnswerWizard.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0e35a-109">Gibt das <b>übergeordnete</b> Objekt des angegebenen Objekts zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0e35a-109">Returns the <b>Parent</b> object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetFileList">
+      <MemberSignature Language="C#" Value="public void ResetFileList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetFileList() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.AnswerWizard.ResetFileList" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetFileList ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetFileList();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="0e35a-110">Die Liste der Dateien zurückgesetzt für die aktuelle AnswerWizard auf die Standardliste der Dateien für Microsoft Office-hostanwendung.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0e35a-110">Resets the list of files for the current AnswerWizard to the default list of files for the Microsoft Office host application.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="0e35a-111">
+            <para>Mit dieser Methode alle Einträge in der aktuellen Liste der AnswerWizard-Datei in der Liste in der Windows-Registrierung für die hostanwendung wiederherstellen. Sie können eine benutzerdefinierte Standardliste des-Datei in der Registrierung festlegen, indem Sie den entsprechenden Registrierungsschlüssel die Namen der benutzerdefinierten Dateien hinzufügen.</para>
+            <b>Vorsicht</b> die fehlerhafte Bearbeitung der Registrierungs 
+          <para>beschädigen stark Ihr Betriebssystem neu installieren müssen. Microsoft kann nicht garantieren, dass Probleme durch fehlerhafte Bearbeitung der Registrierung entstehen aufgelöst werden können. Sichern Sie alle wichtigen Daten vor dem Bearbeiten der Registrierungs. Die neuesten Informationen zur Verwendung und zum Schutz der Registrierung des Computers finden Sie unter Microsoft Windows-Hilfe.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0e35a-111">
+              <para>Use this method to restore all entries in the current AnswerWizard file list to the list in the Windows registry for the host application. You can establish a custom default file list in the registry by adding the names of the custom files to the appropriate registry key.</para>
+              <para>
+                <b>Caution</b>   Incorrectly editing the registry may severely damage your operating system, requiring you to reinstall it. Microsoft cannot guarantee that problems resulting from editing the registry incorrectly can be resolved. Before editing the registry, back up any valuable data. For the most recent information about using and protecting your computer's registry, see Microsoft Windows Help.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

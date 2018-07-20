@@ -1,0 +1,500 @@
+<Type Name="DocumentLibraryVersion" FullName="Microsoft.Office.Core.DocumentLibraryVersion">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8aa1d25f3420d55e99cefaa13355cb193968865d" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660365" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface DocumentLibraryVersion : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DocumentLibraryVersion implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.DocumentLibraryVersion" />
+  <TypeSignature Language="VB.NET" Value="Public Interface DocumentLibraryVersion&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class DocumentLibraryVersion : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0387-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="aa08c-101">Das <b>DocumentLibraryVersion</b> -Objekt stellt eine einzelne gespeicherte Version eines freigegebenen Dokuments mit aktivierter versionsverwaltung, die in einer Dokumentbibliothek auf dem Server gespeichert ist.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="aa08c-101">The <b>DocumentLibraryVersion</b> object represents a single saved version of a shared document that has versioning enabled and that is stored in a document library on the server.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="aa08c-102">
+        <para>Jedes <b>DocumentLibraryVersion</b> -Objekt ist ein Element des aktiven Dokuments <see cref="T:Microsoft.Office.Core.DocumentLibraryVersions" /> Auflistung.</para>
+        <para>Jedes <b>DocumentLibraryVersion</b> -Objekt stellt eine gespeicherte Version des aktiven Dokuments. Wenn versionsverwaltung aktiviert ist, wird eine neue Version auf dem Server erstellt, wenn die unten aufgeführten Aktionen auftreten. Weitere Versionen werden nicht jedes Mal der Benutzer Änderungen an der geöffneten Dokument speichert erstellt.</para>
+        <list type="bullet">
+          <item>
+            <para>Zoll überprüfen</para>
+          </item>
+          <item>
+            <para>Wird auf dem Server speichern - eine neue Version erstellt, wenn der Benutzer das Dokument nach dem Öffnen zuerst speichert. Zusätzliche gespeicherte, während das Dokument geöffnet ist Änderungen zu übernehmen, um die gleiche Version.</para>
+          </item>
+          <item>
+            <para>Wiederherstellen.</para>
+          </item>
+          <item>
+            <para>Hochladen.</para>
+          </item>
+        </list>
+        <para>Verwenden die <see cref="P:Microsoft.Office.Core.DocumentLibraryVersion.Modified" />, <see cref="P:Microsoft.Office.Core.DocumentLibraryVersion.ModifiedBy" />, und <see cref="P:Microsoft.Office.Core.DocumentLibraryVersion.Comments" /> Eigenschaften, um Informationen zu einer gespeicherten Version eines freigegebenen Dokuments zurückzugeben.</para>
+        <para>Verwendung der <see cref="M:Microsoft.Office.Core.DocumentLibraryVersion.Open" /> -Methode, um eine frühere Version zu öffnen oder die <see cref="M:Microsoft.Office.Core.DocumentLibraryVersion.Restore" /> -Methode, um anstatt der aktuellen Version eine frühere Version wiederherzustellen. Verwendung der <see cref="M:Microsoft.Office.Core.DocumentLibraryVersion.Delete" /> -Methode, um eine Version zu löschen.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="aa08c-102">
+          <para>Each <b>DocumentLibraryVersion</b> object is a member of the active document's <see cref="T:Microsoft.Office.Core.DocumentLibraryVersions" /> collection.</para>
+          <para>Each <b>DocumentLibraryVersion</b> object represents one saved version of the active document. When versioning is enabled, a new version is created on the server when the actions listed below occur; additional versions are not created each time the user saves changes to the open document.</para>
+          <list type="bullet">
+            <item>
+              <para>Check In.</para>
+            </item>
+            <item>
+              <para>Save - A new version is created on the server when the user first saves the document after opening it. Additional changes saved while the document is open apply to the same version.</para>
+            </item>
+            <item>
+              <para>Restore.</para>
+            </item>
+            <item>
+              <para>Upload.</para>
+            </item>
+          </list>
+          <para>Use the <see cref="P:Microsoft.Office.Core.DocumentLibraryVersion.Modified" />, <see cref="P:Microsoft.Office.Core.DocumentLibraryVersion.ModifiedBy" />, and <see cref="P:Microsoft.Office.Core.DocumentLibraryVersion.Comments" /> properties to return information about a saved version of a shared document.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Core.DocumentLibraryVersion.Open" /> method to open a previous version, or the <see cref="M:Microsoft.Office.Core.DocumentLibraryVersion.Restore" /> method to restore a previous version in place of the current version. Use the <see cref="M:Microsoft.Office.Core.DocumentLibraryVersion.Delete" /> method to delete a version.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentLibraryVersion.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="aa08c-103">Gibt ein <b>Application</b> -Objekt, das die Container-Anwendung für das Objekt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-103">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comments">
+      <MemberSignature Language="C#" Value="public string Comments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentLibraryVersion.Comments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comments As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comments { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="aa08c-104">Gibt die angegebene Version des freigegebenen Dokuments zugeordnet optionale Kommentare zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-104">Returns any optional comments associated with the specified version of the shared document.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="aa08c-105">
+            <para>Ein Benutzer kann Versionskommentare unter Verwendung der Benutzeroberfläche der Dokumentbibliothek Anhängen beim Einchecken eines Dokuments, das vorher ausgecheckt wurde.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-105">
+              <para>A user can attach version comments through the document library user interface when checking in a document that was previously checked out.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentLibraryVersion.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="aa08c-106">Gibt eine 32-Bit-Ganzzahl, die die Anwendung angibt, in der das angegebene Objekt erstellt wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-106">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="aa08c-107">
+            <para>Wenn das Objekt in Microsoft Word erstellt wurde, gibt diese Eigenschaft "1297307460" zurück, der die Zeichenfolge MSWD darstellt. in Microsoft Excel gibt diese Eigenschaft "1480803660" zurück. Dieser Wert kann auch durch die Konstante <b>WdCreatorCode</b> in Word oder <b>xlCreatorCode Wert</b> in Excel dargestellt werden.</para>
+            <para>Die <b>Creator</b> -Eigenschaft wurde in erster Linie auf dem Macintosh verwendet werden, in dem jede Anwendung einen Erstellercode aus vier Zeichen verfügt über entwickelt. Beispielsweise hat Microsoft Word den Erstellercode MSWD. Weitere Informationen zu dieser Eigenschaft finden Sie in der Sprachreferenzhilfe Lieferumfang von Microsoft Office Macintosh Edition.</para>
+            <para>Die <b>Creator</b> -Eigenschaft gibt immer den numerischen Bezeichner für die aktive Anwendung zurück, wie die <see cref="P:Microsoft.Office.Core.DocumentLibraryVersion.Application" /> -Eigenschaft gibt den Namen der aktiven Anwendung immer in Form einer Zeichenfolge zurück. Verwenden Sie die <b>Eigenschaften CreatedBy</b> -Eigenschaft von der <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, und <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> -Objekten, die den Namen der Person zurückzugeben, die diese Objekte erstellt hat. Verwenden Sie Dokumenteigenschaften, um Informationen zu den Autoren von Office-Dokumenten zurückzugeben.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-107">
+              <para>If the object was created in Microsoft Word, this property returns 1297307460, which represents the string MSWD; in Microsoft Excel, this property returns 1480803660. This value can also be represented by the constant <b>wdCreatorCode</b> in Word, or <b>xlCreatorCode</b> in Excel.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>The <b>Creator</b> property always returns the numeric identifier for the active application, just as the <see cref="P:Microsoft.Office.Core.DocumentLibraryVersion.Application" /> property always returns the name of the active application in string form. Use the <b>CreatedBy</b> property of the <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, and <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objects to return the name of the individual who created those objects. Use document properties to return information about the authors of Office documents.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.DocumentLibraryVersion.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="aa08c-108">Entfernt eine Dokumentbibliotheksversion aus der <see cref="T:Microsoft.Office.Core.DocumentLibraryVersions" /> Auflistung.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-108">Removes a document library version from the <see cref="T:Microsoft.Office.Core.DocumentLibraryVersions" /> collection.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentLibraryVersion.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="aa08c-109">Gibt eine <b>ganze Zahl</b> , die Indexnummer eines Objekts in der Auflistung darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-109">Returns an <b>Integer</b> representing the index number for an object in the collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="aa08c-110">
+            <para>Die Position des ersten Befehlsleisten-Steuerelements ist 1. Trennzeichen werden nicht gezählt, der <see cref="T:Microsoft.Office.Core.CommandBarControls" /> Auflistung.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-110">
+              <para>The position of the first command bar control is 1. Separators are not counted in the <see cref="T:Microsoft.Office.Core.CommandBarControls" /> collection.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Modified">
+      <MemberSignature Language="C#" Value="public object this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Modified" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentLibraryVersion.Modified" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Modified As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="aa08c-111">Gibt das Datum und die Uhrzeit der letzten die angegebene Version des freigegebenen Dokuments auf den Server Speicherung.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-111">Returns the date and time at which the specified version of the shared document was last saved to the server.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="aa08c-112">
+            <para>Eine neue Version wird auf dem Server jedes Mal erstellt, ein Benutzer öffnet das Dokument und wird aktualisiert, wenn der Benutzer Änderungen speichert. Weitere Versionen werden nicht jedes Mal erstellt, die der Benutzer Änderungen an das geöffnete Dokument speichert. <b>Modified</b> -Eigenschaft der aktiven Dokumentversion stellt dem Zeitpunkt der letzten Änderung durch den Benutzer gespeichert geöffneten Dokument dar.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-112">
+              <para>A new version is created on the server each time a user opens the document and is updated when the user saves changes; additional versions are not created each time the user saves changes to the open document. The <b>Modified</b> property of the active document version represents the last time the user saved changes to the open document.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifiedBy">
+      <MemberSignature Language="C#" Value="public string ModifiedBy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ModifiedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentLibraryVersion.ModifiedBy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModifiedBy As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ModifiedBy { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="aa08c-113">Gibt den Namen des Benutzers, der die angegebene Version des freigegebenen Dokuments zuletzt auf dem Server gespeichert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-113">Returns the name of the user who last saved the specified version of the shared document to the server.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public object Open ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Open() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.DocumentLibraryVersion.Open" />
+      <MemberSignature Language="VB.NET" Value="Public Function Open () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Open();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="aa08c-114">Öffnet die angegebene Version des freigegebenen Dokuments aus der <see cref="T:Microsoft.Office.Core.DocumentLibraryVersions" /> -Auflistung im schreibgeschützten Modus.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-114">Opens the specified version of the shared document from the <see cref="T:Microsoft.Office.Core.DocumentLibraryVersions" /> collection in read-only mode.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.DocumentLibraryVersion.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="aa08c-115">Gibt das übergeordnete Objekt für das angegebene Objekt zurück.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-115">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Restore">
+      <MemberSignature Language="C#" Value="public object Restore ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Restore() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.DocumentLibraryVersion.Restore" />
+      <MemberSignature Language="VB.NET" Value="Public Function Restore () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Restore();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="aa08c-116">Stellt eine vorherig gespeicherte Version eines freigegebenen Dokuments aus wieder her, die <see cref="T:Microsoft.Office.Core.DocumentLibraryVersions" /> Auflistung.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-116">Restores a previous saved version of a shared document from the <see cref="T:Microsoft.Office.Core.DocumentLibraryVersions" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="aa08c-117">
+            <para>Verwenden Sie die <b>Restore</b> -Methode, um eine zuvor gespeicherte Version des aktiven Dokuments zurückzugeben. Die <b>Restore</b> -Methode führt verschiedene Aktionen aus:</para>
+            <list type="number">
+              <item>
+                <description>Es ändert sich die open Version des freigegebenen Dokuments in den schreibgeschützten Modus bleibt jedoch geöffnet.</description>
+              </item>
+              <item>
+                <description>Es öffnet die wiederhergestellte Version im Lese-/Schreibmodus.</description>
+              </item>
+              <item>
+                <description>Speichert die wiederhergestellte Version auf dem Server als eine neue Dokumentversion; der wiederhergestellten Version der neuesten Version.</description>
+              </item>
+            </list>
+            <para>Die <b>Restore</b> -Methode erzeugt einen Laufzeitfehler, wenn das aktive Dokument geändert hat, die nicht gespeichert wurden.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="aa08c-117">
+              <para>Use the <b>Restore</b> method to return to an earlier saved version of the active document. The <b>Restore</b> method does several things:</para>
+              <list type="number">
+                <item>
+                  <description>It changes the open version of the shared document to read-only mode but leaves it open.</description>
+                </item>
+                <item>
+                  <description>It opens the restored version in read/write mode.</description>
+                </item>
+                <item>
+                  <description>It saves the restored version to the server as a new document version, making the restored version the latest version.</description>
+                </item>
+              </list>
+              <para>The <b>Restore</b> method raises a run-time error if the active document has changes that have not been saved.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

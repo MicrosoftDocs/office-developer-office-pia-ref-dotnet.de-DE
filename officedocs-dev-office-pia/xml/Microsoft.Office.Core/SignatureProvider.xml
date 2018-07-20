@@ -1,0 +1,722 @@
+<Type Name="SignatureProvider" FullName="Microsoft.Office.Core.SignatureProvider">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f75e580a44e443c0cdc1870bf2d4671939974dc2" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="de-DE" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20660346" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SignatureProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SignatureProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SignatureProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SignatureProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SignatureProvider" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000CD6A3-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="ba254-101">Stellt ein Signaturanbieter-Add-In dar.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ba254-101">Represents a signature provider add-in.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="ba254-102">
+        <para>
+          <b>Hinweis</b>: Signaturanbieter werden ausschließlich in benutzerdefinierten COM-add-ins implementiert und können nicht in Microsoft Visual Basic für Applikationen (VBA) implementiert werden.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ba254-102">
+          <para>
+            <b>Note</b>: Signature providers are implemented exclusively in custom COM add-ins and cannot be implemented in Microsoft Visual Basic for Applications (VBA).</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GenerateSignatureLineImage">
+      <MemberSignature Language="C#" Value="public stdole.IPictureDisp GenerateSignatureLineImage (Microsoft.Office.Core.SignatureLineImage siglnimg, Microsoft.Office.Core.SignatureSetup psigsetup, Microsoft.Office.Core.SignatureInfo psiginfo, object XmlDsigStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class stdole.IPictureDisp GenerateSignatureLineImage([in]valuetype Microsoft.Office.Core.SignatureLineImage siglnimg, [in]class Microsoft.Office.Core.SignatureSetup psigsetup, [in]class Microsoft.Office.Core.SignatureInfo psiginfo, [in]object XmlDsigStream) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureProvider.GenerateSignatureLineImage(Microsoft.Office.Core.SignatureLineImage,Microsoft.Office.Core.SignatureSetup,Microsoft.Office.Core.SignatureInfo,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateSignatureLineImage (siglnimg As SignatureLineImage, psigsetup As SignatureSetup, psiginfo As SignatureInfo, XmlDsigStream As Object) As IPictureDisp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; stdole::IPictureDisp ^ GenerateSignatureLineImage(Microsoft::Office::Core::SignatureLineImage siglnimg, Microsoft::Office::Core::SignatureSetup ^ psigsetup, Microsoft::Office::Core::SignatureInfo ^ psiginfo, System::Object ^ XmlDsigStream);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>stdole.IPictureDisp</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName>System.Runtime.InteropServices.ComAliasName("stdole.IPictureDisp")</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="siglnimg" Type="Microsoft.Office.Core.SignatureLineImage" />
+        <Parameter Name="psigsetup" Type="Microsoft.Office.Core.SignatureSetup" />
+        <Parameter Name="psiginfo" Type="Microsoft.Office.Core.SignatureInfo" />
+        <Parameter Name="XmlDsigStream" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="siglnimg">
+          <span data-ttu-id="ba254-103">Enthält den Namen der Signaturzeilengrafik.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-103">Contains the name if the signature line graphic.</span>
+          </span>
+        </param>
+        <param name="psigsetup">
+          <span data-ttu-id="ba254-104">Gibt Ausgangseinstellungen des Signaturanbieter-Add-Ins an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-104">Specifies initial settings of the signature provider add-in.</span>
+          </span>
+        </param>
+        <param name="psiginfo">
+          <span data-ttu-id="ba254-105">Gibt Informationen zum Signaturanbieter-Add-In an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-105">Specifies information about the signature provider add-in.</span>
+          </span>
+        </param>
+        <param name="XmlDsigStream">To be added.</param>
+        <summary>
+          <span data-ttu-id="ba254-106">Ruft ein Signaturzeilenbild ab.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-106">Gets a signature line image.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="ba254-107">
+            <b>IPictureDisp</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-107">
+              <b>IPictureDisp</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="ba254-108">
+            <para>Die <see cref="T:Microsoft.Office.Core.SignatureProvider" /> -Objekt wird ausschließlich in benutzerdefinierten Signatur Anbieter-add-ins verwendet. Diese Methode wird aufgerufen, für die einzelnen Bilder, die in den Inhalt des Dokuments angezeigt wird. Die Methode kann asynchron aufgerufen werden. Beispielsweise kann die Methode für das Bild "unsigniert" und "No-Software" Bilds direkt nach der Einrichtung der Signatur aufgerufen werden. Die Methode kann dann nach der Anmeldung für das Bild "Angemeldet" aufgerufen werden. Die vier Bilder verwendet werden: </para>
+            <list type="bullet">
+              <item>
+                <para>
+                  <see cref="F:Microsoft.Office.Core.SignatureLineImage.siglnimgSoftwareRequired" />: Dieses Bild wird dem Benutzer angezeigt, wenn das Signaturanbieter-add-in nicht auf dem Computer des Benutzers installiert ist. Wenn der Benutzer versucht, signieren oder eine Signaturzeile anzuzeigen, werden sie zu einem Anbieter bereitgestellte Hyperlink im angegebenen umgeleitet die <see cref="M:Microsoft.Office.Core.SignatureProvider.GetProviderDetail(Microsoft.Office.Core.SignatureProviderDetail)" /> -Methode.</para>
+              </item>
+              <item>
+                <para>
+                  <see cref="F:Microsoft.Office.Core.SignatureLineImage.siglnimgUnsigned" />: Dieses Bild wird für ein unsigniertes Signaturbild angezeigt. Im Wesentlichen ein Dokument mit einer unsignierten Signaturzeile laden Signaturanbieters aufgefordert, ein aktuelles Signaturbild, und dieses Bild zeigt.</para>
+              </item>
+              <item>
+                <para>
+                  <see cref="F:Microsoft.Office.Core.SignatureLineImage.siglnimgSignedValid" />: Dies ist das Bild, das angezeigt wird, wenn eine Signaturzeile signiert und gültig ist (oder genauer werden signiert und die Signatur wird nicht als ungültig registriert). Wenn das Dokument geöffnet wird, wird davon ausgegangen, dass alle signierte Signaturzeilen gültig sind, bis die Überprüfung abgeschlossen ist, zu diesem Zeitpunkt ist, die ein Bild "Signed/ungültiges" bei ungültigen Signaturen angezeigt wird. Da signaturüberprüfung zeitaufwändig ist, wird die Überprüfung der Signatur parallel mit Office in einem Hintergrundthread ausgeführt. Da Ihr Add-in signaturüberprüfung implementiert, Ihres Codes läuft parallel mit Office und sollten nicht zum Anzeigen der Benutzeroberfläche während der signierenden oder überprüfen.</para>
+              </item>
+              <item>
+                <para>
+                  <see cref="F:Microsoft.Office.Core.SignatureLineImage.siglnimgSignedInvalid" />: Hierbei handelt es sich um Bild wird angezeigt, wenn eine Signaturzeile signiert, aber ein Problem mit der Signatur vorhanden ist, wie das Dokument geändert wurde oder das Zertifikat des Benutzers ist gesperrt. Da Ihr Add-in signaturüberprüfung implementiert wird, können Sie entscheiden, wie und wann eine Signatur ungültig ist.</para>
+              </item>
+            </list>
+            <para />
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-108">
+              <para>The <see cref="T:Microsoft.Office.Core.SignatureProvider" /> object is used exclusively in custom signature provider add-ins. This method is called for each of the images that is displayed in the document's content. The  method can be called asynchronously. For example, the method may be called for the "Unsigned" image and the "No-software" image directly after signature setup. The method may then be called after signing for the "Signed" image. The four images used are: </para>
+              <list type="bullet">
+                <item>
+                  <para>
+                    <see cref="F:Microsoft.Office.Core.SignatureLineImage.siglnimgSoftwareRequired" />: This image is displayed to the user if the signature provider add-in is not installed on the user's computer. If the user tries to sign or view a signature line, they are redirected to a provider-supplied hyperlink specified in the <see cref="M:Microsoft.Office.Core.SignatureProvider.GetProviderDetail(Microsoft.Office.Core.SignatureProviderDetail)" /> method.</para>
+                </item>
+                <item>
+                  <para>
+                    <see cref="F:Microsoft.Office.Core.SignatureLineImage.siglnimgUnsigned" />: This image is displayed for an unsigned signature image. Basically, when  a document loads with an unsigned signature line, the signature provider prompts for an up-to-date signature image and shows this image.</para>
+                </item>
+                <item>
+                  <para>
+                    <see cref="F:Microsoft.Office.Core.SignatureLineImage.siglnimgSignedValid" />: This is the image that is displayed when a signature line is signed and valid (or, to be more specific, signed and the signature does not register as invalid). When the document opens, it is assumed that all signed signatures are valid until the verification process is complete, at which point a "Signed/invalid" image is displayed for the invalid signatures. Because signature verification is time-intensive, the signature verification runs in parallel with Office on a background thread. Because your add-in implements signature verification, your code runs parallel with Office and should not attempt to display UI during signing or verifying.</para>
+                </item>
+                <item>
+                  <para>
+                    <see cref="F:Microsoft.Office.Core.SignatureLineImage.siglnimgSignedInvalid" />: This is the image we show when a signature line is signed but there is a problem with the signature, such as the document was modified or the user's certificate is revoked. Because your add-in implements signature verification, you can decide how and when a signature is invalid.</para>
+                </item>
+              </list>
+              <para />
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderDetail">
+      <MemberSignature Language="C#" Value="public object GetProviderDetail (Microsoft.Office.Core.SignatureProviderDetail sigprovdet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetProviderDetail([in]valuetype Microsoft.Office.Core.SignatureProviderDetail sigprovdet) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureProvider.GetProviderDetail(Microsoft.Office.Core.SignatureProviderDetail)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProviderDetail (sigprovdet As SignatureProviderDetail) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetProviderDetail(Microsoft::Office::Core::SignatureProviderDetail sigprovdet);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743815)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sigprovdet" Type="Microsoft.Office.Core.SignatureProviderDetail" />
+      </Parameters>
+      <Docs>
+        <param name="sigprovdet">
+          <span data-ttu-id="ba254-109">Enthält einen Aufzählungswert, der darstellt, welche Art von Informationen vom Add-In abgefragt werden sollen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-109">Contains an enumerated value representing the type of information to query the add-in for.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ba254-110">Ruft das Signaturanbieter-Add-In für verschiedene Details ab.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-110">Queries the signature provider add-in for various details.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="ba254-111">
+            <b>Objekt</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-111">
+              <b>Object</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="ba254-112">
+            <para>Die <see cref="T:Microsoft.Office.Core.SignatureProvider" /> -Objekt wird ausschließlich in benutzerdefinierten Signatur Anbieter-add-ins verwendet. Diese Methode wird verwendet, um das Add-In für drei Angaben Abfragen:</para>
+            <list type="bullet">
+              <item>
+                <para>welcher Hashalgorithmus Add-in unterstützt wird?</para>
+              </item> Ist 
+            <item><para>das Add-in nur eine Benutzeroberfläche (UI) oder unterstützen hashing und die Überprüfung? Wenn <b>True</b> zurückgegeben wird, wird Microsoft Office nicht das Add-in hash oder überprüfen, nur zum Anzeigen der Benutzeroberfläche aufgerufen.</para></item><item><para>Welche URL sollte das Add-in bereitstellen für Benutzer, wenn sie das Signatur-Add-in fehlen?</para></item></list>
+            <para />
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-112">
+              <para>The <see cref="T:Microsoft.Office.Core.SignatureProvider" /> object is used exclusively in custom signature provider add-ins. This method is used to query the add-in for three pieces of information:</para>
+              <list type="bullet">
+                <item>
+                  <para>What hash algorithm does the add-in support?</para>
+                </item>
+                <item>
+                  <para>Is the add-in only a user interface (UI) or does it support hashing and verification? If <b>True</b> is returned, Microsoft Office does not call the add-in to hash or verify, only to display the UI.</para>
+                </item>
+                <item>
+                  <para>What URL should the add-in provide for users if they are missing the signature add-in?</para>
+                </item>
+              </list>
+              <para />
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HashStream">
+      <MemberSignature Language="C#" Value="public Array HashStream (object QueryContinue, object Stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Array HashStream([in]object QueryContinue, [in]object Stream) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureProvider.HashStream(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HashStream (QueryContinue As Object, Stream As Object) As Array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Array ^ HashStream(System::Object ^ QueryContinue, System::Object ^ Stream);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Array</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="QueryContinue" Type="System.Object" />
+        <Parameter Name="Stream" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="QueryContinue">
+          <span data-ttu-id="ba254-113">Stellt eine Möglichkeit dar, um von der Hostanwendung die Berechtigung zum Fortsetzen des Hashingprozesses anzufordern.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-113">Provides a way to query the host application for permission to continue the hashing process.</span>
+          </span>
+        </param>
+        <param name="Stream">
+          <span data-ttu-id="ba254-114">Enthält den Datenstrom.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-114">Contains the data stream.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ba254-115">Ermöglicht einem Signaturanbieter-Add-In einen Hashwert für das Dokument zu erstellen, mit dem Sie bestimmen können, ob der Dokumentinhalt nach dem digitalen Signieren bearbeitet wurde.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-115">Allows a signature provider add-in to create a hash value for the document that you can use to determine if the document contents were tampered with after digital signing.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="ba254-116">
+            <b>Array</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-116">
+              <b>Array</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="ba254-117">
+            <para>Die <see cref="T:Microsoft.Office.Core.SignatureProvider" /> -Objekt wird ausschließlich in benutzerdefinierten Signatur Anbieter-add-ins verwendet. Diese Methode wird einmal pro Signaturdatenstrom in einem Dokument aufgerufen. Der Rückgabewert ist ein Array von Bytes, den unter Verwendung des Hashalgorithmus berechneten Hashwert darstellt.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-117">
+              <para>The <see cref="T:Microsoft.Office.Core.SignatureProvider" /> object is used exclusively in custom signature provider add-ins. This method is called once per signature data stream in a document. The return value is an array of bytes representing the hash value computed using the hash algorithm.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifySignatureAdded">
+      <MemberSignature Language="C#" Value="public void NotifySignatureAdded (object ParentWindow, Microsoft.Office.Core.SignatureSetup psigsetup, Microsoft.Office.Core.SignatureInfo psiginfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifySignatureAdded([in]object ParentWindow, [in]class Microsoft.Office.Core.SignatureSetup psigsetup, [in]class Microsoft.Office.Core.SignatureInfo psiginfo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureProvider.NotifySignatureAdded(System.Object,Microsoft.Office.Core.SignatureSetup,Microsoft.Office.Core.SignatureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NotifySignatureAdded (ParentWindow As Object, psigsetup As SignatureSetup, psiginfo As SignatureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NotifySignatureAdded(System::Object ^ ParentWindow, Microsoft::Office::Core::SignatureSetup ^ psigsetup, Microsoft::Office::Core::SignatureInfo ^ psiginfo);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ParentWindow" Type="System.Object" />
+        <Parameter Name="psigsetup" Type="Microsoft.Office.Core.SignatureSetup" />
+        <Parameter Name="psiginfo" Type="Microsoft.Office.Core.SignatureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="ParentWindow">
+          <span data-ttu-id="ba254-118">Ermöglicht der Hostanwendung das Abrufen des Handles für das Fenster, das das angezeigte Dialogfeld enthält.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-118">Allows the host application to obtain the handle to the window containing the displayed dialog box.</span>
+          </span>
+        </param>
+        <param name="psigsetup">
+          <span data-ttu-id="ba254-119">Enthält Ausgangseinstellungen des Signaturanbieters.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-119">Contains initial settings of the signature provider.</span>
+          </span>
+        </param>
+        <param name="psiginfo">
+          <span data-ttu-id="ba254-120">Enthält Informationen zum Signaturanbieter-Add-In.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-120">Contains information about the signature provider add-in.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ba254-121">Mit dieser Methode kann ein Dialogfeld angezeigt werden, in dem der Benutzer informiert wird, dass der Signiervorgang abgeschlossen ist und zusätzliche Funktionalität für das Add-In bereitgestellt werden.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-121">Used to display a dialog box informing the user that the signing process has completed and providing additional functionality for the add-in.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="ba254-122">
+            <para>Diese Methode wird aufgerufen, wenn der Signiervorgang abgeschlossen ist. Ermöglicht einem Signaturanbieter-Add-in die Möglichkeit, zusätzliche Funktionalität für das Add-in hinzuzufügen. Angenommen, wenn Sie einen Archivierungsdienst anbieten beispielsweise, in dem ein Benutzer ihre signierte Dokument hochladen kann, können diese Methode Sie um dieses Prozesses zu initiieren.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-122">
+              <para>This method is called when the signing process has completed. Allows a signature provider add-in the ability to add additional functionality to the add-in. For example, if you wanted to offer an archive service where a user could upload their signed document, you could use this method to initiate that process.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowSignatureDetails">
+      <MemberSignature Language="C#" Value="public void ShowSignatureDetails (object ParentWindow, Microsoft.Office.Core.SignatureSetup psigsetup, Microsoft.Office.Core.SignatureInfo psiginfo, object XmlDsigStream, out Microsoft.Office.Core.ContentVerificationResults pcontverres, out Microsoft.Office.Core.CertificateVerificationResults pcertverres);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowSignatureDetails([in]object ParentWindow, [in]class Microsoft.Office.Core.SignatureSetup psigsetup, [in]class Microsoft.Office.Core.SignatureInfo psiginfo, [in]object XmlDsigStream, [out] valuetype Microsoft.Office.Core.ContentVerificationResults&amp; pcontverres, [out] valuetype Microsoft.Office.Core.CertificateVerificationResults&amp; pcertverres) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureProvider.ShowSignatureDetails(System.Object,Microsoft.Office.Core.SignatureSetup,Microsoft.Office.Core.SignatureInfo,System.Object,Microsoft.Office.Core.ContentVerificationResults@,Microsoft.Office.Core.CertificateVerificationResults@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowSignatureDetails (ParentWindow As Object, psigsetup As SignatureSetup, psiginfo As SignatureInfo, XmlDsigStream As Object, ByRef pcontverres As ContentVerificationResults, ByRef pcertverres As CertificateVerificationResults)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowSignatureDetails(System::Object ^ ParentWindow, Microsoft::Office::Core::SignatureSetup ^ psigsetup, Microsoft::Office::Core::SignatureInfo ^ psiginfo, System::Object ^ XmlDsigStream, [Runtime::InteropServices::Out] Microsoft::Office::Core::ContentVerificationResults % pcontverres, [Runtime::InteropServices::Out] Microsoft::Office::Core::CertificateVerificationResults % pcertverres);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ParentWindow" Type="System.Object" />
+        <Parameter Name="psigsetup" Type="Microsoft.Office.Core.SignatureSetup" />
+        <Parameter Name="psiginfo" Type="Microsoft.Office.Core.SignatureInfo" />
+        <Parameter Name="XmlDsigStream" Type="System.Object" />
+        <Parameter Name="pcontverres" Type="Microsoft.Office.Core.ContentVerificationResults&amp;" RefType="out" />
+        <Parameter Name="pcertverres" Type="Microsoft.Office.Core.CertificateVerificationResults&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ParentWindow">
+          <span data-ttu-id="ba254-123">Enthält das Handle für das Fenster, das die Signaturdetails enthält.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-123">Contains the handle to the window containing the signature details.</span>
+          </span>
+        </param>
+        <param name="psigsetup">
+          <span data-ttu-id="ba254-124">Gibt Ausgangseinstellungen des Signaturanbieters an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-124">Specifies initial settings of the signature provider.</span>
+          </span>
+        </param>
+        <param name="psiginfo">
+          <span data-ttu-id="ba254-125">Gibt Informationen zur signierten Signaturzeile an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-125">Specifies information about the signed signature line.</span>
+          </span>
+        </param>
+        <param name="XmlDsigStream">
+          <span data-ttu-id="ba254-126">Stellt einen XML-Datenstrom oder -BLOB (Binary Large Object) dar.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-126">Represents a steam of data or binary large object of XML.</span>
+          </span>
+        </param>
+        <param name="pcontverres">
+          <span data-ttu-id="ba254-127">Enthält einen Wert, der das Ergebnis der Überprüfung des Signaturinhalts darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-127">Contains a value representing the results of verificating the signature content.</span>
+          </span>
+        </param>
+        <param name="pcertverres">
+          <span data-ttu-id="ba254-128">Enthält einen Wert, der das Ergebnis der Überprüfung der Signaturzertifizierung darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-128">Contains a value representing the results of verificating the signing certification.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ba254-129">Stellt ein Signaturanbieter-add-in die Möglichkeit zum Anzeigen von Details zu einer signierten Signaturzeile und zusätzliche gespeicherten Informationen wie einen sicheren Zeitstempel anzeigen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-129">Provides a signature provider add-in the opportunity to display details about a signed signature line and display additional stored information such as a secure time-stamp.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowSignatureSetup">
+      <MemberSignature Language="C#" Value="public void ShowSignatureSetup (object ParentWindow, Microsoft.Office.Core.SignatureSetup psigsetup);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowSignatureSetup([in]object ParentWindow, [in]class Microsoft.Office.Core.SignatureSetup psigsetup) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureProvider.ShowSignatureSetup(System.Object,Microsoft.Office.Core.SignatureSetup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowSignatureSetup (ParentWindow As Object, psigsetup As SignatureSetup)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowSignatureSetup(System::Object ^ ParentWindow, Microsoft::Office::Core::SignatureSetup ^ psigsetup);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ParentWindow" Type="System.Object" />
+        <Parameter Name="psigsetup" Type="Microsoft.Office.Core.SignatureSetup" />
+      </Parameters>
+      <Docs>
+        <param name="ParentWindow">
+          <span data-ttu-id="ba254-130">Enthält das Handle für das Fenster, das das Dialogfeld Signatureinrichtung enthält.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-130">Contains the handle to the window containing the Signature Setup dialog box.</span>
+          </span>
+        </param>
+        <param name="psigsetup">
+          <span data-ttu-id="ba254-131">Gibt Ausgangseinstellungen des Signaturanbieters an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-131">Specifies initial settings of the signature provider.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ba254-132">Mit dieser Methode kann ein Signaturanbieter-Add-In dem Benutzer das Dialogfeld Signatureinrichtung anzeigen.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-132">Provides a signature provider add-in the opportunity to display the Signature Setup dialog box to the user.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="ba254-133">
+            <para>Diese Methode wird für beide den Einfügung Konfigurationsvorgang verwendet und später einzeln zum erneuten Konfigurieren von der Signaturzeile angezeigt. Sie zeigt das Dialogfeld Signatureinrichtung während dieses Rückrufs und wartet auf die Benutzer wählen Sie OK oder Abbrechen. Es ist nicht erforderlich, um ein Dialogfeld für die Einrichtung der Signatur anzuzeigen, es sei denn, Sie insbesondere Informationen über den Autor der Signaturzeile angezeigt. Wenn Sie alle erforderlichen Details für Microsoft Office ohne Benutzereingabe bereitstellen können, ist kein Dialogfeld erforderlich.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-133">
+              <para>This method is used  for both the insertion time configuration process and if a user later wants to re-configure the signature line. You display the Signature Setup dialog box during this callback and wait for the user to select OK or Cancel. It is not necessary to display a dialog box for signature setup unless you specifically need information from the author about the signature line. If you can provide all of the necessary details back to Microsoft Office without user input, then no dialog is necessary.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowSigningCeremony">
+      <MemberSignature Language="C#" Value="public void ShowSigningCeremony (object ParentWindow, Microsoft.Office.Core.SignatureSetup psigsetup, Microsoft.Office.Core.SignatureInfo psiginfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowSigningCeremony([in]object ParentWindow, [in]class Microsoft.Office.Core.SignatureSetup psigsetup, [in]class Microsoft.Office.Core.SignatureInfo psiginfo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureProvider.ShowSigningCeremony(System.Object,Microsoft.Office.Core.SignatureSetup,Microsoft.Office.Core.SignatureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowSigningCeremony (ParentWindow As Object, psigsetup As SignatureSetup, psiginfo As SignatureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowSigningCeremony(System::Object ^ ParentWindow, Microsoft::Office::Core::SignatureSetup ^ psigsetup, Microsoft::Office::Core::SignatureInfo ^ psiginfo);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ParentWindow" Type="System.Object" />
+        <Parameter Name="psigsetup" Type="Microsoft.Office.Core.SignatureSetup" />
+        <Parameter Name="psiginfo" Type="Microsoft.Office.Core.SignatureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="ParentWindow">
+          <span data-ttu-id="ba254-134">Enthält das Handle für das Fenster, das das Dialogfeld Signatur enthält.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-134">Contains the handle to the window containing the Signature dialog box.</span>
+          </span>
+        </param>
+        <param name="psigsetup">
+          <span data-ttu-id="ba254-135">Gibt Ausgangseinstellungen des Signaturanbieters an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-135">Specifies initial settings of the signature provider.</span>
+          </span>
+        </param>
+        <param name="psiginfo">
+          <span data-ttu-id="ba254-136">Gibt Informationen zum Signaturanbieter an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-136">Specifies information about the signature provider.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ba254-137">Mit dieser Methode kann ein Signaturanbieter-Add-In Benutzern das Dialogfeld Signatur anzeigen, in dem sie ihre Identität angeben können und anschließend authentifiziert werden.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-137">Provides a signature provider add-in the opportunity to display the Signature dialog box to users, allowing them to specify their identity and then be authenticated.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="ba254-138">
+            <para>Diese Methode wird intern von der Microsoft Office-Anwendung aufgerufen, wenn der Benutzer versucht, eine Signaturzeile signieren, oder wenn das Add-in aufgerufen hat die <see cref="M:Microsoft.Office.Core.Signature.Sign(System.Object,System.Object,System.Object,System.Object)" /> -Methode in der Office-Anwendung-Objektmodells auf ein <see cref="T:Microsoft.Office.Core.Signature" /> Objekt.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-138">
+              <para>This method is internally called by the Microsoft Office application when the user is attempting to sign a signature line, or if the add-in has called the <see cref="M:Microsoft.Office.Core.Signature.Sign(System.Object,System.Object,System.Object,System.Object)" /> method in the Office application's object model on a <see cref="T:Microsoft.Office.Core.Signature" /> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignXmlDsig">
+      <MemberSignature Language="C#" Value="public void SignXmlDsig (object QueryContinue, Microsoft.Office.Core.SignatureSetup psigsetup, Microsoft.Office.Core.SignatureInfo psiginfo, object XmlDsigStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SignXmlDsig([in]object QueryContinue, [in]class Microsoft.Office.Core.SignatureSetup psigsetup, [in]class Microsoft.Office.Core.SignatureInfo psiginfo, [in]object XmlDsigStream) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureProvider.SignXmlDsig(System.Object,Microsoft.Office.Core.SignatureSetup,Microsoft.Office.Core.SignatureInfo,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SignXmlDsig (QueryContinue As Object, psigsetup As SignatureSetup, psiginfo As SignatureInfo, XmlDsigStream As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SignXmlDsig(System::Object ^ QueryContinue, Microsoft::Office::Core::SignatureSetup ^ psigsetup, Microsoft::Office::Core::SignatureInfo ^ psiginfo, System::Object ^ XmlDsigStream);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743811)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="QueryContinue" Type="System.Object" />
+        <Parameter Name="psigsetup" Type="Microsoft.Office.Core.SignatureSetup" />
+        <Parameter Name="psiginfo" Type="Microsoft.Office.Core.SignatureInfo" />
+        <Parameter Name="XmlDsigStream" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="QueryContinue">
+          <span data-ttu-id="ba254-139">Stellt eine Möglichkeit dar, um von der Hostanwendung die Berechtigung zum Fortsetzen des Überprüfungsvorgangs anzufordern.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-139">Provides a way to query the host application for permission to continue the verification operation.</span>
+          </span>
+        </param>
+        <param name="psigsetup">
+          <span data-ttu-id="ba254-140">Gibt Konfigurationsinformationen zu einer Signaturzeile an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-140">Specifies configuration information about a signature line.</span>
+          </span>
+        </param>
+        <param name="psiginfo">
+          <span data-ttu-id="ba254-141">Gibt bei der Signaturzeremonie aufgezeichnete Informationen an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-141">Specifies information captured from the signing ceremony.</span>
+          </span>
+        </param>
+        <param name="XmlDsigStream">
+          <span data-ttu-id="ba254-142">Stellt einen Datenstrom mit XML-Inhalt, der ein <b>XMLDSIG</b> -Objekt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-142">Represents a steam of data containing XML, which represents an <b>XMLDSIG</b> object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ba254-143">Mit dieser Methode wird die XMLDSIG-Vorlage signiert.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-143">Used to sign the XMLDSIG template.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="ba254-144">
+            <para>XMLDSIG ist eine auf Standards basierende Signaturformat<a href="http://www.w3.org/TR/xmldsig-core/">http://www.w3.org/TR/xmldsig-core/</a></para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-144">
+              <para>XMLDSIG is a standards-based signature format <a href="http://www.w3.org/TR/xmldsig-core/">http://www.w3.org/TR/xmldsig-core/</a></para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyXmlDsig">
+      <MemberSignature Language="C#" Value="public void VerifyXmlDsig (object QueryContinue, Microsoft.Office.Core.SignatureSetup psigsetup, Microsoft.Office.Core.SignatureInfo psiginfo, object XmlDsigStream, out Microsoft.Office.Core.ContentVerificationResults pcontverres, out Microsoft.Office.Core.CertificateVerificationResults pcertverres);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void VerifyXmlDsig([in]object QueryContinue, [in]class Microsoft.Office.Core.SignatureSetup psigsetup, [in]class Microsoft.Office.Core.SignatureInfo psiginfo, [in]object XmlDsigStream, [out] valuetype Microsoft.Office.Core.ContentVerificationResults&amp; pcontverres, [out] valuetype Microsoft.Office.Core.CertificateVerificationResults&amp; pcertverres) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SignatureProvider.VerifyXmlDsig(System.Object,Microsoft.Office.Core.SignatureSetup,Microsoft.Office.Core.SignatureInfo,System.Object,Microsoft.Office.Core.ContentVerificationResults@,Microsoft.Office.Core.CertificateVerificationResults@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub VerifyXmlDsig (QueryContinue As Object, psigsetup As SignatureSetup, psiginfo As SignatureInfo, XmlDsigStream As Object, ByRef pcontverres As ContentVerificationResults, ByRef pcertverres As CertificateVerificationResults)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void VerifyXmlDsig(System::Object ^ QueryContinue, Microsoft::Office::Core::SignatureSetup ^ psigsetup, Microsoft::Office::Core::SignatureInfo ^ psiginfo, System::Object ^ XmlDsigStream, [Runtime::InteropServices::Out] Microsoft::Office::Core::ContentVerificationResults % pcontverres, [Runtime::InteropServices::Out] Microsoft::Office::Core::CertificateVerificationResults % pcertverres);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743813)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="QueryContinue" Type="System.Object" />
+        <Parameter Name="psigsetup" Type="Microsoft.Office.Core.SignatureSetup" />
+        <Parameter Name="psiginfo" Type="Microsoft.Office.Core.SignatureInfo" />
+        <Parameter Name="XmlDsigStream" Type="System.Object" />
+        <Parameter Name="pcontverres" Type="Microsoft.Office.Core.ContentVerificationResults&amp;" RefType="out" />
+        <Parameter Name="pcertverres" Type="Microsoft.Office.Core.CertificateVerificationResults&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="QueryContinue">
+          <span data-ttu-id="ba254-145">Stellt eine Möglichkeit dar, um von der Hostanwendung die Berechtigung zum Fortsetzen des Überprüfungsvorgangs anzufordern.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-145">Provides a way to query the host application for permission to continue the verification operation.</span>
+          </span>
+        </param>
+        <param name="psigsetup">
+          <span data-ttu-id="ba254-146">Gibt Konfigurationsinformationen zu einer Signaturzeile an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-146">Specifies configuration information about a signature line.</span>
+          </span>
+        </param>
+        <param name="psiginfo">
+          <span data-ttu-id="ba254-147">Gibt bei der Signaturzeremonie aufgezeichnete Informationen an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-147">Specifies information captured from the signing ceremony.</span>
+          </span>
+        </param>
+        <param name="XmlDsigStream">
+          <span data-ttu-id="ba254-148">Stellt einen Datenstrom mit XML-Inhalt, der ein <b>XMLDSIG</b> -Objekt darstellt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-148">Represents a steam of data containing XML, which represents an <b>XMLDSIG</b> object.</span>
+          </span>
+        </param>
+        <param name="pcontverres">
+          <span data-ttu-id="ba254-149">Gibt den Status der Signaturüberprüfungsaktion an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-149">Specifies the status of the signature verification action.</span>
+          </span>
+        </param>
+        <param name="pcertverres">
+          <span data-ttu-id="ba254-150">Gibt den Status der Überprüfung des Signaturzertifikats an.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-150">Specifies the status of the signing certificate  verification.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ba254-151">Überprüft eine Signatur basierend auf dem Signierungsstatus des Dokuments und der Rechtmäßigkeit des zum Signieren verwendeten Zertifikats.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-151">Verifies a signature based on the signed state of the document and the legitimacy of the certificate used for signing.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="ba254-152">
+            <para>XMLDSIG ist eine Signatur Standards basierende Format (<a href="http://www.w3.org/TR/xmldsig-core/">http://www.w3.org/TR/xmldsig-core/</a></para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ba254-152">
+              <para>XMLDSIG is a standards-based signature format (<a href="http://www.w3.org/TR/xmldsig-core/">http://www.w3.org/TR/xmldsig-core/</a></para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
