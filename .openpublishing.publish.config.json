@@ -50,7 +50,7 @@
       ]
     }
   ],
-  "notification_subscribers": [],
+  "notification_subscribers": ["v-mipop@microsoft.com","v-jijaku@microsoft.com"],
   "branches_to_filter": [
     "live-sxs",
     "master-sxs"
